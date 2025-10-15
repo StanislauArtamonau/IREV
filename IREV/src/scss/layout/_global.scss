@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  @include font-style($FoundersGrotesk-family, 88px, 88px, 700, 0.02em, uppercase);
+}
+
+h2 {
+  @include font-style($FoundersGrotesk-family, 50px, 0.85, 700, 0.02em, uppercase);
+}
+
+h3{
+  @include font-style($FoundersGrotesk-family, 32px, 1, 700, 0, uppercase);
+}
+
+div{
+  width: 150px;
+  height: 150px;
+
+}

@@ -1,0 +1,51 @@
+@mixin font-style($family, $size, $line-height, $weight, $spacing, $transform){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+}
+
+@mixin body-large-font{
+  font-family: $IBMPlexMono-family;
+  font-weight: map-get($body-large, "weight");
+  font-size: map-get($body-large, "font-size");
+  line-height: map-get($body-large, "line-height");
+  letter-spacing: map-get($body-large, "letter-spacing");
+  text-transform: map-get($body-large, "transform");
+}
+
+@mixin body-medium-font{
+  font-family: $IBMPlexMono-family;
+  font-weight: map-get($body-medium, "weight");
+  font-size: map-get($body-medium, "font-size");
+  line-height: map-get($body-medium, "line-height");
+  letter-spacing: map-get($body-medium, "letter-spacing");
+  text-transform: map-get($body-medium, "transform");
+}
+
+@mixin body-small-font{
+  font-family: $IBMPlexMono-family;
+  font-weight: map-get($body-small, "weight");
+  font-size: map-get($body-small, "font-size");
+  line-height: map-get($body-small, "line-height");
+  letter-spacing: map-get($body-small, "letter-spacing");
+}
+
+@mixin caption-medium-font{
+  font-family: $IBMPlexMono-family;
+  font-weight: map-get($caption-medium, "weight");
+  font-size: map-get($caption-medium, "font-size");
+  line-height: map-get($caption-medium, "line-height");
+  letter-spacing: map-get($caption-medium, "letter-spacing");
+}
+
+@mixin caption-small-font{
+  font-family: $IBMPlexMono-family;
+  font-weight: map-get($caption-small, "weight");
+  font-size: map-get($caption-small, "font-size");
+  line-height: map-get($caption-small, "line-height");
+  letter-spacing: map-get($caption-small, "letter-spacing");
+}
+
