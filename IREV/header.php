@@ -9,6 +9,6 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header>
+<h1>
     HEADER
-</header>
+</h1>
