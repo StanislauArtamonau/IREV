@@ -15,8 +15,3 @@ h2 {
 h3{
   @include font-style($FoundersGrotesk-family, 32px, 1, 700, 0, uppercase);
 }
-
-div{
-  width: 150px;
-  height: 150px;
-}

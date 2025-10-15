@@ -8,7 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
@@ -112,7 +114,7 @@
       <workItem from="1760490443511" duration="120000" />
       <workItem from="1760492204118" duration="239000" />
       <workItem from="1760520680164" duration="12063000" />
-      <workItem from="1760537107332" duration="967000" />
+      <workItem from="1760537107332" duration="2248000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -178,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760533149536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="поставил относительные импорты в подключении шрифтов">
+      <option name="closed" value="true" />
+      <created>1760538081757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760538081757</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
