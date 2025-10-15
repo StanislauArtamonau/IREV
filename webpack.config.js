@@ -60,7 +60,7 @@ module.exports = (env, argv) => {
                             },
                         },
                     ],
-                }
+                },
             ],
         },
         plugins: [

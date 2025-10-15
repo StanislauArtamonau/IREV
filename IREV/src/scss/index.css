@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Founders Grotesk";
-  src: url("../../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
-  src: url("../../fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
+  src: url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.eot");
+  src: url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -42,8 +42,8 @@
 }
 @font-face {
   font-family: "Founders Grotesk";
-  src: url("../../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
-  src: url("../../fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("../../fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
+  src: url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.eot");
+  src: url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("IREV/src/fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
