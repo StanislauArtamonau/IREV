@@ -11,8 +11,8 @@
 <?php wp_body_open(); ?>
 <header>
     <div class="header_wrapper">
-        <div class="header_logo">
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/logo.svg')); ?>"
+        <div>
+            <img class="header_logo" src="<?php echo esc_url(get_theme_file_uri('src/icons/logo.svg')); ?>"
                  alt="irev logo"/>
         </div>
         <div class="header_menu">
@@ -46,6 +46,11 @@
         </div>
         <button class="header_signIn">
             Sign In
+        </button>
+        <button class="header_hamburger">
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/hamburgerIcon.svg')); ?>"
+                 alt="hamburger"
+            />
         </button>
     </div>
 </header>

@@ -18,6 +18,10 @@ header{
     @include body-small-font();
     font-size: 16px;
 
+    .header_hamburger{
+      display: none;
+    }
+
     .header_menu{
       display: flex;
       gap: 36px;
@@ -42,6 +46,39 @@ header{
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+
+    @media(max-width: 745px){
+      .header_logo{
+        width: 60px;
+        height: 17px;
+      }
+
+      .header_menu{
+        display: none;
+      }
+
+      .header_signIn{
+        display: none;
+      }
+
+      .header_hamburger{
+        display: flex;
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+
+  @media(max-width: 745px){
+    .header_wrapper{
+      height: 17px;
+      max-width: 703px;
+      padding: 0;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }

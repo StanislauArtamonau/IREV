@@ -55,5 +55,46 @@ footer{
       display: flex;
       justify-content: space-between;
     }
+
+    @media(max-width: 745px){
+      .footer_logo{
+        top: 0;
+        max-width: 421px;
+        height: 118px;
+      }
+
+      .footer_nav{
+        display: none !important;
+      }
+
+      .footer_lower{
+        flex-direction: column;
+        font-size: 9px;
+        gap: 8px;
+      }
+    }
+
+    @media(max-width: 376px){
+      .footer_logo{
+        width: 335px;
+        height: 93px;
+      }
+    }
+  }
+
+  @media(max-width: 745px){
+    .footer_wrapper{
+      max-width: 420px;
+      height: 186px;
+      justify-content: flex-end;
+    }
+  }
+
+  @media(max-width: 376px){
+    .footer_wrapper{
+      max-width: 335px;
+      height: 147px;
+      justify-content: flex-end;
+    }
   }
 }

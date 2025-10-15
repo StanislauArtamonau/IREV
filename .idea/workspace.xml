@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="фикс относительных импортов в подключении шрифтов">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="desktop header, footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/html.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +116,7 @@
       <workItem from="1760520680164" duration="12063000" />
       <workItem from="1760537107332" duration="4896000" />
       <workItem from="1760561848585" duration="1259000" />
-      <workItem from="1760563126606" duration="5407000" />
+      <workItem from="1760563126606" duration="8965000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -203,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760539391629</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="desktop header, footer">
+      <option name="closed" value="true" />
+      <created>1760568678140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760568678140</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +230,8 @@
     <MESSAGE value="fix template" />
     <MESSAGE value="поставил относительные импорты в подключении шрифтов" />
     <MESSAGE value="фикс относительных импортов в подключении шрифтов" />
-    <option name="LAST_COMMIT_MESSAGE" value="фикс относительных импортов в подключении шрифтов" />
+    <MESSAGE value="desktop header, footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="desktop header, footer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
