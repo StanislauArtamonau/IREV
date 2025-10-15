@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="базовый ui kit, fonts, mixins">
-      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="базовый ui kit, fonts, mixins, url fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +103,7 @@
       <workItem from="1760462345476" duration="5627000" />
       <workItem from="1760475946523" duration="13947000" />
       <workItem from="1760490443511" duration="120000" />
+      <workItem from="1760492204118" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -137,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760490170174</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="базовый ui kit, fonts, mixins, url fix">
+      <option name="closed" value="true" />
+      <created>1760491887975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760491887975</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="базовый ui kit, fonts, mixins" />
-    <option name="LAST_COMMIT_MESSAGE" value="базовый ui kit, fonts, mixins" />
+    <MESSAGE value="базовый ui kit, fonts, mixins, url fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="базовый ui kit, fonts, mixins, url fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
