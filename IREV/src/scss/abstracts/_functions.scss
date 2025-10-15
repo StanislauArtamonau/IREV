@@ -1,0 +1,4 @@
+@function getColor($color-name, $shade: 100) {
+  $color-map: map-get($colors, $color-name);
+  @return map-get($color-map, $shade);
+}
