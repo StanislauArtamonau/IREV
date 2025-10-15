@@ -49,3 +49,9 @@
   letter-spacing: map-get($caption-small, "letter-spacing");
 }
 
+@mixin offSelect{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
