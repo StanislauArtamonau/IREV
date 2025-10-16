@@ -187,6 +187,7 @@ footer .footer_wrapper .footer_logo {
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 90%;
   z-index: -100;
 }
 footer .footer_wrapper .footer_nav {
@@ -233,7 +234,7 @@ footer .footer_wrapper .footer_lower {
 @media (max-width: 745px) {
   footer .footer_wrapper .footer_logo {
     top: 0;
-    max-width: 421px;
+    max-width: min(420px, 90vw);
     height: 118px;
   }
   footer .footer_wrapper .footer_nav {
@@ -247,20 +248,20 @@ footer .footer_wrapper .footer_lower {
 }
 @media (max-width: 376px) {
   footer .footer_wrapper .footer_logo {
-    width: 335px;
+    max-width: min(335px, 90vw);
     height: 93px;
   }
 }
 @media (max-width: 745px) {
   footer .footer_wrapper {
-    max-width: 420px;
+    max-width: min(420px, 90vw);
     height: 186px;
     justify-content: flex-end;
   }
 }
 @media (max-width: 376px) {
   footer .footer_wrapper {
-    max-width: 335px;
+    max-width: min(335px, 90vw);
     height: 147px;
     justify-content: flex-end;
   }
