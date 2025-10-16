@@ -131,9 +131,6 @@ header .header_wrapper .header_signIn {
   align-items: center;
   justify-content: center;
 }
-header .header_wrapper .header_signIn:hover {
-  opacity: 0.7;
-}
 header .header_wrapper .header_nav {
   position: relative;
 }
@@ -161,6 +158,9 @@ header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_sel
 }
 header .header_wrapper .header_nav .header_menu_item.active button {
   color: #0F5EF7;
+}
+header .header_wrapper .header_nav .header_menu_item.active button:hover {
+  opacity: 1;
 }
 header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_unselected {
   display: none;
@@ -389,6 +389,16 @@ body {
   background: rgb(0, 2, 12);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+}
+a:hover {
+  opacity: 0.7;
+}
+
 ul, ol {
   list-style: none;
 }
@@ -398,6 +408,11 @@ button {
   border: none;
   color: #F8FAFF;
   outline: none;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+}
+button:hover {
+  opacity: 0.7;
 }
 button:focus {
   outline: none;
@@ -406,6 +421,7 @@ button:focus {
 button:active {
   outline: none;
   box-shadow: none;
+  opacity: 0.7;
 }
 button:focus-visible {
   outline: none;

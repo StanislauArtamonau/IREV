@@ -8,13 +8,19 @@
                 </span>
                 <ul class="footer_nav_list_list">
                     <li>
-                        Partner Platform
+                        <a>
+                            Partner Platform
+                        </a>
                     </li>
                     <li>
-                        Lead Distribution
+                        <a>
+                            Lead Distribution
+                        </a>
                     </li>
                     <li>
-                        Integrations
+                        <a>
+                            Integrations
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -24,13 +30,19 @@
                 </span>
                 <ul class="footer_nav_list_list">
                     <li>
-                        IGaming
+                        <a>
+                            IGaming
+                        </a>
                     </li>
                     <li>
-                        Finance
+                        <a>
+                            Finance
+                        </a>
                     </li>
                     <li>
-                        E-commerce
+                        <a>
+                            E-commerce
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -40,13 +52,19 @@
                 </span>
                 <ul class="footer_nav_list_list">
                     <li>
-                        About us
+                        <a>
+                            About us
+                        </a>
                     </li>
                     <li>
-                        Careers
+                        <a>
+                            Careers
+                        </a>
                     </li>
                     <li>
-                        Contact us
+                        <a>
+                            Contact us
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -56,10 +74,14 @@
                 </span>
                 <ul class="footer_nav_list_list">
                     <li>
-                        Blog
+                        <a>
+                            Blog
+                        </a>
                     </li>
                     <li>
-                        Affiliate marketing glossary
+                        <a>
+                            Affiliate marketing glossary
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -69,16 +91,24 @@
                 </span>
                 <ul class="footer_nav_list_list">
                     <li>
-                        Data Control and Processing Policy
+                        <a>
+                            Data Control and Processing Policy
+                        </a>
                     </li>
                     <li>
-                        Terms and conditions
+                        <a>
+                            Terms and conditions
+                        </a>
                     </li>
                     <li>
-                        Privacy policy
+                        <a>
+                            Privacy policy
+                        </a>
                     </li>
                     <li>
-                        Cookies policy
+                        <a>
+                            Cookies policy
+                        </a>
                     </li>
                 </ul>
             </div>
