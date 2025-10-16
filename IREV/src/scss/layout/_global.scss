@@ -12,6 +12,28 @@ ul, ol{
   list-style: none;
 }
 
+button{
+  background: transparent;
+  border: none;
+  color: #F8FAFF;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 h1 {
   @include font-style($FoundersGrotesk-family, 88px, 88px, 700, 0.02em, uppercase);
 }

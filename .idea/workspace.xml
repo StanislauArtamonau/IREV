@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="адаптив хедер, футер">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix адаптив">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,7 @@
         <option value="PHP File" />
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -114,7 +121,8 @@
       <workItem from="1760520680164" duration="12063000" />
       <workItem from="1760537107332" duration="4896000" />
       <workItem from="1760561848585" duration="1259000" />
-      <workItem from="1760563126606" duration="10506000" />
+      <workItem from="1760563126606" duration="11616000" />
+      <workItem from="1760607775287" duration="6613000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -212,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760572396427</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix адаптив">
+      <option name="closed" value="true" />
+      <created>1760573729118</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760573729118</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +254,8 @@
     <MESSAGE value="фикс относительных импортов в подключении шрифтов" />
     <MESSAGE value="desktop header, footer" />
     <MESSAGE value="адаптив хедер, футер" />
-    <option name="LAST_COMMIT_MESSAGE" value="адаптив хедер, футер" />
+    <MESSAGE value="fix адаптив" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix адаптив" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -22,17 +22,6 @@ header{
       display: none;
     }
 
-    .header_menu{
-      display: flex;
-      gap: 36px;
-    }
-
-    .header_menu_item{
-      display: flex;
-      gap: 8px;
-      cursor: pointer;
-    }
-
     .header_signIn{
       @include body-small-font();
       font-size: 16px;
@@ -48,14 +37,80 @@ header{
       justify-content: center;
     }
 
+    .header_nav{
+      position: relative;
 
-    @media(max-width: 745px){
+      .header_menu{
+        display: flex;
+        gap: 36px;
+        position: relative;
+      }
+
+      .header_menu_item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        button{
+          @include body-small-font();
+          font-size: 16px;
+        }
+
+        .header_menu_item_arrow_selected{
+          display: none;
+        }
+
+        &.active{
+          button {
+            color: #0F5EF7;
+          }
+
+          .header_menu_item_arrow_unselected {
+            display: none;
+          }
+
+          .header_menu_item_arrow_selected{
+            display: flex;
+          }
+        }
+      }
+
+      .nav_dropdown_container{
+        position: absolute;
+        width: 100%;
+        top: 21px;
+        display: none;
+        z-index: 1000;
+
+        &.active{
+          display: block;
+        }
+
+        .nav_dropdown{
+          background: #1C1E25CC;
+          height: 100px;
+          border-radius: 10px;
+          padding: 39px 40px 39px 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &:has(a:only-of-type) {
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+
+    @media(max-width: $tablet-width){
       .header_logo{
         width: 60px;
         height: 17px;
       }
 
-      .header_menu{
+      .header_nav{
         display: none;
       }
 
@@ -71,7 +126,7 @@ header{
     }
   }
 
-  @media(max-width: 745px){
+  @media(max-width: $tablet-width){
     .header_wrapper{
       height: 17px;
       max-width: 703px;

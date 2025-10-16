@@ -15,35 +15,83 @@
             <img class="header_logo" src="<?php echo esc_url(get_theme_file_uri('src/icons/logo.svg')); ?>"
                  alt="irev logo"/>
         </div>
-        <div class="header_menu">
-            <div class="header_menu_item">
-                Product
-                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                     alt="arrow"
-                />
+        <nav class="header_nav">
+            <div class="header_menu">
+                <div class="header_menu_item" data-dropdown-trigger="product">
+                    <button>
+                        Product
+                    </button>
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_unselected"
+                    />
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_selected"
+                    />
+                </div>
+                <div class="header_menu_item" data-dropdown-trigger="solution">
+                    <button>
+                        Solution
+                    </button>
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_unselected"
+                    />
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_selected"
+                    />
+                </div>
+                <div class="header_menu_item">
+                        Pricing
+                </div>
+                <div class="header_menu_item" data-dropdown-trigger="resources">
+                    <button>
+                        Resources
+                    </button>
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_unselected"
+                    />
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_selected"
+                    />
+                </div>
+                <div class="header_menu_item" data-dropdown-trigger="company">
+                    <button>
+                        Company
+                    </button>
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_unselected"
+                    />
+                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                         alt="arrow"
+                         class="header_menu_item_arrow_selected"
+                    />
+                </div>
             </div>
-            <div class="header_menu_item">
-                Solution
-                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                     alt="arrow"
-                />
+            <div class="nav_dropdown_container">
+                <div class="nav_dropdown" data-dropdown-content="product">
+                    <a>Lead Distribution</a>
+                    <a>Partner Platform</a>
+                </div>
+                <div class="nav_dropdown" data-dropdown-content="solution">
+                    <a>IGaming & Casino</a>
+                </div>
+                <div class="nav_dropdown" data-dropdown-content="resources">
+                    <a>Blog</a>
+                    <a>Affiliate Marketing Glossary</a>
+                </div>
+                <div class="nav_dropdown" data-dropdown-content="company">
+                    <a>About us</a>
+                    <a>Career</a>
+                    <a>Contact us</a>
+                </div>
             </div>
-            <div class="header_menu_item">
-                Pricing
-            </div>
-            <div class="header_menu_item">
-                Resources
-                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                     alt="arrow"
-                />
-            </div>
-            <div class="header_menu_item">
-                Company
-                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                     alt="arrow"
-                />
-            </div>
-        </div>
+        </nav>
         <button class="header_signIn">
             Sign In
         </button>
