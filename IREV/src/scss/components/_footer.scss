@@ -8,7 +8,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 1220px;
+    max-width: min(1220px, calc(100vw - 40px));
     height: 384px;
     margin: 0 auto;
     position: relative;
@@ -24,18 +24,21 @@ footer{
 
     .footer_nav{
       height: 231px;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
       justify-content: space-between;
 
       .footer_nav_list{
         display: flex;
         flex-direction: column;
-        max-width: 164px;
+        max-width: 100%;
         gap: 36px;
 
         .footer_nav_list_title{
           @include caption-small-font();
           text-transform: uppercase;
+          white-space: nowrap;
         }
 
         .footer_nav_list_list{
@@ -44,6 +47,11 @@ footer{
           display: flex;
           flex-direction: column;
           gap: 16px;
+
+          li {
+            word-break: break-word;
+            overflow-wrap: break-word;
+          }
         }
       }
     }

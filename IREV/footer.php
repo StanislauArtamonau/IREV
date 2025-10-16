@@ -59,7 +59,7 @@
                         Blog
                     </li>
                     <li>
-                        Affiliate Marketing glossary
+                        Affiliate marketing glossary
                     </li>
                 </ul>
             </div>

@@ -84,6 +84,7 @@
 }
 header {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -130,6 +131,9 @@ header .header_wrapper .header_signIn {
   align-items: center;
   justify-content: center;
 }
+header .header_wrapper .header_signIn:hover {
+  opacity: 0.7;
+}
 header .header_wrapper .header_nav {
   position: relative;
 }
@@ -164,15 +168,27 @@ header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_ar
 header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_selected {
   display: flex;
 }
+@media (max-width: 900px) {
+  header .header_wrapper .header_nav .header_menu {
+    gap: 10px !important;
+  }
+  header .header_wrapper .header_nav .header_menu_item {
+    gap: 4px;
+  }
+}
 header .header_wrapper .header_nav .nav_dropdown_container {
   position: absolute;
   width: 100%;
   top: 21px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.1s;
   z-index: 1000;
 }
 header .header_wrapper .header_nav .nav_dropdown_container.active {
   display: block;
+  visibility: visible;
+  opacity: 1;
 }
 header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown {
   background: rgba(28, 30, 37, 0.8);
@@ -224,7 +240,7 @@ footer .footer_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1220px;
+  max-width: min(1220px, 100vw - 40px);
   height: 384px;
   margin: 0 auto;
   position: relative;
@@ -239,13 +255,15 @@ footer .footer_wrapper .footer_logo {
 }
 footer .footer_wrapper .footer_nav {
   height: 231px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   justify-content: space-between;
 }
 footer .footer_wrapper .footer_nav .footer_nav_list {
   display: flex;
   flex-direction: column;
-  max-width: 164px;
+  max-width: 100%;
   gap: 36px;
 }
 footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_title {
@@ -255,6 +273,7 @@ footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_title {
   line-height: 1;
   letter-spacing: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_list {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
@@ -266,6 +285,10 @@ footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_list li {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 footer .footer_wrapper .footer_lower {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
