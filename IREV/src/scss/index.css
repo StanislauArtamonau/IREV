@@ -1,0 +1,458 @@
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Medium.eot");
+  src: url("../fonts/IBMPlexMono-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Medium.woff2") format("woff2"), url("../fonts/IBMPlexMono-Medium.woff") format("woff"), url("../fonts/IBMPlexMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Regular.eot");
+  src: url("../fonts/IBMPlexMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Regular.woff2") format("woff2"), url("../fonts/IBMPlexMono-Regular.woff") format("woff"), url("../fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Light.eot");
+  src: url("../fonts/IBMPlexMono-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Light.woff2") format("woff2"), url("../fonts/IBMPlexMono-Light.woff") format("woff"), url("../fonts/IBMPlexMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Medium.eot");
+  src: url("../fonts/IBMPlexMono-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Medium.woff2") format("woff2"), url("../fonts/IBMPlexMono-Medium.woff") format("woff"), url("../fonts/IBMPlexMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Regular.eot");
+  src: url("../fonts/IBMPlexMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Regular.woff2") format("woff2"), url("../fonts/IBMPlexMono-Regular.woff") format("woff"), url("../fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Light.eot");
+  src: url("../fonts/IBMPlexMono-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Light.woff2") format("woff2"), url("../fonts/IBMPlexMono-Light.woff") format("woff"), url("../fonts/IBMPlexMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+  color: #F8FAFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+header .header_wrapper {
+  max-width: 1281px;
+  margin: 0 auto;
+  padding: 30px 31px 30px 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+header .header_wrapper .header_hamburger {
+  display: none;
+}
+header .header_wrapper .header_signIn {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  width: 120px;
+  height: 36px;
+  background: rgba(28, 30, 37, 0.8);
+  color: #F8FAFF;
+  padding: 11px 16px 11px 16px;
+  border: 0.5px solid rgba(248, 250, 255, 0.8980392157);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header_wrapper .header_nav {
+  position: relative;
+}
+header .header_wrapper .header_nav .header_menu {
+  display: flex;
+  gap: 36px;
+  position: relative;
+}
+header .header_wrapper .header_nav .header_menu_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+header .header_wrapper .header_nav .header_menu_item button {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_selected {
+  display: none;
+}
+header .header_wrapper .header_nav .header_menu_item.active button {
+  color: #0F5EF7;
+}
+header .header_wrapper .header_nav .header_menu_item.active button:hover {
+  opacity: 1;
+}
+header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_unselected {
+  display: none;
+}
+header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_selected {
+  display: flex;
+}
+@media (max-width: 900px) {
+  header .header_wrapper .header_nav .header_menu {
+    gap: 10px !important;
+  }
+  header .header_wrapper .header_nav .header_menu_item {
+    gap: 4px;
+  }
+}
+header .header_wrapper .header_nav .nav_dropdown_container {
+  position: absolute;
+  width: 100%;
+  top: 21px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.1s;
+  z-index: 1000;
+}
+header .header_wrapper .header_nav .nav_dropdown_container.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown {
+  background: rgba(28, 30, 37, 0.8);
+  height: 100px;
+  border-radius: 10px;
+  padding: 39px 40px 39px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown:has(a:only-of-type) {
+  justify-content: center;
+}
+@media (max-width: 751px) {
+  header .header_wrapper .header_logo {
+    width: 60px;
+    height: 17px;
+  }
+  header .header_wrapper .header_nav {
+    display: none;
+  }
+  header .header_wrapper .header_signIn {
+    display: none;
+  }
+  header .header_wrapper .header_hamburger {
+    display: flex;
+    background: transparent;
+    border: none;
+  }
+}
+@media (max-width: 751px) {
+  header .header_wrapper {
+    height: 17px;
+    max-width: 703px;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+footer .footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: min(1220px, 100vw - 40px);
+  height: 384px;
+  margin: 0 auto;
+  position: relative;
+}
+footer .footer_wrapper .footer_logo {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  z-index: -100;
+}
+footer .footer_wrapper .footer_nav {
+  height: 231px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+}
+footer .footer_wrapper .footer_nav .footer_nav_list {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 36px;
+}
+footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_title {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_list {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer_wrapper .footer_nav .footer_nav_list .footer_nav_list_list li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+footer .footer_wrapper .footer_lower {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 751px) {
+  footer .footer_wrapper .footer_logo {
+    top: 0;
+    max-width: min(420px, 100vw - 40px);
+    height: 118px;
+  }
+  footer .footer_wrapper .footer_nav {
+    display: none !important;
+  }
+  footer .footer_wrapper .footer_lower {
+    flex-direction: column;
+    font-size: 9px;
+    gap: 8px;
+  }
+}
+@media (max-width: 376px) {
+  footer .footer_wrapper .footer_logo {
+    max-width: min(335px, 100vw - 40px);
+    height: 93px;
+  }
+}
+@media (max-width: 751px) {
+  footer .footer_wrapper {
+    max-width: min(420px, 100vw - 40px);
+    height: 186px;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 376px) {
+  footer .footer_wrapper {
+    max-width: min(335px, 100vw - 40px);
+    height: 147px;
+    justify-content: flex-end;
+  }
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
+  src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff2") format("woff2"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.woff") format("woff"), url("../fonts/Founders-Grotesk-X-Condensed-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Medium.eot");
+  src: url("../fonts/IBMPlexMono-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Medium.woff2") format("woff2"), url("../fonts/IBMPlexMono-Medium.woff") format("woff"), url("../fonts/IBMPlexMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-SemiBold.eot");
+  src: url("../fonts/IBMPlexMono-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Regular.eot");
+  src: url("../fonts/IBMPlexMono-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Regular.woff2") format("woff2"), url("../fonts/IBMPlexMono-Regular.woff") format("woff"), url("../fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBMPlexMono-Light.eot");
+  src: url("../fonts/IBMPlexMono-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/IBMPlexMono-Light.woff2") format("woff2"), url("../fonts/IBMPlexMono-Light.woff") format("woff"), url("../fonts/IBMPlexMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 2, 12);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: #F8FAFF;
+  outline: none;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+}
+button:hover {
+  opacity: 0.7;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+button:active {
+  outline: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+h1 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=index.css.map */

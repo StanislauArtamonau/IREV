@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: getColor("background-black", 100);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+ul, ol{
+  list-style: none;
+}
+
+button{
+  background: transparent;
+  border: none;
+  color: #F8FAFF;
+  outline: none;
+  cursor: pointer;
+  transition: opacity ease 0.3s;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+h1 {
+  @include font-style($FoundersGrotesk-family, 88px, 88px, 700, 0.02em, uppercase);
+}
+
+h2 {
+  @include font-style($FoundersGrotesk-family, 50px, 0.85, 700, 0.02em, uppercase);
+}
+
+h3{
+  @include font-style($FoundersGrotesk-family, 32px, 1, 700, 0, uppercase);
+}

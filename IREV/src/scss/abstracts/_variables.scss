@@ -1,0 +1,128 @@
+// settings
+
+$desktop-width: 1281px;
+$tablet-width: 751px;
+$mobile-width: 376px;
+
+// fonts
+
+$FoundersGrotesk-family: 'Founders Grotesk', Arial, sans-serif;
+$IBMPlexMono-family: 'IBMPlexMono', "SF Mono", "Cascadia Code", "Fira Code",
+"Consolas", "Monaco", "Courier New", monospace;
+
+$body-large: (
+  "weight": 500,
+  "font-size": 32px,
+  "line-height": 1,
+  "letter-spacing": 0,
+  "transform": uppercase
+);
+
+$body-medium: (
+        "weight": 600,
+        "font-size": 20px,
+        "line-height": 1,
+        "letter-spacing": 0,
+        "transform": uppercase
+);
+
+$body-small: (
+        "weight": 400,
+        "font-size": 20px,
+        "line-height": 1,
+        "letter-spacing": 0
+);
+
+$caption-medium: (
+        "weight": 300,
+        "font-size": 20px,
+        "line-height": 1,
+        "letter-spacing": 0,
+);
+
+$caption-small: (
+        "weight": 300,
+        "font-size": 16px,
+        "line-height": 1,
+        "letter-spacing": 0,
+);
+
+// colors
+
+$colors: (
+        "background-black": (
+                100: rgba(0, 2, 12, 1),
+                80: rgba(0, 2, 12, 0.8),
+                60: rgba(0, 2, 12, 0.6),
+                40: rgba(0, 2, 12, 0.4),
+                20: rgba(0, 2, 12, 0.2),
+        ),
+        "regular-black": (
+                100: rgba(28, 30, 37, 1),
+                80: rgba(28, 30, 37, 0.8),
+                60: rgba(28, 30, 37, 0.6),
+                40: rgba(28, 30, 37, 0.4),
+                20: rgba(28, 30, 37, 0.2)
+        ),
+        "regular-white": (
+                100: rgba(248, 250, 255, 1),
+                80: rgba(248, 250, 255, 0.8),
+                60: rgba(248, 250, 255, 0.6),
+                40: rgba(248, 250, 255, 0.4),
+                20: rgba(248, 250, 255, 0.2)
+        ),
+        "electric-blue": (
+                100: rgba(15, 94, 247, 1),
+                80: rgba(15, 94, 247, 0.8),
+                60: rgba(15, 94, 247, 0.6),
+                40: rgba(15, 94, 247, 0.4),
+                20: rgba(15, 94, 247, 0.2)
+        ),
+        "aquamarine": (
+                100: rgba(122, 255, 246, 1),
+                80: rgba(122, 255, 246, 0.8),
+                60: rgba(122, 255, 246, 0.6),
+                40: rgba(122, 255, 246, 0.4),
+                20: rgba(122, 255, 246, 0.2)
+        ),
+        "lilac": (
+                100: rgba(169, 128, 255, 1),
+                80: rgba(169, 128, 255, 0.8),
+                60: rgba(169, 128, 255, 0.6),
+                40: rgba(169, 128, 255, 0.4),
+                20: rgba(169, 128, 255, 0.2)
+        )
+);
+
+// gradient
+
+$radial-gradient: radial-gradient(ellipse 70% 50% at 70% 50%,
+        rgba(80, 12, 190, 1),
+        rgba(255, 246, 122, 1),
+        rgba(122, 255, 246, 1),
+        rgba(15, 94, 247, 1));
+
+$angular-gradient: conic-gradient(
+                from 65deg at 70% 50%,
+                rgba(80, 12, 190, 1) 10deg,
+                rgba(255, 246, 122, 1) 40deg,
+                rgba(122, 255, 246, 1) 190deg,
+                rgba(15, 94, 247, 1) 260deg
+);
+
+$linear-gradient: linear-gradient(65deg,
+        rgba(80, 12, 190, 1) 20%,
+        rgba(255, 246, 122, 1),
+        rgba(122, 255, 246, 1),
+        rgba(15, 94, 247, 1)
+);
+
+$header-height: 96px;
+
+
+
+
+
+
+
+

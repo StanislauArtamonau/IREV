@@ -1,0 +1,67 @@
+$font-path: '../fonts/';
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('#{$font-path}Founders-Grotesk-X-Condensed-Bold.eot');
+  src: url('#{$font-path}Founders-Grotesk-X-Condensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}Founders-Grotesk-X-Condensed-Bold.woff2') format('woff2'),
+  url('#{$font-path}Founders-Grotesk-X-Condensed-Bold.woff') format('woff'),
+  url('#{$font-path}Founders-Grotesk-X-Condensed-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('#{$font-path}IBMPlexMono-Medium.eot');
+  src: url('#{$font-path}IBMPlexMono-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}IBMPlexMono-Medium.woff2') format('woff2'),
+  url('#{$font-path}IBMPlexMono-Medium.woff') format('woff'),
+  url('#{$font-path}IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('#{$font-path}IBMPlexMono-SemiBold.eot');
+  src: url('#{$font-path}IBMPlexMono-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}IBMPlexMono-SemiBold.woff2') format('woff2'),
+  url('#{$font-path}IBMPlexMono-SemiBold.woff') format('woff'),
+  url('#{$font-path}IBMPlexMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('#{$font-path}IBMPlexMono-SemiBold.eot');
+  src: url('#{$font-path}IBMPlexMono-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}IBMPlexMono-SemiBold.woff2') format('woff2'),
+  url('#{$font-path}IBMPlexMono-SemiBold.woff') format('woff'),
+  url('#{$font-path}IBMPlexMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('#{$font-path}IBMPlexMono-Regular.eot');
+  src: url('#{$font-path}IBMPlexMono-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}IBMPlexMono-Regular.woff2') format('woff2'),
+  url('#{$font-path}IBMPlexMono-Regular.woff') format('woff'),
+  url('#{$font-path}IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('#{$font-path}IBMPlexMono-Light.eot');
+  src: url('#{$font-path}IBMPlexMono-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$font-path}IBMPlexMono-Light.woff2') format('woff2'),
+  url('#{$font-path}IBMPlexMono-Light.woff') format('woff'),
+  url('#{$font-path}IBMPlexMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
