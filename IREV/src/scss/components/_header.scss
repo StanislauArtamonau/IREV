@@ -1,10 +1,12 @@
 header {
   position: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
-  height: 96px;
+  height: $header-height;
   color: #F8FAFF;
   @include offSelect();
 
@@ -36,6 +38,15 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+
+      &.two{
+        background: #1C1E2580;
+      }
+
+      &.one, &.go{
+        background: #1C1E2500;
+      }
     }
 
     .header_nav {
@@ -153,5 +164,12 @@ header {
       margin-left: 20px;
       margin-right: 20px;
     }
+  }
+}
+
+@media(max-width: $tablet-width){
+  header{
+    height: auto;
+    padding-bottom: 20px;
   }
 }

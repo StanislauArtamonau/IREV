@@ -53,7 +53,7 @@ button{
 }
 
 h1 {
-  @include font-style($FoundersGrotesk-family, 88px, 88px, 700, 0.02em, uppercase);
+  @include font-style($FoundersGrotesk-family, 88px, 85%, 700, 0.02em, uppercase);
 }
 
 h2 {
@@ -62,4 +62,9 @@ h2 {
 
 h3{
   @include font-style($FoundersGrotesk-family, 32px, 1, 700, 0, uppercase);
+}
+
+.home_main{
+  margin-top: calc($header-height + 67px);
+  margin-bottom: 90px;
 }
