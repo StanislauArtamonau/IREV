@@ -1,71 +1,82 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.header_menu_item');
     const dropdownTriggers = document.querySelectorAll('[data-dropdown-trigger]');
     const dropdownContainer = document.querySelector('.nav_dropdown_container');
     const dropdownContents = document.querySelectorAll('[data-dropdown-content]');
     let closeTimeout;
+    let leaveTimeout;
+    let activeTrigger = null;
 
-    dropdownTriggers.forEach(trigger => {
-        trigger.addEventListener('mouseenter', function() {
+    menuItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
             clearTimeout(closeTimeout);
-            const dropdownType = this.getAttribute('data-dropdown-trigger');
-            openDropdown(dropdownType, this);
+            clearTimeout(leaveTimeout);
+
+            menuItems.forEach(i => i !== item && i.classList.remove('active'));
+            item.classList.add('active');
         });
 
-        trigger.addEventListener('mouseleave', function() {
-            closeTimeout = setTimeout(() => {
+        item.addEventListener('mouseleave', () => {
+            leaveTimeout = setTimeout(() => {
                 if (!isMouseOverDropdown()) {
+                    item.classList.remove('active');
+                    activeTrigger = null;
                     closeAllDropdowns();
                 }
             }, 100);
         });
     });
 
-    if (dropdownContainer) {
-        dropdownContainer.addEventListener('mouseenter', function() {
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('mouseenter', function() {
             clearTimeout(closeTimeout);
+            menuItems.forEach(i => i !== this && i.classList.remove('active'));
+            this.classList.add('active');
+
+            activeTrigger = this;
+            const dropdownType = this.dataset.dropdownTrigger;
+            openDropdown(dropdownType);
         });
 
-        dropdownContainer.addEventListener('mouseleave', function() {
+        trigger.addEventListener('mouseleave', () => {
             closeTimeout = setTimeout(() => {
-                closeAllDropdowns();
+                if (!isMouseOverDropdown()) closeAllDropdowns();
             }, 100);
         });
+    });
+
+    if (dropdownContainer) {
+        dropdownContainer.addEventListener('mouseenter', () => clearTimeout(closeTimeout));
+        dropdownContainer.addEventListener('mouseleave', () => {
+            closeTimeout = setTimeout(closeAllDropdowns, 100);
+        });
     }
 
-    function openDropdown(type, trigger) {
-        closeAllDropdowns();
-
+    function openDropdown(type) {
+        closeAllDropdowns(false);
         dropdownContainer.classList.add('active');
-        trigger.classList.add('active');
 
         const targetContent = document.querySelector(`[data-dropdown-content="${type}"]`);
-        if (targetContent) {
-            targetContent.style.display = 'flex';
-        }
+        if (targetContent) targetContent.style.display = 'flex';
     }
 
-    function closeAllDropdowns() {
+    function closeAllDropdowns(clearActive = true) {
         dropdownContainer.classList.remove('active');
+        dropdownContents.forEach(content => content.style.display = 'none');
 
-        dropdownTriggers.forEach(trigger => {
-            trigger.classList.remove('active');
-        });
-
-        dropdownContents.forEach(content => {
-            content.style.display = 'none';
-        });
+        if (clearActive) {
+            menuItems.forEach(i => i.classList.remove('active'));
+            dropdownTriggers.forEach(t => t.classList.remove('active'));
+            activeTrigger = null;
+        }
     }
 
     function isMouseOverDropdown() {
-        const dropdownElements = document.querySelectorAll('.nav_dropdown_container, [data-dropdown-trigger].active');
-        return Array.from(dropdownElements).some(element =>
-            element.matches(':hover') || element.querySelector(':hover')
-        );
+        return dropdownContainer.matches(':hover') ||
+            (activeTrigger && activeTrigger.matches(':hover'));
     }
 
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closeAllDropdowns();
-        }
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeAllDropdowns();
     });
 });

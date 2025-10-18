@@ -67,4 +67,12 @@ h3{
 .home_main{
   margin-top: calc($header-height + 67px);
   margin-bottom: 90px;
+
+  @media(max-width: $tablet-width){
+    margin-top: calc(57px + 30px);
+  }
+
+  @media(max-width: $mobile-width){
+    margin-top: 73px;
+  }
 }

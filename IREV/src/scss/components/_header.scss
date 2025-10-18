@@ -61,12 +61,32 @@ header {
       .header_menu_item {
         display: flex;
         align-items: center;
+        height: 21px;
         gap: 8px;
         cursor: pointer;
+        overflow: hidden;
+        position: relative;
 
         button {
           @include body-small-font();
           font-size: 16px;
+          transition: color 0.2s ease;
+        }
+
+        .header_menu_item_arrow_unselected,
+        .header_menu_item_arrow_selected {
+          transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .header_menu_item_inner {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          transition: transform 0.4s ease;
+        }
+
+        &:hover .header_menu_item_inner {
+          animation: flyUpFromBottom 0.7s ease forwards;
         }
 
         .header_menu_item_arrow_selected {
@@ -88,6 +108,29 @@ header {
 
           .header_menu_item_arrow_selected {
             display: flex;
+          }
+
+          @keyframes flyUpFromBottom {
+            0% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            30% {
+              transform: translateY(-150%);
+              opacity: 1;
+            }
+            31% {
+              transform: translateY(150%);
+              opacity: 1;
+            }
+            70% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(0);
+              opacity: 1;
+            }
           }
         }
       }
@@ -169,6 +212,7 @@ header {
 
 @media(max-width: $tablet-width){
   header{
+    width: 100%;
     height: auto;
     padding-bottom: 20px;
   }
