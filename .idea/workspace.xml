@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="home-first-component/ header fix">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="фиксы видео и прочее">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
@@ -99,9 +98,9 @@
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\icons" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\img" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV" />
-      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\icons" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\assets\fonts" />
     </key>
@@ -137,7 +136,7 @@
       <workItem from="1760696674415" duration="18796000" />
       <workItem from="1760737758394" duration="19454000" />
       <workItem from="1760782465224" duration="2535000" />
-      <workItem from="1760787090863" duration="8146000" />
+      <workItem from="1760787090863" duration="11336000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -291,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760784753624</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="фиксы видео и прочее">
+      <option name="closed" value="true" />
+      <created>1760796841788</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760796841788</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +329,8 @@
     <MESSAGE value="fix header footer" />
     <MESSAGE value="fix hover" />
     <MESSAGE value="home-first-component/ header fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="home-first-component/ header fix" />
+    <MESSAGE value="фиксы видео и прочее" />
+    <option name="LAST_COMMIT_MESSAGE" value="фиксы видео и прочее" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

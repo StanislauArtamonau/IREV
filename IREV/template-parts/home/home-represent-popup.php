@@ -54,6 +54,7 @@
                     <video width="100%" id="popupVideo">
                         <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
                     </video>
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playbutton.svg')); ?>" alt="play" />
                 </div>
                 <span>Watch IREV live review now [2 min]</span>
                 <div class="home_popup_content_lower_rightcont_lower">
@@ -80,6 +81,7 @@
             <video width="100%">
                 <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
             </video>
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playbutton.svg')); ?>" alt="play" />
         </div>
         <form class="modal-form">
             <input type="email" class="form-input" placeholder="Enter e-mail">

@@ -383,6 +383,14 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        position: relative;
+
+        img{
+          position: absolute;
+          z-index: 10000000000;
+          width: 50px;
+          height: 50px;
+        }
 
         @media(max-width: $tablet-width){
           max-width: calc(calc(286/612) * min(612px, 90vw));
@@ -669,6 +677,16 @@
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000000;
+    width: 50px;
+    height: 50px;
+  }
 
   video{
     width: 100%;

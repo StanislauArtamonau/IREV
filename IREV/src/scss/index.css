@@ -910,6 +910,16 @@ footer .footer_wrapper .footer_lower {
   border-radius: 2px;
   background: black;
   overflow: hidden;
+  position: relative;
+}
+.home_represent .home_represent_lowerWrapper .home_represent_lowerWrapper_video .video_cont img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000000000;
+  width: 50px;
+  height: 50px;
 }
 @media (max-width: 751px) {
   .home_represent .home_represent_lowerWrapper .home_represent_lowerWrapper_video .video_cont {
@@ -1378,6 +1388,13 @@ footer .footer_wrapper .footer_lower {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+.home_popup_content .home_popup_content_lower .home_popup_content_lower_rightcont .home_popup_content_lower_rightcont_video img {
+  position: absolute;
+  z-index: 10000000000;
+  width: 50px;
+  height: 50px;
 }
 @media (max-width: 751px) {
   .home_popup_content .home_popup_content_lower .home_popup_content_lower_rightcont .home_popup_content_lower_rightcont_video {
@@ -1687,6 +1704,16 @@ footer .footer_wrapper .footer_lower {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+}
+.modal-video img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000000000;
+  width: 50px;
+  height: 50px;
 }
 .modal-video video {
   width: 100%;

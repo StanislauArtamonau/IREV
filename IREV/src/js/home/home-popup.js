@@ -104,13 +104,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
     // video
-
-    // video
-
     const video = document.getElementById('popupVideo');
     const videoContainer = document.querySelector('.home_popup_content_lower_rightcont_video');
+    const playButton = videoContainer.querySelector('img'); // находим изображение кнопки play
+
+    function updatePlayButtonVisibility() {
+        if (video.paused) {
+            playButton.style.display = 'block';
+        } else {
+            playButton.style.display = 'none';
+        }
+    }
+
+    video.addEventListener('play', updatePlayButtonVisibility);
+    video.addEventListener('pause', updatePlayButtonVisibility);
+    video.addEventListener('ended', function() {
+        playButton.style.display = 'block';
+    });
 
     videoContainer.addEventListener('click', function() {
         if (video.paused) {
@@ -119,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
             video.pause();
         }
     });
+
+    updatePlayButtonVisibility();
 });
 
 

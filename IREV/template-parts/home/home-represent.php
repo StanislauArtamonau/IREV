@@ -85,6 +85,7 @@
                 <video width="100%">
                     <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
                 </video>
+                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playbutton.svg')); ?>" alt="play" />
             </div>
             <div class="video_player">
                 <span>00:30</span>

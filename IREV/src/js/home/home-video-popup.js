@@ -5,42 +5,46 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalVideo = modalOverlay ? modalOverlay.querySelector('video') : null;
     const playButton = videoWrapper ? videoWrapper.querySelector('.video_player button') : null;
 
+    const originalPlayImg = videoWrapper ? videoWrapper.querySelector('.video_cont img') : null;
+    const modalPlayImg = modalOverlay ? modalOverlay.querySelector('.modal-video img') : null;
+
     let currentTime = 0;
-    let isPlaying = false;
-    let activeVideo = null;
 
-    function switchToModalVideo() {
-        if (!originalVideo || !modalVideo) return;
+    function togglePlayButton(video, playImg) {
+        if (!video || !playImg) return;
 
-        currentTime = originalVideo.currentTime;
-        isPlaying = !originalVideo.paused;
-
-        originalVideo.pause();
-        originalVideo.currentTime = 0;
-
-        modalVideo.currentTime = currentTime;
-        if (isPlaying) {
-            modalVideo.play().catch(e => console.log('Modal video play error:', e));
+        if (video.paused) {
+            playImg.style.display = 'block';
+        } else {
+            playImg.style.display = 'none';
         }
-
-        activeVideo = modalVideo;
     }
 
-    function switchToOriginalVideo() {
-        if (!originalVideo || !modalVideo) return;
+    function setupVideoListeners(video, playImg) {
+        if (!video || !playImg) return;
 
-        currentTime = modalVideo.currentTime;
-        isPlaying = !modalVideo.paused;
+        video.addEventListener('play', function() {
+            playImg.style.display = 'none';
+        });
 
-        modalVideo.pause();
-        modalVideo.currentTime = 0;
+        video.addEventListener('pause', function() {
+            playImg.style.display = 'block';
+        });
 
-        originalVideo.currentTime = currentTime;
-        if (isPlaying) {
-            originalVideo.play().catch(e => console.log('Original video play error:', e));
-        }
+        video.addEventListener('ended', function() {
+            playImg.style.display = 'block';
+            video.currentTime = 0;
+        });
+    }
 
-        activeVideo = originalVideo;
+    if (originalVideo && originalPlayImg) {
+        setupVideoListeners(originalVideo, originalPlayImg);
+        togglePlayButton(originalVideo, originalPlayImg);
+    }
+
+    if (modalVideo && modalPlayImg) {
+        setupVideoListeners(modalVideo, modalPlayImg);
+        modalPlayImg.style.display = 'none';
     }
 
     if (playButton && originalVideo) {
@@ -50,26 +54,71 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (originalVideo.paused) {
                 originalVideo.play();
-                isPlaying = true;
-                activeVideo = originalVideo;
             } else {
                 originalVideo.pause();
-                isPlaying = false;
             }
         });
     }
 
+    function openModalWithVideo() {
+        if (!originalVideo || !modalVideo) return;
+
+        currentTime = originalVideo.currentTime;
+
+        originalVideo.pause();
+        if (originalPlayImg) {
+            originalPlayImg.style.display = 'none';
+        }
+
+        modalVideo.currentTime = currentTime;
+
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        modalVideo.play().catch(e => console.log('Modal video play error:', e));
+
+        if (modalPlayImg) {
+            modalPlayImg.style.display = 'none';
+        }
+    }
+
+    function closeModal() {
+        if (!originalVideo || !modalVideo) return;
+
+        currentTime = modalVideo.currentTime;
+
+        modalVideo.pause();
+        if (modalPlayImg) {
+            modalPlayImg.style.display = 'none';
+        }
+
+        originalVideo.currentTime = currentTime;
+
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+
+        if (originalPlayImg) {
+            originalPlayImg.style.display = 'block';
+        }
+
+        resetForm();
+    }
+
     if (videoWrapper && modalOverlay) {
         videoWrapper.addEventListener('click', function(e) {
-            if (!playButton.contains(e.target)) {
+            // Проверяем, что клик не по кнопке управления в video_player
+            if (!playButton || !playButton.contains(e.target)) {
                 e.preventDefault();
                 e.stopPropagation();
-
-                switchToModalVideo();
-
-                modalOverlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
+                openModalWithVideo();
             }
+        });
+    }
+
+    if (originalPlayImg) {
+        originalPlayImg.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openModalWithVideo();
         });
     }
 
@@ -78,25 +127,16 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
             if (modalVideo.paused) {
                 modalVideo.play();
-                isPlaying = true;
             } else {
                 modalVideo.pause();
-                isPlaying = false;
             }
         });
     }
 
-    if (originalVideo) {
-        originalVideo.addEventListener('click', function(e) {
+    if (modalPlayImg) {
+        modalPlayImg.addEventListener('click', function(e) {
             e.stopPropagation();
-            if (originalVideo.paused) {
-                originalVideo.play();
-                isPlaying = true;
-                activeVideo = originalVideo;
-            } else {
-                originalVideo.pause();
-                isPlaying = false;
-            }
+            modalVideo.play();
         });
     }
 
@@ -114,16 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function closeModal() {
-        switchToOriginalVideo();
-
-        modalOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-
-        // Сбрасываем состояние формы при закрытии модалки
-        resetForm();
-    }
-
     const submitButton = document.querySelector('.form-button');
     const emailInput = document.querySelector('.form-input');
 
@@ -134,15 +164,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (validateEmail(email)) {
                 console.log('Email submitted:', email);
-                // Здесь можно добавить отправку формы
-                showSuccessMessage();
                 closeModal();
             } else {
                 showErrorInPlaceholder();
             }
         });
 
-        // Сбрасываем ошибку при начале ввода
         emailInput.addEventListener('input', function() {
             if (this.classList.contains('error')) {
                 resetForm();
@@ -156,23 +183,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showErrorInPlaceholder() {
-        emailInput.value = '';
-        emailInput.placeholder = 'Please enter a valid email address';
-        emailInput.classList.add('error');
-    }
-
-    function showSuccessMessage() {
-        // Можно добавить здесь дополнительную логику для успешной отправки
-        console.log('Form submitted successfully');
+        if (emailInput) {
+            emailInput.value = '';
+            emailInput.placeholder = 'Please enter a valid email address';
+            emailInput.classList.add('error');
+        }
     }
 
     function resetForm() {
-        emailInput.value = '';
-        emailInput.placeholder = 'Enter e-mail';
-        emailInput.classList.remove('error');
-    }
-
-    if (originalVideo) {
-        activeVideo = originalVideo;
+        if (emailInput) {
+            emailInput.value = '';
+            emailInput.placeholder = 'Enter e-mail';
+            emailInput.classList.remove('error');
+        }
     }
 });
