@@ -461,6 +461,7 @@
     }
 
     .home_represent_lowerWrapper_video{
+      cursor: pointer;
       flex: 1;
       max-width: 458px;
       padding: 19px;
@@ -476,6 +477,7 @@
         height: 200px;
         border-radius: 2px;
         background: black;
+        overflow: hidden;
 
         @media(max-width: $tablet-width){
           max-width: 347px;

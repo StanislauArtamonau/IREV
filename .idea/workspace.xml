@@ -9,7 +9,8 @@
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
@@ -80,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/serap/PhpstormProjects/IREV/IREV/src/fonts",
+    "last_opened_file_path": "C:/Users/serap/PhpstormProjects/IREV/IREV/src/video",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,6 +95,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\video" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -134,7 +136,8 @@
       <workItem from="1760634053690" duration="23982000" />
       <workItem from="1760696674415" duration="18796000" />
       <workItem from="1760737758394" duration="19454000" />
-      <workItem from="1760782465224" duration="2253000" />
+      <workItem from="1760782465224" duration="2535000" />
+      <workItem from="1760787090863" duration="8146000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -280,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760757342555</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="home-first-component/ header fix">
+      <option name="closed" value="true" />
+      <created>1760784753624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760784753624</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

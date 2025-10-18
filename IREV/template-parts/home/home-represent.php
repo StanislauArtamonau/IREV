@@ -82,10 +82,13 @@
         </span>
         <div class="home_represent_lowerWrapper_video">
             <div class="video_cont">
+                <video width="100%">
+                    <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
+                </video>
             </div>
             <div class="video_player">
                 <span>00:30</span>
-                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/play.svg')); ?>" />
+                <button><img src="<?php echo esc_url(get_theme_file_uri('src/icons/play.svg')); ?>" /></button>
             </div>
         </div>
     </div>

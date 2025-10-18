@@ -43,4 +43,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setTimeout(updateTimer, 10);
+
+
+    // email save
+
+    const mainEmailInput = document.querySelector('.home_represent_form_container_input');
+    const popupEmailInput = document.querySelector('.home_popup_content_form_inputs input[type="email"]');
+
+    if (mainEmailInput && popupEmailInput) {
+        mainEmailInput.addEventListener('input', function() {
+            popupEmailInput.value = this.value;
+        });
+
+        popupEmailInput.addEventListener('input', function() {
+            mainEmailInput.value = this.value;
+        });
+
+        if (mainEmailInput.value) {
+            popupEmailInput.value = mainEmailInput.value;
+        }
+    }
+
+    // checkbox save
+
+    const policyCheckbox = document.getElementById('policyCheckbox');
+    const submitButton = document.getElementById('submitButton');
+
+    if (policyCheckbox && submitButton) {
+        policyCheckbox.addEventListener('change', function() {
+            updateButtonState();
+        });
+
+        const customCheckbox = policyCheckbox.closest('.checkbox');
+        if (customCheckbox) {
+            customCheckbox.addEventListener('click', function(e) {
+                policyCheckbox.checked = !policyCheckbox.checked;
+                policyCheckbox.dispatchEvent(new Event('change'));
+            });
+        }
+
+        updateButtonState();
+
+        function updateButtonState() {
+            if (policyCheckbox.checked) {
+                submitButton.classList.add('selected');
+            } else {
+                submitButton.classList.remove('selected');
+            }
+        }
+    }
+
 });

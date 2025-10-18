@@ -31,11 +31,11 @@
                     <input type="text" placeholder="Vertical"/>
                     <input type="text" placeholder="I am looking for"/>
                 </div>
-                <button>get walkthrough</button>
+                <button id="submitButton">get walkthrough</button>
                 <div class="home_popup_content_form_container">
                     <div class="home_popup_content_form_checkbox">
                         <label class="checkbox">
-                            <input type="checkbox">
+                            <input type="checkbox" id="policyCheckbox">
                             <span class="custom-checkbox"></span>
                         </label>
                         <span>By signing up you agree to <a>IREV Policy</a></span>
@@ -51,7 +51,9 @@
             </form>
             <div class="home_popup_content_lower_rightcont">
                 <div class="home_popup_content_lower_rightcont_video">
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/popupvideo.svg')); ?>" alt="video"/>
+                    <video width="100%" id="popupVideo">
+                        <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
+                    </video>
                 </div>
                 <span>Watch IREV live review now [2 min]</span>
                 <div class="home_popup_content_lower_rightcont_lower">
@@ -74,11 +76,15 @@
 
 <div class="modal-overlay" id="modalOverlay">
     <div class="modal">
-        <div class="modal-video"></div>
-        <div class="modal-form">
+        <div class="modal-video">
+            <video width="100%">
+                <source src="<?php echo esc_url(get_theme_file_uri('src/video/sample-15s.mp4')); ?>" type="video/mp4">
+            </video>
+        </div>
+        <form class="modal-form">
             <input type="email" class="form-input" placeholder="Enter e-mail">
             <button class="form-button">TALK TO SALES</button>
-        </div>
+        </form>
     </div>
 </div>
 

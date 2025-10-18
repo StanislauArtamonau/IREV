@@ -104,6 +104,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+
+    // video
+
+    // video
+
+    const video = document.getElementById('popupVideo');
+    const videoContainer = document.querySelector('.home_popup_content_lower_rightcont_video');
+
+    videoContainer.addEventListener('click', function() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
 });
 
 

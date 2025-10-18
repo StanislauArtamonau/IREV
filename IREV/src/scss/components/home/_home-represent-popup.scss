@@ -207,6 +207,8 @@
 
       button{
         background: #0F5EF780;
+        pointer-events: none;
+        cursor: pointer;
         border: none;
         border-radius: 60px;
         padding: 11px 16px 11px 16px;
@@ -215,6 +217,12 @@
         font-size: 16px;
         color: #F8FAFF;
         margin-top: 16px;
+        transition: background-color ease 0.3s;
+
+        &.selected{
+          pointer-events: auto;
+          background: rgb(15, 94, 247);
+        }
 
         @media(max-width: $tablet-width){
           padding: 7px 10px 7px 10px;
@@ -238,6 +246,13 @@
           background: #1C1E251A;
           border: none;
           border-radius: 10px;
+          @include caption-small-font();
+          font-size: 14px;
+
+          @media(max-width: $tablet-width){
+            font-size: 10px;
+          }
+
 
           @media(max-width: $tablet-width){
             height: 29px;
@@ -364,6 +379,10 @@
         max-width: 420px;
         max-height: 200px;
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
 
         @media(max-width: $tablet-width){
           max-width: calc(calc(286/612) * min(612px, 90vw));
@@ -371,7 +390,7 @@
         }
 
         @media(max-width: 450px){
-          max-width: 150px;
+          max-width: 140px;
         }
 
         @media(max-width: $mobile-width){
@@ -379,8 +398,12 @@
           max-height: 170px;
         }
 
-        img{
+        video{
+          cursor: pointer;
           width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
         }
       }
 
@@ -614,6 +637,21 @@
   flex-direction: column;
   overflow: hidden;
 
+  @media(max-width: $tablet-width){
+    max-width: 704px;
+    padding: 23px;
+    height: 415px;
+    margin-bottom: 11px;
+  }
+
+  @media(max-width: $mobile-width){
+    max-width: 373px;
+    padding: 0;
+    padding-bottom: 18px;
+    height: 260px;
+    margin-bottom: 11px;
+  }
+
   .modal-overlay.active & {
     transform: translateY(0);
   }
@@ -629,6 +667,20 @@
   color: white;
   font-size: 18px;
   border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+
+  video{
+    width: 100%;
+  }
+
+  @media(max-width: $tablet-width){
+    height: 308px;
+  }
+
+  @media(max-width: $mobile-width){
+    height: 200px;
+  }
 }
 
 .modal-form {
@@ -640,6 +692,34 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+
+  @media(max-width: $tablet-width){
+    margin-top: 22px;
+    max-width: 432px;
+    height: 39px;
+    gap: 6px;
+  }
+
+  @media(max-width: $mobile-width){
+    margin-top: 10px;
+    max-width: 346px;
+    height: 32px;
+    gap: 8px;
+  }
+}
+
+.form-input.error {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.form-input.error::placeholder {
+  color: #ff0000;
+  opacity: 0.8;
+}
+
+.form-input {
+  transition: all 0.3s ease;
 }
 
 .form-input {
@@ -651,11 +731,39 @@
   border-radius: 10px;
   font-size: 16px;
   transition: border-color 0.3s ease;
+  height: 100%;
+  color: #F8FAFFCC;
+  @include caption-small-font();
+
+  @media(max-width: $tablet-width){
+    font-size: 12px;
+  }
+
+  @media(max-width: $mobile-width){
+    font-size: 10px;
+  }
+
+  @media(max-width: $tablet-width){
+    padding: 16px;
+    max-width: 281px;
+  }
+
+  @media(max-width: $mobile-width){
+    max-width: 224px;
+  }
 
   &::placeholder{
     color: #F8FAFFCC;
     @include caption-small-font();
     font-size: 16px;
+
+    @media(max-width: $tablet-width){
+      font-size: 12px;
+    }
+
+    @media(max-width: $mobile-width){
+      font-size: 10px;
+    }
   }
 
   &:focus {
@@ -678,6 +786,19 @@
   transition: background-color 0.3s ease;
   @include body-medium-font();
   font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: $tablet-width){
+    max-width: 144px;
+    font-size: 12px;
+  }
+
+  @media(max-width: $mobile-width){
+    max-width: 115px;
+    font-size: 10px;
+  }
 
   &:hover {
     background: #0056b3;
@@ -685,20 +806,5 @@
 
   &:active {
     transform: translateY(1px);
-  }
-}
-
-.open-modal-btn {
-  padding: 12px 24px;
-  background: #28a745;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 20px;
-
-  &:hover {
-    background: #218838;
   }
 }
