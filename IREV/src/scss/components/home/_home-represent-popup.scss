@@ -575,3 +575,130 @@
   opacity: 1;
   transform: translate(50%, -50%) scale(1);
 }
+
+// video modal
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal {
+  max-width: 900px;
+  width: 100%;
+  height: 532px;
+  border-radius: 20px;
+  background: #1C1E25;
+  margin-bottom: 125px;
+  transform: translateY(20px);
+  padding: 30px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .modal-overlay.active & {
+    transform: translateY(0);
+  }
+}
+
+.modal-video {
+  width: 100%;
+  height: 394px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.modal-form {
+  margin-top: 29px;
+  align-self: center;
+  max-width: 553px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 16px 24px 16px 24px;
+  max-width: 360px;
+  background: #F8FAFF26;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+
+  &::placeholder{
+    color: #F8FAFFCC;
+    @include caption-small-font();
+    font-size: 16px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  &::placeholder {
+    color: #6c757d;
+  }
+}
+
+.form-button {
+  padding: 11px 16px 11px 16px;
+  color: white;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @include body-medium-font();
+  font-size: 16px;
+
+  &:hover {
+    background: #0056b3;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.open-modal-btn {
+  padding: 12px 24px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+
+  &:hover {
+    background: #218838;
+  }
+}

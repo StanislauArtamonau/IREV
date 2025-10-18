@@ -71,3 +71,14 @@
         </div>
     </div>
 </div>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-video"></div>
+        <div class="modal-form">
+            <input type="email" class="form-input" placeholder="Enter e-mail">
+            <button class="form-button">TALK TO SALES</button>
+        </div>
+    </div>
+</div>
+

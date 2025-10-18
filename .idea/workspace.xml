@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix hover">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="home-first-component/ header fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-represent-popup.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-represent-popup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-represent.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-represent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,9 @@
     &quot;accountId&quot;: &quot;827537e0-95df-46cc-9018-446e16833d38&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/modules/intellij.relaxng.jar!/resources/html5-schema/html5/web-forms.rnc" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -71,26 +72,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/serap/PhpstormProjects/IREV/IREV/src/fonts&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.stickyLines&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/serap/PhpstormProjects/IREV/IREV/src/fonts",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\fonts" />
@@ -132,7 +133,8 @@
       <workItem from="1760623385117" duration="4847000" />
       <workItem from="1760634053690" duration="23982000" />
       <workItem from="1760696674415" duration="18796000" />
-      <workItem from="1760737758394" duration="19326000" />
+      <workItem from="1760737758394" duration="19454000" />
+      <workItem from="1760782465224" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -270,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760659211009</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="home-first-component/ header fix">
+      <option name="closed" value="true" />
+      <created>1760757342555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760757342555</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +310,8 @@
     <MESSAGE value="header dropdown" />
     <MESSAGE value="fix header footer" />
     <MESSAGE value="fix hover" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix hover" />
+    <MESSAGE value="home-first-component/ header fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="home-first-component/ header fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
