@@ -82,7 +82,7 @@
   font-weight: 300;
   font-style: normal;
 }
-header {
+.header {
   position: fixed;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -97,7 +97,7 @@ header {
   -ms-user-select: none;
   user-select: none;
 }
-header .header_wrapper {
+.header .header_wrapper {
   max-width: 1281px;
   margin: 0 auto;
   padding: 30px 31px 30px 31px;
@@ -112,10 +112,10 @@ header .header_wrapper {
   letter-spacing: 0;
   font-size: 16px;
 }
-header .header_wrapper .header_hamburger {
+.header .header_wrapper .header_hamburger {
   display: none;
 }
-header .header_wrapper .header_signIn {
+.header .header_wrapper .header_signIn {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
   font-weight: 400;
   font-size: 20px;
@@ -134,21 +134,21 @@ header .header_wrapper .header_signIn {
   justify-content: center;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-header .header_wrapper .header_signIn.two {
+.header .header_wrapper .header_signIn.two {
   background: rgba(28, 30, 37, 0.5019607843);
 }
-header .header_wrapper .header_signIn.one, header .header_wrapper .header_signIn.go {
+.header .header_wrapper .header_signIn.one, .header .header_wrapper .header_signIn.go {
   background: rgba(28, 30, 37, 0);
 }
-header .header_wrapper .header_nav {
+.header .header_wrapper .header_nav {
   position: relative;
 }
-header .header_wrapper .header_nav .header_menu {
+.header .header_wrapper .header_nav .header_menu {
   display: flex;
   gap: 36px;
   position: relative;
 }
-header .header_wrapper .header_nav .header_menu_item {
+.header .header_wrapper .header_nav .header_menu_item {
   display: flex;
   align-items: center;
   height: 21px;
@@ -157,7 +157,7 @@ header .header_wrapper .header_nav .header_menu_item {
   overflow: hidden;
   position: relative;
 }
-header .header_wrapper .header_nav .header_menu_item button {
+.header .header_wrapper .header_nav .header_menu_item button {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
   font-weight: 400;
   font-size: 20px;
@@ -166,32 +166,32 @@ header .header_wrapper .header_nav .header_menu_item button {
   font-size: 16px;
   transition: color 0.2s ease;
 }
-header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_unselected,
-header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_selected {
+.header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_unselected,
+.header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_selected {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
-header .header_wrapper .header_nav .header_menu_item .header_menu_item_inner {
+.header .header_wrapper .header_nav .header_menu_item .header_menu_item_inner {
   display: flex;
   align-items: center;
   gap: 8px;
   transition: transform 0.4s ease;
 }
-header .header_wrapper .header_nav .header_menu_item:hover .header_menu_item_inner {
+.header .header_wrapper .header_nav .header_menu_item:hover .header_menu_item_inner {
   animation: flyUpFromBottom 0.7s ease forwards;
 }
-header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_selected {
+.header .header_wrapper .header_nav .header_menu_item .header_menu_item_arrow_selected {
   display: none;
 }
-header .header_wrapper .header_nav .header_menu_item.active button {
+.header .header_wrapper .header_nav .header_menu_item.active button {
   color: #0F5EF7;
 }
-header .header_wrapper .header_nav .header_menu_item.active button:hover {
+.header .header_wrapper .header_nav .header_menu_item.active button:hover {
   opacity: 1;
 }
-header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_unselected {
+.header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_unselected {
   display: none;
 }
-header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_selected {
+.header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_arrow_selected {
   display: flex;
 }
 @keyframes flyUpFromBottom {
@@ -217,14 +217,14 @@ header .header_wrapper .header_nav .header_menu_item.active .header_menu_item_ar
   }
 }
 @media (max-width: 900px) {
-  header .header_wrapper .header_nav .header_menu {
+  .header .header_wrapper .header_nav .header_menu {
     gap: 10px !important;
   }
-  header .header_wrapper .header_nav .header_menu_item {
+  .header .header_wrapper .header_nav .header_menu_item {
     gap: 4px;
   }
 }
-header .header_wrapper .header_nav .nav_dropdown_container {
+.header .header_wrapper .header_nav .nav_dropdown_container {
   position: absolute;
   width: 100%;
   top: 21px;
@@ -233,12 +233,12 @@ header .header_wrapper .header_nav .nav_dropdown_container {
   transition: opacity 0.8s ease 0.1s;
   z-index: 1000;
 }
-header .header_wrapper .header_nav .nav_dropdown_container.active {
+.header .header_wrapper .header_nav .nav_dropdown_container.active {
   display: block;
   visibility: visible;
   opacity: 1;
 }
-header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown {
+.header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown {
   background: rgba(28, 30, 37, 0.8);
   height: 100px;
   border-radius: 10px;
@@ -247,28 +247,28 @@ header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown {
   justify-content: space-between;
   align-items: center;
 }
-header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown:has(a:only-of-type) {
+.header .header_wrapper .header_nav .nav_dropdown_container .nav_dropdown:has(a:only-of-type) {
   justify-content: center;
 }
 @media (max-width: 751px) {
-  header .header_wrapper .header_logo {
+  .header .header_wrapper .header_logo {
     width: 60px;
     height: 17px;
   }
-  header .header_wrapper .header_nav {
+  .header .header_wrapper .header_nav {
     display: none;
   }
-  header .header_wrapper .header_signIn {
+  .header .header_wrapper .header_signIn {
     display: none;
   }
-  header .header_wrapper .header_hamburger {
+  .header .header_wrapper .header_hamburger {
     display: flex;
     background: transparent;
     border: none;
   }
 }
 @media (max-width: 751px) {
-  header .header_wrapper {
+  .header .header_wrapper {
     height: 17px;
     max-width: 703px;
     padding: 0;
@@ -634,6 +634,9 @@ footer .footer_wrapper .footer_lower {
   overflow: hidden;
   background: transparent;
   padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 751px) {
   .home_represent .home_represent_upperWrapper .home_represent_general .home_represent_form_container .home_represent_form button {
@@ -704,6 +707,12 @@ footer .footer_wrapper .footer_lower {
   bottom: 39px;
   left: 170px;
   animation: multiColorFlow 8s ease-in-out infinite;
+}
+@media (max-width: 800px) {
+  .home_represent .home_represent_backgroundImg {
+    max-width: 500px;
+    max-height: 480px;
+  }
 }
 @media (max-width: 751px) {
   .home_represent .home_represent_backgroundImg {
@@ -917,7 +926,7 @@ footer .footer_wrapper .footer_lower {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10000000000;
+  z-index: 2;
   width: 50px;
   height: 50px;
 }
@@ -1871,6 +1880,163 @@ footer .footer_wrapper .footer_lower {
 }
 .form-button:active {
   transform: translateY(1px);
+}
+
+.home_gear1 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+}
+@media (max-width: 751px) {
+  .home_gear1 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear1 {
+    max-width: min(335px, 100% - 40px);
+    margin-top: 75px;
+  }
+}
+.home_gear1 header {
+  max-height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .home_gear1 header {
+    max-height: 16px;
+  }
+  .home_gear1 header img {
+    max-width: 35px;
+    max-height: 14px;
+  }
+}
+@media (max-width: 751px) {
+  .home_gear1 header {
+    max-height: 16px;
+  }
+  .home_gear1 header img {
+    max-width: 35px;
+    max-height: 14px;
+  }
+}
+.home_gear1 header span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear1 header span {
+    font-size: 12px;
+  }
+}
+.home_gear1 .home_gear1_wrapper {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (max-width: 751px) {
+  .home_gear1 .home_gear1_wrapper {
+    margin-top: 50px;
+    gap: 36px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear1 .home_gear1_wrapper {
+    margin-top: 36px;
+    gap: 24px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 376px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #F8FAFF;
+  transition: color ease 0.3s;
+  cursor: default;
+  height: fit-content;
+  min-width: 50%;
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label:hover {
+  color: #0F5EF7;
+}
+@media (max-width: 751px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 20px;
+    color: #0F5EF7;
+  }
+}
+@media (max-width: 420px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 17px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 16px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+  max-width: 651px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+@media (max-width: 751px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+    max-width: 376px;
+    gap: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+    max-width: 335px;
+    gap: 16px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container h2 {
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container h2 {
+    font-size: 30px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text {
+    font-size: 12px;
+  }
+}
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text .home_gear1_info_text_container_text_colored {
+  color: #0F5EF7;
 }
 
 @font-face {
