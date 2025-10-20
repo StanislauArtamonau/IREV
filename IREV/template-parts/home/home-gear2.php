@@ -35,7 +35,11 @@
     </div>
         <div class="home_gear2_lower_container">
             <div class="home_gear2_lower_container_nitro">
-                <div class="nitro-effect"></div>
+                <div class="nitro-effect">
+                    <img
+                            src="<?php echo esc_url(get_theme_file_uri('src/icons/nitro.png')); ?>"
+                    />
+                </div>
                 <span class="home_gear2_lower_container_rev">R-R-REV</span>
             </div>
             <div class="home_gear2_lower_container_lower_wrapper">

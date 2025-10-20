@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="component 3">
-      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IREV/src/icons/homegear2back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IREV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IREV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear1.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +147,8 @@
       <workItem from="1760787090863" duration="11782000" />
       <workItem from="1760882637630" duration="983000" />
       <workItem from="1760902642607" duration="18776000" />
-      <workItem from="1760949205998" duration="14346000" />
+      <workItem from="1760949205998" duration="14709000" />
+      <workItem from="1760974213117" duration="5170000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -338,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760909918707</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="component 3">
+      <option name="closed" value="true" />
+      <created>1760964191048</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760964191048</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

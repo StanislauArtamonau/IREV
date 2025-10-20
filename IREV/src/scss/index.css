@@ -2236,32 +2236,52 @@ footer .footer_wrapper .footer_lower {
 .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro {
   display: flex;
   justify-content: flex-start;
+  height: fit-content;
   position: relative;
   overflow: visible;
+  align-items: center;
 }
 .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .nitro-effect {
   position: absolute;
-  border-radius: 25%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) scaleX(0);
-  width: 100%;
-  height: calc(100% + 20px);
-  background: radial-gradient(ellipse 70% 50% at 70% 50%, rgb(80, 12, 190), rgb(255, 246, 122), rgb(122, 255, 246), rgb(15, 94, 247));
-  filter: blur(25px);
-  z-index: 1;
-  opacity: 0;
-  transform-origin: left center;
-  max-width: calc(100% - 60px);
+  filter: blur(10px);
+  z-index: -2;
+  max-width: 69%;
 }
-@media (max-width: 751px) {
+@media (max-width: 500px) {
   .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .nitro-effect {
-    filter: blur(13px);
+    filter: blur(7px);
   }
 }
 @media (max-width: 376px) {
   .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .nitro-effect {
-    filter: blur(10px);
+    filter: blur(4px);
+  }
+}
+.home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .nitro-effect img {
+  width: min(850px, 100%);
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: nitroSlide 1.2s ease-out forwards;
+  will-change: transform, opacity;
+}
+@keyframes nitroSlide {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes nitroSlideReverse {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
   }
 }
 .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
@@ -2269,11 +2289,29 @@ footer .footer_wrapper .footer_lower {
   font-size: 200px;
   line-height: 0.85;
   text-transform: uppercase;
-  position: relative;
   max-height: 111px;
-  z-index: 2;
   opacity: 0;
-  transform: scaleX(0);
+  animation: textSlide 1.2s ease-out 0.1s forwards;
+}
+@keyframes textSlide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(min(1220px - 100%, 100vw - 100% - 60px));
+    opacity: 1;
+  }
+}
+@keyframes textSlideReverse {
+  0% {
+    transform: translateX(min(1220px - 100%, 100vw - 100% - 60px));
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @media (max-width: 1200px) {
   .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
@@ -2297,6 +2335,18 @@ footer .footer_wrapper .footer_lower {
   .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
     font-size: 115px;
     max-height: 64px;
+  }
+}
+@media (max-width: 650px) {
+  .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
+    font-size: 90px;
+    max-height: 49px;
+  }
+}
+@media (max-width: 500px) {
+  .home_gear2 .home_gear2_lower_container .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
+    font-size: 70px;
+    max-height: 38px;
   }
 }
 @media (max-width: 376px) {
@@ -2381,38 +2431,7 @@ footer .footer_wrapper .footer_lower {
     height: 25px;
   }
 }
-.home_gear2.animate .home_gear2_lower_container_nitro .home_gear2_lower_container_rev {
-  animation: textSlide 1.2s ease-out forwards;
-}
-.home_gear2.animate .home_gear2_lower_container_nitro .nitro-effect {
-  animation: nitroFollowText 1.4s ease-out forwards;
-  animation-delay: 0.1s;
-}
 
-@keyframes textSlide {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(var(--text-final-translate, 100px));
-    opacity: 1;
-  }
-}
-@keyframes nitroFollowText {
-  0% {
-    opacity: 0;
-    transform: translateY(-50%) scaleX(0);
-  }
-  15% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50%) scaleX(0.8);
-    width: var(--nitro-final-width, 100%);
-  }
-}
 @font-face {
   font-family: "Founders Grotesk";
   src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
