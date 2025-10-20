@@ -54,20 +54,28 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+  position: relative;
 
   .home_popup_content_upper{
         display: flex;
-        gap: 157px;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         align-items: flex-start;
 
-    @media(max-width: 900px) {
-      gap: 100px;
-    }
+    button{
+      position: absolute;
+      top: 30px;
+      right: 30px;
 
-    @media(max-width: 555px){
-      gap: 50px;
+      @media(max-width: $tablet-width){
+        top: 20px;
+        right: 20px;
+      }
+
+      @media(max-width: $mobile-width){
+        top: 20px;
+        right: 20px;
+      }
     }
 
     @media(max-width: $mobile-width){
@@ -81,14 +89,6 @@
       img{
         width: 24px;
         height: 24px;
-      }
-    }
-
-    @media(max-width: $mobile-width){
-      img{
-        position: absolute;
-        top: 20px;
-        right: 20px;
       }
     }
   }

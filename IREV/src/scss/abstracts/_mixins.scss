@@ -55,3 +55,18 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+@mixin home_gear{
+  max-width: min(1220px, calc(100% - 60px));
+  margin: 200px auto 0;
+
+  @media(max-width: $tablet-width){
+    max-width: min(704px, calc(100% - 40px));
+    margin-top: 95px;
+  }
+
+  @media(max-width: $mobile-width){
+    max-width: min(335px, calc(100% - 40px));
+    margin-top: 75px;
+  }
+}

@@ -5,7 +5,7 @@
 ?>
 
 <section class="home_gear1">
-    <header>
+    <header class="home_gear_header">
         <span>[GEAR 01]</span>
         <img
                  src="<?php echo esc_url(get_theme_file_uri('src/icons/gear1.svg')); ?>"

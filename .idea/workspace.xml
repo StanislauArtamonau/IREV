@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="финиш по 1 компоненту">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="component 3">
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/homegear2back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IREV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IREV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear1.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +39,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="PHP File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +85,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.home-gear2.php.executor&quot;: &quot;Coverage&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -104,6 +115,16 @@
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\assets\fonts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="home-gear2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IREV/IREV/template-parts/home/home-gear2.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -138,7 +159,8 @@
       <workItem from="1760782465224" duration="2535000" />
       <workItem from="1760787090863" duration="11782000" />
       <workItem from="1760882637630" duration="983000" />
-      <workItem from="1760902642607" duration="6353000" />
+      <workItem from="1760902642607" duration="18776000" />
+      <workItem from="1760949205998" duration="14346000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -308,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760801993679</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="component 2">
+      <option name="closed" value="true" />
+      <created>1760909918707</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760909918707</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,10 +371,15 @@
     <MESSAGE value="home-first-component/ header fix" />
     <MESSAGE value="фиксы видео и прочее" />
     <MESSAGE value="финиш по 1 компоненту" />
-    <option name="LAST_COMMIT_MESSAGE" value="финиш по 1 компоненту" />
+    <MESSAGE value="component 2" />
+    <MESSAGE value="component 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="component 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IREV$home_gear2_php.dat" NAME="home-gear2.php Coverage Results" MODIFIED="1760921727861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

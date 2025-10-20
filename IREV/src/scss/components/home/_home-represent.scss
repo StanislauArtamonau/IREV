@@ -309,6 +309,10 @@
     left: 170px;
     animation: multiColorFlow 8s ease-in-out infinite;
 
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateZ(0);
+    will-change: transform;
+
     @media(max-width: 800px){
       max-width: 500px;
       max-height: 480px;
@@ -333,6 +337,12 @@
       height: 269px;
       left: 26px;
       top: 220px;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .home_represent_backgroundImg.parallax {
+      transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
     }
   }
 

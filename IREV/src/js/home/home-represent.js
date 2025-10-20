@@ -94,3 +94,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+// paralax
+document.addEventListener('DOMContentLoaded', function() {
+    const parallaxImg = document.querySelector('.home_represent_backgroundImg');
+
+    if (parallaxImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        parallaxImg.classList.add('parallax');
+
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const speed = 0.3;
+            const offset = (scrolled * speed) + 'px';
+
+            document.documentElement.style.setProperty('--parallax-offset', offset);
+        }
+
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(function() {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        updateParallax();
+    }
+});
+
