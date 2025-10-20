@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="component 3">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="component 3 fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,8 @@
       <workItem from="1760882637630" duration="983000" />
       <workItem from="1760902642607" duration="18776000" />
       <workItem from="1760949205998" duration="14709000" />
-      <workItem from="1760974213117" duration="5170000" />
+      <workItem from="1760974213117" duration="5226000" />
+      <workItem from="1760983957572" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -334,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760964191048</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="component 3 fix">
+      <option name="closed" value="true" />
+      <created>1760979459694</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760979459694</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="финиш по 1 компоненту" />
     <MESSAGE value="component 2" />
     <MESSAGE value="component 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="component 3" />
+    <MESSAGE value="component 3 fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="component 3 fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

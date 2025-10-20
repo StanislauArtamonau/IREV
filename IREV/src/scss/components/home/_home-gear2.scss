@@ -147,8 +147,6 @@
 
 
   .home_gear2_lower_container {
-    --text-final-translate: initial;
-    --nitro-final-width: initial;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -194,30 +192,7 @@
           width: min(850px, 100%);
           transform-origin: left center;
           transform: scaleX(0);
-          animation: nitroSlide 1.2s ease-out forwards;
-          will-change: transform, opacity;
-        }
-
-        @keyframes nitroSlide {
-          0% {
-            transform: scaleX(0);
-            opacity: 1;
-          }
-          100% {
-            transform: scaleX(1);
-            opacity: 1;
-          }
-        }
-
-        @keyframes nitroSlideReverse {
-          0% {
-            transform: scaleX(1);
-            opacity: 1;
-          }
-          100% {
-            transform: scaleX(0);
-            opacity: 0;
-          }
+          will-change: transform;
         }
       }
 
@@ -227,30 +202,9 @@
         line-height: 0.85;
         text-transform: uppercase;
         max-height: 111px;
-        opacity: 0;
-        animation: textSlide 1.2s ease-out 0.1s forwards;
-
-        @keyframes textSlide {
-          0% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-          100% {
-            transform: translateX(min(calc(1220px - 100%), calc(100vw - 100% - 60px)));
-            opacity: 1;
-          }
-        }
-
-        @keyframes textSlideReverse {
-          0% {
-            transform: translateX(min(calc(1220px - 100%), calc(100vw - 100% - 60px)));
-            opacity: 1;
-          }
-          100% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
+        opacity: 1;
+        transform: translateX(0);
+        will-change: transform;
 
         @media (max-width: 1200px) {
           font-size: 160px;

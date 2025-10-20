@@ -1,49 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const nitroContainer = document.querySelector(".home_gear2_lower_container_nitro");
-    const revText = document.querySelector(".home_gear2_lower_container_rev");
-    const nitroEffect = document.querySelector(".nitro-effect img");
+const container = document.querySelector('.home_gear2_lower_container');
+const nitroImg = document.querySelector('.nitro-effect img');
+const revText = document.querySelector('.home_gear2_lower_container_rev');
 
-    let lastScrollY = window.scrollY;
-    let scrollDirection = "down";
-    let isAnimated = false;
+function updateScrollAnimation() {
+    const rect = container.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
 
-    const addAnimations = () => {
-        if (isAnimated) return;
-        isAnimated = true;
-        revText.style.animation = "textSlide 1.2s ease-out 0.1s forwards";
-        nitroEffect.style.animation = "nitroSlide 1s ease-out forwards";
-    };
+    let progress = 1 - rect.top / windowHeight;
+    progress = Math.min(Math.max(progress, 0), 1);
 
-    const removeAnimations = () => {
-        if (!isAnimated) return;
-        isAnimated = false;
-        revText.style.animation = "textSlideReverse 1.2s ease-out 0.1s forwards";
-        nitroEffect.style.animation = "nitroSlideReverse 1s ease-out forwards";
-    };
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                const currentY = window.scrollY;
-                scrollDirection = currentY > lastScrollY ? "down" : "up";
-                lastScrollY = currentY;
-
-                if (entry.isIntersecting && scrollDirection === "down") {
-                    addAnimations();
-                }
-
-                if (!entry.isIntersecting && scrollDirection === "up") {
-                    removeAnimations();
-                }
-            });
-        },
-        {
-            root: null,
-            rootMargin: "-45% 0px -45% 0px",
-            threshold: 0,
-        }
+    const shift = Math.min(
+        1220 - revText.offsetWidth,
+        window.innerWidth - revText.offsetWidth - 60
     );
 
-    observer.observe(nitroContainer);
-});
+    revText.style.transform = `translateX(${progress * shift}px)`;
 
+    nitroImg.style.transform = `scaleX(${progress})`;
+}
+
+function onScroll() {
+    requestAnimationFrame(updateScrollAnimation);
+}
+
+window.addEventListener('scroll', onScroll);
+window.addEventListener('resize', updateScrollAnimation);
+
+updateScrollAnimation();
