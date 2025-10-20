@@ -1,0 +1,206 @@
+  .home_gear3{
+    margin-top: 200px;
+
+    header{
+      max-width: min(1220px, calc(100vw - 60px));
+      margin: 0 auto;
+    }
+    .home_gear3_container{
+      position: relative;
+      max-width: min(1220px, calc(100vw - 60px));
+      margin: 120px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 733px;
+
+      h2{
+        color: #F8FAFFE5;
+        max-width: 367px;
+      }
+
+      .home_gear3_clients{
+        margin-top: 120px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .home_gear3_clients_avatar{
+          display: flex;
+          gap: 8px;
+          position: relative;
+
+          .avatar-item{
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            button{
+              img{
+                display: flex;
+                width: 40px;
+                height: 40px;
+                transition: transform 0.2s;
+              }
+            }
+
+            .tooltip{
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              background: #1C1E25;
+              color: #F8FAFFE5;
+              padding: 16px;
+              border-radius: 10px;
+              white-space: nowrap;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.3s;
+              margin-top: 16px;
+              @include body-small-font();
+            }
+
+            &.selected {
+              border: 2px solid #0F5EF7;
+
+              .tooltip {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+
+
+      .home_gear3_reviews_container{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        overflow: hidden; /* Добавляем скрытие переполнения */
+
+        .home_gear3_reviews{
+          display: none;
+          position: relative;
+          height: 288px;
+
+          &.selected{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .home_gear3_reviews_review{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 36px;
+            width: 344px;
+            height: 288px;
+            background: #1C1E25CC;
+            border-radius: 20px;
+            padding: 36px 16px 36px 16px;
+            opacity: 0.4;
+            transition: all 0.5s ease-in-out, opacity 0.3s ease-in-out;
+            pointer-events: auto;
+
+            // Центральный элемент
+            &.carousel-center {
+              transform: translateX(-50%) scale(1);
+              left: 50%;
+              opacity: 1;
+              z-index: 3;
+            }
+
+            // Левый сосед
+            &.carousel-left {
+              transform: translateX(calc(-50% - 384px)) scale(1);
+              left: 50%;
+              opacity: 0.7;
+              z-index: 2;
+            }
+
+            // Правый сосед
+            &.carousel-right {
+              transform: translateX(calc(-50% + 384px)) scale(1);
+              left: 50%;
+              opacity: 0.7;
+              z-index: 2;
+            }
+
+            // Крайний левый
+            &.carousel-far-left {
+              transform: translateX(calc(-50% - 768px)) scale(1);
+              left: 50%;
+              opacity: 0.4;
+              z-index: 1;
+            }
+
+            // Крайний правый
+            &.carousel-far-right {
+              transform: translateX(calc(-50% + 768px)) scale(1);
+              left: 50%;
+              opacity: 0.4;
+              z-index: 1;
+            }
+
+            // Скрытые элементы (за пределами видимости)
+            &.carousel-hidden {
+              transform: translateX(calc(-50% - 2000px)) scale(0.8) !important;
+              opacity: 0 !important;
+              pointer-events: none !important;
+              z-index: -1 !important;
+              transition: all 0.3s ease-in-out !important;
+            }
+
+            &.selected{
+              opacity: 1;
+              border: 1px solid #0F5EF7;
+            }
+
+            span{
+              @include caption-medium-font();
+              font-size: 14px;
+              color: #F8FAFFE5;
+            }
+
+            .client{
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              margin-top: auto;
+
+              img{
+                width: 54px;
+                height: 54px;
+              }
+
+              .client_info{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .client_name{
+                  @include caption-medium-font();
+                  font-size: 16px;
+                }
+
+                .client_additional{
+                  @include body-large-font();
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
