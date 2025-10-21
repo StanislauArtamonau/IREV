@@ -1,17 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Элементы управления
     const avatarButtons = document.querySelectorAll('.home_gear3_clients_avatar button');
     const reviewsContainers = document.querySelectorAll('.home_gear3_reviews');
 
-    // Текущее состояние
     let currentClient = 'client4';
     let currentReviewIndex = 2;
     let isAnimating = false;
 
-    // Инициализация
     initCarousel();
 
-    // Обработчики кликов на аватары
     avatarButtons.forEach(button => {
         button.addEventListener('click', function() {
             if (isAnimating) return;
@@ -21,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Обработчики кликов на отзывы
     document.querySelectorAll('.home_gear3_reviews_review').forEach(review => {
         review.addEventListener('click', function() {
             if (isAnimating) return;
@@ -32,9 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const reviews = reviewContainer.querySelectorAll('.home_gear3_reviews_review');
             const reviewIndex = Array.from(reviews).indexOf(this);
 
-            // Проверяем, что клик был по видимому элементу (не по скрытому)
             if (!this.classList.contains('carousel-hidden')) {
-                selectReview(reviewIndex);
+                const position = reviewIndex - currentReviewIndex;
+                const totalReviews = reviews.length;
+
+                let adjustedPosition = position;
+                if (position < -2) {
+                    adjustedPosition += totalReviews;
+                } else if (position > 2) {
+                    adjustedPosition -= totalReviews;
+                }
+
+                handleReviewClick(adjustedPosition, reviewIndex, totalReviews);
             }
         });
     });
@@ -49,34 +53,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
         isAnimating = true;
 
-        // Снимаем выделение со всех аватаров
         document.querySelectorAll('.avatar-item').forEach(item => {
             item.classList.remove('selected');
         });
 
-        // Добавляем выделение выбранному аватару
         const selectedAvatar = document.querySelector(`[data-trigger="${clientId}"]`).closest('.avatar-item');
         selectedAvatar.classList.add('selected');
 
-        // Обновляем текущего клиента
         currentClient = clientId;
         currentReviewIndex = 2;
 
-        // Обновляем отображение
         updateClientDisplay();
         updateReviewsCarousel();
 
-        // Завершаем анимацию после завершения CSS transition
         setTimeout(() => {
             isAnimating = false;
         }, 500);
     }
 
-    function selectReview(index) {
-        if (currentReviewIndex === index || isAnimating) return;
+    function handleReviewClick(position, clickedIndex, totalReviews) {
+        if (isAnimating) return;
 
         isAnimating = true;
-        currentReviewIndex = index;
+
+        let newIndex;
+
+        switch(position) {
+            case -2:
+                newIndex = (currentReviewIndex - 1 + totalReviews) % totalReviews;
+                break;
+            case -1:
+                newIndex = clickedIndex;
+                break;
+            case 0:
+                isAnimating = false;
+                return;
+            case 1:
+                newIndex = clickedIndex;
+                break;
+            case 2:
+                newIndex = (currentReviewIndex + 1) % totalReviews;
+                break;
+            default:
+                newIndex = clickedIndex;
+        }
+
+        currentReviewIndex = newIndex;
         updateReviewsCarousel();
 
         setTimeout(() => {
@@ -85,12 +107,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateClientDisplay() {
-        // Скрываем все контейнеры отзывов
         reviewsContainers.forEach(container => {
             container.classList.remove('selected');
         });
 
-        // Показываем только выбранного клиента
         const selectedReviews = document.querySelector(`[data-client="${currentClient}"]`);
         if (selectedReviews) {
             selectedReviews.classList.add('selected');
@@ -104,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const reviews = currentReviewsContainer.querySelectorAll('.home_gear3_reviews_review');
         const totalReviews = reviews.length;
 
-        // Сбрасываем все классы позиционирования
         reviews.forEach(review => {
             review.classList.remove(
                 'selected',
@@ -117,12 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
             );
         });
 
-        // Добавляем выделение выбранному отзыву
         if (reviews[currentReviewIndex]) {
             reviews[currentReviewIndex].classList.add('selected');
         }
 
-        // Применяем классы для анимации карусели
         applyCarouselClasses(reviews, totalReviews);
     }
 
@@ -130,24 +147,19 @@ document.addEventListener('DOMContentLoaded', function() {
         reviews.forEach((review, index) => {
             let position = index - currentReviewIndex;
 
-            // Обрабатываем зацикливание позиций
             if (position < -2) {
                 position += totalReviews;
             } else if (position > 2) {
                 position -= totalReviews;
             }
 
-            // Сначала проверяем, находится ли элемент за пределами видимой области
-            // Используем более строгое условие для определения видимых элементов
             const isVisible = Math.abs(position) <= 2;
 
             if (!isVisible) {
                 review.classList.add('carousel-hidden');
-                return; // Прерываем выполнение для скрытых элементов
+                return;
             }
 
-            // Для видимых элементов применяем позиционирование
-            // И гарантируем, что у них нет класса hidden
             review.classList.remove('carousel-hidden');
 
             switch(position) {
@@ -167,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     review.classList.add('carousel-far-right');
                     break;
                 default:
-                    // На всякий случай, если что-то пошло не так
                     review.classList.add('carousel-hidden');
                     break;
             }

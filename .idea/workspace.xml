@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="button comp 3 fix">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="slider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear3.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="fb4d15f8c810f90912da40db535e7de79ad7240a" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,6 +109,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.home-gear2.php" />
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +149,7 @@
       <workItem from="1760902642607" duration="18776000" />
       <workItem from="1760949205998" duration="14709000" />
       <workItem from="1760974213117" duration="5226000" />
-      <workItem from="1760983957572" duration="14331000" />
+      <workItem from="1760983957572" duration="19462000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -359,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760988288400</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="slider">
+      <option name="closed" value="true" />
+      <created>1761000818135</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1761000818135</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +405,8 @@
     <MESSAGE value="component 3 fix" />
     <MESSAGE value="component 3 fixx" />
     <MESSAGE value="button comp 3 fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="button comp 3 fix" />
+    <MESSAGE value="slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="slider" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
