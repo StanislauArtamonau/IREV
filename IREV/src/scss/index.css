@@ -1940,7 +1940,6 @@ footer .footer_wrapper .footer_lower {
 }
 @media (max-width: 376px) {
   .home_gear1 {
-    max-width: min(335px, 100% - 40px);
     margin-top: 75px;
   }
 }
@@ -2060,7 +2059,6 @@ footer .footer_wrapper .footer_lower {
 }
 @media (max-width: 376px) {
   .home_gear2 {
-    max-width: min(335px, 100% - 40px);
     margin-top: 75px;
   }
 }
@@ -2580,32 +2578,29 @@ footer .footer_wrapper .footer_lower {
   opacity: 1;
   visibility: visible;
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container {
+.home_gear3 .home_gear3_container .home_gear3_reviews {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
   width: 100%;
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews {
-  display: none;
-  position: relative;
+  bottom: 0;
   height: 288px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews {
+  .home_gear3 .home_gear3_container .home_gear3_reviews {
     height: 192px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews.selected {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review {
-  position: absolute;
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0 !important;
   cursor: pointer;
   gap: 36px;
   width: 344px;
@@ -2613,84 +2608,23 @@ footer .footer_wrapper .footer_lower {
   background: rgba(28, 30, 37, 0.8);
   border-radius: 20px;
   padding: 36px 16px 36px 16px;
-  opacity: 0.4;
-  transition: all 0.5s ease-in-out, opacity 0.3s ease-in-out;
   pointer-events: auto;
+  opacity: 0.8;
+  transition: opacity ease 0.3s;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
     gap: 23px;
     width: 228px;
     height: 191px;
     padding: 23px 10px 23px 10px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-center {
-  transform: translateX(-50%) scale(1);
-  left: 50%;
-  opacity: 1;
-  z-index: 3;
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-left {
-  transform: translateX(calc(-50% - (100% + 40px))) scale(1);
-  left: 50%;
-  opacity: 0.7;
-  z-index: 2;
-}
-@media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-left {
-    transform: translateX(calc(-50% - (100% + 20px))) scale(1);
-  }
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-right {
-  transform: translateX(calc(-50% + 100% + 40px)) scale(1);
-  left: 50%;
-  opacity: 0.7;
-  z-index: 2;
-}
-@media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-right {
-    transform: translateX(calc(-50% + 100% + 20px)) scale(1);
-  }
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-far-left {
-  transform: translateX(calc(-50% - (200% + 40px + 40px))) scale(1);
-  left: 50%;
-  opacity: 0.4;
-  z-index: 1;
-}
-@media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-far-left {
-    transform: translateX(calc(-50% - (200% + 20px + 20px))) scale(1);
-  }
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-far-right {
-  transform: translateX(calc(-50% + 200% + 40px + 40px)) scale(1);
-  left: 50%;
-  opacity: 0.4;
-  z-index: 1;
-}
-@media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-far-right {
-    transform: translateX(calc(-50% + 200% + 20px + 20px)) scale(1);
-  }
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.no-transition-transform {
-  transition: opacity 0.3s ease-in-out !important;
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.carousel-hidden {
-  transform: translateX(calc(-50% - 2000px)) scale(0.8);
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-  visibility: hidden;
-}
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review.selected {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review.selected {
   opacity: 1;
   border: 1px solid #0F5EF7;
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review span {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
   font-weight: 300;
   font-size: 20px;
@@ -2700,42 +2634,42 @@ footer .footer_wrapper .footer_lower {
   color: rgba(248, 250, 255, 0.8980392157);
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review span {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
     font-size: 10px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-top: auto;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
     gap: 10px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
   width: 54px;
   height: 54px;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
     width: 36px;
     height: 36px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
     gap: 2px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
   font-weight: 300;
   font-size: 20px;
@@ -2744,11 +2678,11 @@ footer .footer_wrapper .footer_lower {
   font-size: 16px;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
     font-size: 10px;
   }
 }
-.home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+.home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
   font-weight: 500;
   font-size: 32px;
@@ -2758,7 +2692,7 @@ footer .footer_wrapper .footer_lower {
   font-size: 20px;
 }
 @media (max-width: 751px) {
-  .home_gear3 .home_gear3_container .home_gear3_reviews_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+  .home_gear3 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
     font-size: 13px;
   }
 }
@@ -3347,6 +3281,22 @@ footer .footer_wrapper .footer_lower {
     transform: translateY(-20px);
   }
 }
+.home_gear4 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+}
+@media (max-width: 751px) {
+  .home_gear4 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear4 {
+    margin-top: 75px;
+  }
+}
+
 @font-face {
   font-family: "Founders Grotesk";
   src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");

@@ -9,6 +9,7 @@ get_header(); ?>
     <?php get_template_part('template-parts/home/home-gear1'); ?>
     <?php get_template_part('template-parts/home/home-gear2'); ?>
     <?php get_template_part('template-parts/home/home-gear3'); ?>
+    <?php get_template_part('template-parts/home/home-gear4'); ?>
     <?php get_template_part('template-parts/home/home-represent-popup'); ?>
 </main>
 <?php

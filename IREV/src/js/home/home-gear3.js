@@ -1,212 +1,66 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const avatarButtons = document.querySelectorAll('.home_gear3_clients_avatar button');
-    const reviewsContainers = document.querySelectorAll('.home_gear3_reviews');
+document.addEventListener("DOMContentLoaded", () => {
+    const avatarButtons = document.querySelectorAll(".avatar-item button");
+    const reviewsContainer = document.querySelector(".home_gear3_reviews");
+    const reviews = document.querySelectorAll(".home_gear3_reviews_review");
 
-    let currentClient = 'client4';
-    let currentReviewIndex = 2;
-    let isAnimating = false;
+    function centerReview(targetClient) {
+        const activeReview = document.querySelector(`.home_gear3_reviews_review[data-client="${targetClient}"]`);
+        if (!activeReview) return;
 
-    initCarousel();
+        const containerWidth = reviewsContainer.offsetWidth;
+        const reviewWidth = activeReview.offsetWidth;
+        const gap = 40;
+
+        const reviewIndex = Array.from(reviews).indexOf(activeReview);
+
+        const totalItemsWidth = reviewIndex * (reviewWidth + gap);
+        const offset = (containerWidth / 2) - (reviewWidth / 2) - totalItemsWidth;
+
+        reviewsContainer.style.transition = "transform 0.6s ease";
+        reviewsContainer.style.transform = `translateX(${offset}px)`;
+    }
+
+    function switchReview(target) {
+        document.querySelectorAll(".avatar-item").forEach(a => a.classList.remove("selected"));
+        reviews.forEach(r => r.classList.remove("selected"));
+
+        const selectedAvatar = document.querySelector(`.avatar-item button[data-trigger="${target}"]`).closest(".avatar-item");
+        const activeReview = document.querySelector(`.home_gear3_reviews_review[data-client="${target}"]`);
+
+        if (selectedAvatar && activeReview) {
+            selectedAvatar.classList.add("selected");
+            activeReview.classList.add("selected");
+            centerReview(target);
+        }
+    }
 
     avatarButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            if (isAnimating) return;
-
-            const clientId = this.getAttribute('data-trigger');
-            switchClient(clientId);
+        button.addEventListener("click", () => {
+            const target = button.getAttribute("data-trigger");
+            switchReview(target);
         });
     });
 
-    document.querySelectorAll('.home_gear3_reviews_review').forEach(review => {
-        review.addEventListener('click', function() {
-            if (isAnimating) return;
-
-            const reviewContainer = this.closest('.home_gear3_reviews');
-            if (!reviewContainer.classList.contains('selected')) return;
-
-            const reviews = reviewContainer.querySelectorAll('.home_gear3_reviews_review');
-            const reviewIndex = Array.from(reviews).indexOf(this);
-
-            if (!this.classList.contains('carousel-hidden')) {
-                const position = reviewIndex - currentReviewIndex;
-                const totalReviews = reviews.length;
-
-                let adjustedPosition = position;
-                if (position < -2) {
-                    adjustedPosition += totalReviews;
-                } else if (position > 2) {
-                    adjustedPosition -= totalReviews;
-                }
-
-                handleReviewClick(adjustedPosition, reviewIndex, totalReviews);
+    function initCenterReview() {
+        setTimeout(() => {
+            const initialSelected = document.querySelector('.avatar-item.selected button');
+            if (initialSelected) {
+                const initialTarget = initialSelected.getAttribute("data-trigger");
+                centerReview(initialTarget);
             }
-        });
+        }, 100);
+    }
+
+    initCenterReview();
+
+    window.addEventListener('resize', () => {
+        const currentSelected = document.querySelector('.avatar-item.selected button');
+        if (currentSelected) {
+            const currentTarget = currentSelected.getAttribute("data-trigger");
+            setTimeout(() => centerReview(currentTarget), 50);
+        }
     });
-
-    function initCarousel() {
-        updateClientDisplay();
-        updateReviewsCarousel();
-    }
-
-    function switchClient(clientId) {
-        if (currentClient === clientId) return;
-
-        isAnimating = true;
-
-        document.querySelectorAll('.avatar-item').forEach(item => {
-            item.classList.remove('selected');
-        });
-
-        const selectedAvatar = document.querySelector(`[data-trigger="${clientId}"]`).closest('.avatar-item');
-        selectedAvatar.classList.add('selected');
-
-        currentClient = clientId;
-        currentReviewIndex = 2;
-
-        updateClientDisplay();
-        updateReviewsCarousel();
-
-        setTimeout(() => {
-            isAnimating = false;
-        }, 500);
-    }
-
-    function handleReviewClick(position, clickedIndex, totalReviews) {
-        if (isAnimating) return;
-
-        isAnimating = true;
-
-        let newIndex;
-        let disableFarLeft = false;
-        let disableFarRight = false;
-
-        switch(position) {
-            case -2: // far-left
-                newIndex = (currentReviewIndex - 1 + totalReviews) % totalReviews;
-                disableFarLeft = true;
-                break;
-            case -1: // left
-                newIndex = clickedIndex;
-                disableFarLeft = true;
-                break;
-            case 0: // center
-                isAnimating = false;
-                return;
-            case 1: // right
-                newIndex = clickedIndex;
-                disableFarRight = true;
-                break;
-            case 2: // far-right
-                newIndex = (currentReviewIndex + 1) % totalReviews;
-                disableFarRight = true;
-                break;
-            default:
-                newIndex = clickedIndex;
-        }
-
-        currentReviewIndex = newIndex;
-        updateReviewsCarousel(disableFarLeft, disableFarRight);
-
-        setTimeout(() => {
-            isAnimating = false;
-        }, 500);
-    }
-
-    function updateClientDisplay() {
-        reviewsContainers.forEach(container => {
-            container.classList.remove('selected');
-        });
-
-        const selectedReviews = document.querySelector(`[data-client="${currentClient}"]`);
-        if (selectedReviews) {
-            selectedReviews.classList.add('selected');
-        }
-    }
-
-    function updateReviewsCarousel(disableFarLeft = false, disableFarRight = false) {
-        const currentReviewsContainer = document.querySelector(`[data-client="${currentClient}"]`);
-        if (!currentReviewsContainer) return;
-
-        const reviews = currentReviewsContainer.querySelectorAll('.home_gear3_reviews_review');
-        const totalReviews = reviews.length;
-
-        reviews.forEach(review => {
-            review.classList.remove(
-                'selected',
-                'carousel-center',
-                'carousel-left',
-                'carousel-right',
-                'carousel-far-left',
-                'carousel-far-right',
-                'carousel-hidden',
-                'no-transition-transform'
-            );
-        });
-
-        if (reviews[currentReviewIndex]) {
-            reviews[currentReviewIndex].classList.add('selected');
-        }
-
-        applyCarouselClasses(reviews, totalReviews);
-
-        if (disableFarLeft) {
-            const farLeftReview = currentReviewsContainer.querySelector('.carousel-far-left');
-            if (farLeftReview) {
-                farLeftReview.classList.add('no-transition-transform');
-            }
-        }
-
-        if (disableFarRight) {
-            const farRightReview = currentReviewsContainer.querySelector('.carousel-far-right');
-            if (farRightReview) {
-                farRightReview.classList.add('no-transition-transform');
-            }
-        }
-    }
-
-    function applyCarouselClasses(reviews, totalReviews) {
-        reviews.forEach((review, index) => {
-            let position = index - currentReviewIndex;
-
-            if (position < -2) {
-                position += totalReviews;
-            } else if (position > 2) {
-                position -= totalReviews;
-            }
-
-            const isVisible = Math.abs(position) <= 2;
-
-            if (!isVisible) {
-                review.classList.add('carousel-hidden');
-                return;
-            }
-
-            review.classList.remove('carousel-hidden');
-
-            switch(position) {
-                case 0:
-                    review.classList.add('carousel-center');
-                    break;
-                case -1:
-                    review.classList.add('carousel-left');
-                    break;
-                case 1:
-                    review.classList.add('carousel-right');
-                    break;
-                case -2:
-                    review.classList.add('carousel-far-left');
-                    break;
-                case 2:
-                    review.classList.add('carousel-far-right');
-                    break;
-                default:
-                    review.classList.add('carousel-hidden');
-                    break;
-            }
-        });
-    }
 });
-
 
 // cases
 document.addEventListener('DOMContentLoaded', function() {

@@ -180,33 +180,29 @@
       }
     }
 
-
-    .home_gear3_reviews_container{
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-
       .home_gear3_reviews{
-        display: none;
-        position: relative;
+        position: absolute;
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        bottom: 0;
+
         height: 288px;
+        transition: transform 0.6s ease;
+        will-change: transform;
+        left: 0;
+        right: 0;
+        flex-wrap: nowrap;
+        align-items: flex-start;
 
         @media(max-width: $tablet-width){
           height: 192px;
         }
 
-        &.selected{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         .home_gear3_reviews_review{
-          position: absolute;
           display: flex;
           flex-direction: column;
+          flex-shrink: 0 !important;
           cursor: pointer;
           gap: 36px;
           width: 344px;
@@ -214,9 +210,9 @@
           background: #1C1E25CC;
           border-radius: 20px;
           padding: 36px 16px 36px 16px;
-          opacity: 0.4;
-          transition: all 0.5s ease-in-out, opacity 0.3s ease-in-out;
           pointer-events: auto;
+          opacity: 0.8;
+          transition: opacity ease 0.3s;
 
           @media(max-width: $tablet-width){
             gap: 23px;
@@ -225,70 +221,6 @@
             padding: 23px 10px 23px 10px;
           }
 
-          &.carousel-center {
-            transform: translateX(-50%) scale(1);
-            left: 50%;
-            opacity: 1;
-            z-index: 3;
-          }
-
-          &.carousel-left {
-            transform: translateX(calc(-50% - calc(100% + 40px))) scale(1);
-            left: 50%;
-            opacity: 0.7;
-            z-index: 2;
-
-            @media(max-width: $tablet-width){
-              transform: translateX(calc(-50% - calc(100% + 20px))) scale(1);
-            }
-          }
-
-          &.carousel-right {
-            transform: translateX(calc(-50% + calc(100% + 40px))) scale(1);
-            left: 50%;
-            opacity: 0.7;
-            z-index: 2;
-
-            @media(max-width: $tablet-width){
-              transform: translateX(calc(-50% + calc(100% + 20px))) scale(1);
-            }
-          }
-
-          &.carousel-far-left {
-            transform: translateX(calc(-50% - calc(100% + 100% + 40px + 40px))) scale(1);
-            left: 50%;
-            opacity: 0.4;
-            z-index: 1;
-
-            @media(max-width: $tablet-width){
-              transform: translateX(calc(-50% - calc(100% + 100% + 20px + 20px))) scale(1);
-            }
-          }
-
-          &.carousel-far-right {
-            transform: translateX(calc(-50% + calc(100% + 100% + 40px + 40px))) scale(1);
-            left: 50%;
-            opacity: 0.4;
-            z-index: 1;
-
-            @media(max-width: $tablet-width){
-              transform: translateX(calc(-50% + calc(100% + 100% + 20px + 20px))) scale(1);
-            }
-          }
-
-          &.no-transition-transform {
-            transition: opacity 0.3s ease-in-out !important;
-          }
-
-
-          &.carousel-hidden {
-            transform: translateX(calc(-50% - 2000px)) scale(0.8);
-            opacity: 0;
-            pointer-events: none;
-            z-index: -1;
-            transition: all 0.3s ease-in-out;
-            visibility: hidden;
-          }
 
           &.selected{
             opacity: 1;
@@ -355,7 +287,6 @@
           }
         }
       }
-    }
   }
 
 
