@@ -5,3 +5,4 @@ require('./home/home-popup.js');
 require('./home/home-video-popup.js');
 require('./home/home-gear2.js');
 require('./home/home-gear3.js');
+require('./home/home-gear5.js');

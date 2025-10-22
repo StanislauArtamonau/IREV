@@ -3811,6 +3811,418 @@ footer .footer_wrapper .footer_lower {
     background-color: rgb(0, 2, 12);
   }
 }
+.home_gear5 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+}
+@media (max-width: 751px) {
+  .home_gear5 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 {
+    margin-top: 75px;
+  }
+}
+.home_gear5 .home_gear5_container {
+  margin-top: 120px;
+  height: 1104px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container {
+    margin-top: 50px;
+    height: 549px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_container {
+    margin-top: 36px;
+    height: fit-content;
+  }
+}
+.home_gear5 .home_gear5_container h2 {
+  max-width: 450px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container h2 {
+    display: none;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container {
+  margin-top: 120px;
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container {
+    margin-top: 0;
+    gap: 23px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container {
+    flex-direction: column;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card {
+    max-width: 341px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card {
+    max-width: 100%;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card img {
+  width: 100%;
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label {
+    margin-top: 24px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper {
+    gap: 4px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper img {
+  max-width: 56px;
+  height: 40px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper img {
+    max-width: 32px;
+    height: 23px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper div {
+  max-width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 22px 7px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(248, 250, 255, 0.5019607843);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label .card_label_wrapper div {
+    max-width: 150px;
+    height: 23px;
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: rgba(248, 250, 255, 0.8980392157);
+  margin-top: 8px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card .card_label span {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul {
+    margin-top: 24px;
+    gap: 24px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li {
+    gap: 4px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li {
+    max-width: 307px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li .label_list_main {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li .label_list_main {
+    font-size: 12px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li .label_list_additional {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card ul li .label_list_additional {
+    font-size: 10px;
+  }
+}
+.home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card button {
+  width: 100%;
+  margin-top: 48px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 16px 11px 16px;
+  border-radius: 60px;
+  background: #1C1E25;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_container .home_gear5_cards_container .cards_card button {
+    height: 28px;
+    margin-top: 24px;
+    padding: 6px 9px 6px 9px;
+    font-size: 10px;
+  }
+}
+.home_gear5 .home_gear5_lower_container {
+  min-height: 896px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container {
+    min-height: 704px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container {
+    min-height: 512px;
+    margin-top: 72px;
+  }
+}
+.home_gear5 .home_gear5_lower_container img {
+  top: 0;
+  right: 0;
+  position: absolute;
+  max-width: 62%;
+  height: 459px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container img {
+    width: 62%;
+    max-width: 347px;
+    max-height: 220px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container img {
+    top: 107px;
+    width: 100%;
+    max-height: 212px;
+  }
+}
+.home_gear5 .home_gear5_lower_container h2 {
+  max-width: 308px;
+  color: #F8FAFF;
+  margin-top: 323px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container h2 {
+    max-width: 347px;
+    font-size: 36px;
+    margin-top: 0;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion {
+    margin-top: 185px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion {
+    margin-top: 274px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 22px 48px;
+  border-radius: 10px;
+  background: #1C1E25;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item {
+    padding: 12px 27px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+  max-width: 468px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  display: none;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+    font-size: 8px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item .close {
+  display: none;
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  position: initial;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+    width: 7px;
+    height: 7px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .open {
+  display: none;
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .text_opened {
+  display: flex;
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .open {
+  display: none;
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item button {
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item button {
+    width: 15px;
+    height: 15px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+  position: initial;
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+    width: 7px;
+    height: 7px;
+  }
+}
+.home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .home_gear5 .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+    font-size: 8px;
+  }
+}
+
 @font-face {
   font-family: "Founders Grotesk";
   src: url("../fonts/Founders-Grotesk-X-Condensed-Bold.eot");
