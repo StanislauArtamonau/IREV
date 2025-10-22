@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="gear 3">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="gear 4">
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear4award.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear4back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear4logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IREV/src/icons/gear4star.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear3.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear4.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear4.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,8 @@
       <workItem from="1761055748801" duration="4876000" />
       <workItem from="1761061631566" duration="5436000" />
       <workItem from="1761074078825" duration="8133000" />
-      <workItem from="1761118757877" duration="3208000" />
+      <workItem from="1761118757877" duration="10398000" />
+      <workItem from="1761147804029" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -393,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761080281420</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="slider fix">
+      <option name="closed" value="true" />
+      <created>1761122019246</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1761122019246</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +443,9 @@
     <MESSAGE value="slider" />
     <MESSAGE value="gear 3 ( ne dodelan )" />
     <MESSAGE value="gear 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="gear 3" />
+    <MESSAGE value="slider fix" />
+    <MESSAGE value="gear 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="gear 4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

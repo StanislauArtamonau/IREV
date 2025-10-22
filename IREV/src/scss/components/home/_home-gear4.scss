@@ -1,3 +1,458 @@
 .home_gear4{
   @include home_gear();
+
+  .home_gear4_container{
+    max-width: min(1200px, calc(100vw - 60px));
+    margin: 70px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 376px;
+    position: relative;
+    gap: 30px;
+
+    img{
+      @media(max-width: $tablet-width){
+        width: 161px;
+        height: 170px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 77px;
+        height: 81px;
+      }
+    }
+
+    @media(max-width: $tablet-width){
+      max-width: min(710px, calc(100vw - 40px));
+      margin-top: 50px;
+      height: 218px;
+      gap: 17px;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 36px;
+      height: 104px;
+      gap: 8px;
+    }
+
+    .star1{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -2;
+
+      @media(max-width: $tablet-width){
+        width: 54px;
+        height: 57px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .star2{
+      position: absolute;
+      width: 191px;
+      height: 204px;
+      transform: rotate(23deg);
+      left: 46px;
+      bottom: 0;
+      z-index: -2;
+
+      @media(max-width: $tablet-width){
+        width: 111px;
+        height: 119px;
+        left: 26px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 53px;
+        height: 57px;
+        left: 12px;
+      }
+    }
+
+    .star3{
+      position: absolute;
+      width: 104px;
+      height: 117px;
+      transform: rotate(45deg);
+      bottom: 10px;
+      right: calc(100% / 3.64);
+      z-index: -2;
+
+      @media(max-width: $tablet-width){
+        width: 60px;
+        height: 64px;
+        right: calc(100% / 3.7);
+      }
+
+      @media(max-width: $mobile-width){
+        width: 29px;
+        height: 31px;
+        right: calc(100% / 5.6);
+      }
+    }
+
+    .star4{
+      position: absolute;
+      width: 143px;
+      height: 153px;
+      transform: rotate(-15deg);
+      right: 0;
+      top: 22px;
+      z-index: -2;
+
+      @media(max-width: $tablet-width){
+        width: 83px;
+        height: 89px;
+        top: 13px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 40px;
+        height: 42px;
+        top: 6px;
+      }
+    }
+
+    .text_wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      @media(max-width: $tablet-width){
+        gap: 3px;
+      }
+
+      @media(max-width: $mobile-width){
+        gap: 2px;
+        max-width: 130px;
+      }
+
+      .text_main{
+        @include body-medium-font();
+        font-size: 40px;
+        color: #F8FAFFE5;
+        text-transform: none;
+
+        @media(max-width: $tablet-width){
+          font-size: 24px;
+        }
+
+        @media(max-width: $mobile-width){
+          font-size: 12px;
+        }
+      }
+
+      .text_additional{
+        @include caption-small-font();
+        font-size: 20px;
+        color: #F8FAFFE5;
+
+        @media(max-width: $tablet-width){
+          font-size: 12px;
+        }
+
+        @media(max-width: $mobile-width){
+          font-size: 8px;
+        }
+      }
+    }
+  }
+
+
+  .home_gear4_lower_container{
+    margin-top: 200px;
+    max-width: min(1191px, calc(100vw - 60px));
+    height: 666px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media(max-width: $tablet-width){
+      margin-top: 100px;
+      max-width: min(710px, calc(100vw - 40px));
+      height: 394px;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 72px;
+      height: 531px;
+    }
+
+
+    .gear4back{
+      position: absolute;
+      max-width: 294px;
+      max-height: 484px;
+      bottom: 0;
+      right: 0;
+      z-index: -2;
+      animation: multiColorFlow 8s ease-in-out infinite;
+
+      @media(max-width: $tablet-width){
+        max-width: 174px;
+        max-height: 286px;
+      }
+
+      @media(max-width: $mobile-width){
+        max-width: 141px;
+        max-height: 231px;
+        top: 98px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    @keyframes multiColorFlow {
+      0% {
+        filter: hue-rotate(0deg) saturate(1.2);
+      }
+      25% {
+        filter: hue-rotate(90deg) saturate(1.3);
+      }
+      50% {
+        filter: hue-rotate(180deg) saturate(1.1);
+      }
+      75% {
+        filter: hue-rotate(270deg) saturate(1.4);
+      }
+      100% {
+        filter: hue-rotate(360deg) saturate(1.2);
+      }
+    }
+
+    h2{
+      max-width: 579px;
+      color: #F8FAFF;
+
+      @media(max-width: $tablet-width){
+        max-width: 342px;
+        font-size: 36px;
+      }
+
+      @media(max-width: $mobile-width){
+        max-width: 100%;
+      }
+    }
+
+    .home_gear4_lower_label_wrapper{
+      display: flex;
+      margin-bottom: 22px;
+      margin-top: auto;
+
+      @media(max-width: $tablet-width){
+        margin-bottom: 9px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin-bottom: 0;
+      }
+
+      .border_link{
+        width: 68px;
+        height: 50%;
+        border-bottom: 1px solid #F8FAFFE5;
+
+        @media(max-width: $tablet-width){
+          width: 40px;
+        }
+
+        @media(max-width: $mobile-width){
+          width: 27px;
+        }
+
+        @media(max-width: $mobile-width){
+          height: 51.5%;
+        }
+      }
+
+      .label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: 438px;
+
+        @media(max-width: $tablet-width){
+          height: 259px;
+        }
+
+        @media(max-width: $mobile-width){
+          height: 177px;
+        }
+
+        .label_upper{
+          width: fit-content;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include body-large-font();
+          color: #F8FAFFE5;
+          border: 1px solid #F8FAFFE5;
+          border-radius: 10px;
+          padding: 2px 30px 2px 30px;
+          font-size: 24px;
+
+          @media(max-width: $tablet-width){
+            height: 29px;
+            font-size: 16px;
+            padding: 1px 17px 1px 17px;
+          }
+
+          @media(max-width: 560px){
+            font-size: 12px;
+          }
+
+          @media(max-width: $mobile-width){
+            height: 23px;
+            padding: 0 12px 0 12px;
+            font-size: 11px;
+          }
+        }
+
+        .border{
+          display: flex;
+          width: 100%;
+          height: 242px;
+          margin-top: 48px;
+
+          @media(max-width: $tablet-width){
+            height: 145px;
+            margin-top: 28px;
+          }
+
+          @media(max-width: $mobile-width){
+            height: 98px;
+            margin-top: 19px;
+          }
+
+          .border_vertical{
+            margin-left: 50%;
+            width: 1px;
+            height: 100%;
+            border: 1px solid #F8FAFFE5;
+            position: relative;
+
+            .upper_circle{
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              border: 2px solid #F8FAFFE5;
+              position: absolute;
+              top: 0;
+              transform: translateX(-50%) translateY(-50%);
+              background: getColor("background-black", 100);
+
+              @media(max-width: $tablet-width){
+                width: 14px;
+                height: 14px;
+              }
+
+              @media(max-width: $mobile-width){
+                width: 9px;
+                height: 9px;
+              }
+            }
+
+            .lower_circle{
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              border: 2px solid #F8FAFFE5;
+              position: absolute;
+              bottom: 0;
+              transform: translateX(-50%) translateY(50%);
+              background: getColor("background-black", 100);
+
+              @media(max-width: $tablet-width){
+                width: 14px;
+                height: 14px;
+              }
+
+              @media(max-width: $mobile-width){
+                width: 9px;
+                height: 9px;
+              }
+            }
+
+            &.second{
+              margin-left: 0;
+            }
+          }
+
+          .border_horizontal{
+            width: 50%;
+            height: 50%;
+            border-bottom: 1px solid #F8FAFFE5;
+          }
+        }
+
+        .label_lower{
+          margin-top: auto;
+          width: fit-content;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include body-large-font();
+          color: #F8FAFFE5;
+          border: 1px solid #F8FAFFE5;
+          border-radius: 10px;
+          padding: 2px 30px 2px 30px;
+          font-size: 24px;
+
+          @media(max-width: $tablet-width){
+            height: 29px;
+            font-size: 16px;
+            padding: 1px 17px 1px 17px;
+          }
+
+          @media(max-width: 560px){
+            font-size: 12px;
+          }
+
+          @media(max-width: 400px){
+            font-size: 10px;
+          }
+
+          @media(max-width: $mobile-width){
+            height: 23px;
+            padding: 0 12px 0 12px;
+            font-size: 11px;
+          }
+
+          &.last{
+            height: 64px;
+            border: none;
+
+            @media(max-width: $tablet-width){
+              height: 26px;
+              img{
+                height: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.circle1 { animation: fillCircle 10s infinite 0s; transition: background-color ease 0.3s }
+.circle2 { animation: fillCircle 10s infinite 2s; transition: background-color ease 0.3s }
+.circle3 { animation: fillCircle 10s infinite 4s; transition: background-color ease 0.3s }
+.circle4 { animation: fillCircle 10s infinite 6s; transition: background-color ease 0.3s }
+.circle5 { animation: fillCircle 10s infinite 8s; transition: background-color ease 0.3s }
+
+@keyframes fillCircle {
+  0%, 16% { background-color: getColor("background-black", 100); }
+  17%, 33% { background: #F8FAFF; }
+  34%, 100% { background-color: getColor("background-black", 100); }
 }
