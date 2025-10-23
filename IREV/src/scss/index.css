@@ -97,6 +97,11 @@
   -ms-user-select: none;
   user-select: none;
 }
+@media (max-width: 751px) {
+  .header {
+    height: 57px;
+  }
+}
 .header .header_wrapper {
   max-width: 1281px;
   margin: 0 auto;
@@ -4324,6 +4329,402 @@ html {
 @media (max-width: 376px) {
   .home_gear6 .home_gear6_container button {
     max-width: 100%;
+  }
+}
+
+.partner_platform_represent {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 67px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_represent {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent {
+    margin-top: 36px;
+    min-height: 445px;
+  }
+}
+.partner_platform_represent .back {
+  position: absolute;
+  max-width: 50%;
+  max-height: 245px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -2;
+  top: 128px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .back {
+    top: 87px;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .back {
+    top: 107px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.partner_platform_represent .represent_label {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin-left: 306px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .represent_label {
+    gap: 16px;
+    margin-left: 107px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .represent_label {
+    flex-direction: column;
+    gap: 9px;
+    margin-left: 0;
+  }
+}
+.partner_platform_represent .represent_label h1 {
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .represent_label h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .represent_label h1 {
+    width: 100%;
+    font-size: 48px;
+  }
+}
+.partner_platform_represent .represent_label span {
+  max-width: 212px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: rgba(248, 250, 255, 0.8);
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .represent_label span {
+    max-width: 133px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .represent_label span {
+    margin-left: auto;
+    max-width: 105px;
+  }
+}
+.partner_platform_represent .home_represent_rate {
+  margin-top: 153px;
+  max-width: 256px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_rate {
+    margin-top: 96px;
+    max-width: 147px;
+    height: auto;
+    gap: 9px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .home_represent_rate {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    max-width: 147px;
+    height: auto;
+  }
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars {
+  max-width: 170px;
+  height: 40px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars {
+    max-width: 98px;
+    height: 23px;
+  }
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(1) {
+  left: 0;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(2) {
+  left: 26px;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(3) {
+  left: 52px;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(4) {
+  left: 78px;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(5) {
+  left: 104px;
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(6) {
+  left: 130px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img {
+    max-width: 23px;
+    height: 23px;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(1) {
+    left: 0;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(2) {
+    left: 15px;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(3) {
+    left: 30px;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(4) {
+    left: 45px;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(5) {
+    left: 60px;
+  }
+  .partner_platform_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(6) {
+    left: 75px;
+  }
+}
+.partner_platform_represent .home_represent_rate .home_represent_rate_rating {
+  max-width: 120px;
+  height: 24px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_rate .home_represent_rate_rating {
+    max-width: 69px;
+    height: 14px;
+  }
+}
+.partner_platform_represent .home_represent_rate span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8);
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_rate span {
+    font-size: 10px;
+  }
+}
+.partner_platform_represent .home_represent_form_container {
+  margin-top: 115px;
+  max-width: 605px;
+  margin-left: 308px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_form_container {
+    margin-top: 58px;
+    max-width: 349px;
+    height: 51px;
+    margin-left: 23.7vw;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .home_represent_form_container {
+    margin-top: 234px;
+    width: 100%;
+    margin-left: 0;
+    height: 50px;
+  }
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_form_container .home_represent_form {
+    gap: 9px;
+  }
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form input {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+  flex: 1;
+  max-width: 360px;
+  height: 50px;
+  padding: 16px 24px 16px 24px;
+  background: #1C1E25;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_form_container .home_represent_form input {
+    max-width: 207px;
+    font-size: 10px;
+    height: 28px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .home_represent_form_container .home_represent_form input {
+    max-width: 199px;
+    height: 27px;
+  }
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form input::placeholder {
+  color: rgba(248, 250, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form input.two::placeholder {
+  color: #F8FAFF;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form input.one::placeholder, .partner_platform_represent .home_represent_form_container .home_represent_form input.go::placeholder {
+  color: #FF4D4D;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form button {
+  flex: 1;
+  max-width: 229px;
+  height: 50px;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(248, 250, 255, 0.8980392157);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_form_container .home_represent_form button {
+    max-width: 132px;
+    font-size: 10px;
+    height: 28px;
+    padding: 6px 9px 6px 9px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .home_represent_form_container .home_represent_form button {
+    max-width: 128px;
+    height: 27px;
+  }
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F5EF7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F5EF7 0%, #6F31F0 50%, #7AFFF6 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form button.two::before {
+  opacity: 1;
+}
+.partner_platform_represent .home_represent_form_container .home_represent_form button.one::after, .partner_platform_represent .home_represent_form_container .home_represent_form button.go::after {
+  opacity: 1;
+}
+.partner_platform_represent .home_represent_form_container span {
+  margin-right: auto;
+  color: rgba(248, 250, 255, 0.8);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .home_represent_form_container span {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_represent .home_represent_form_container span {
+    margin-left: 0;
+  }
+}
+.partner_platform_represent .represent_text_lower {
+  max-width: 317px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+  margin-top: 80px;
+  margin-left: 305px;
+}
+@media (max-width: 751px) {
+  .partner_platform_represent .represent_text_lower {
+    max-width: 189px;
+    margin-top: 36px;
+    margin-left: 170px;
+    font-size: 12px;
   }
 }
 

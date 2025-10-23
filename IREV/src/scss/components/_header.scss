@@ -8,6 +8,11 @@
   width: 100%;
   height: $header-height;
   color: #F8FAFF;
+
+  @media(max-width: $tablet-width){
+    height: 57px;
+  }
+
   @include offSelect();
 
   .header_wrapper {
