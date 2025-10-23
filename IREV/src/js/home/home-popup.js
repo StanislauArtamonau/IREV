@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const popupOverlay = document.querySelector('.home_popup_overlay');
     const closeButton = document.querySelector('.home_popup_content_upper button');
     const form = document.querySelector('.home_popup_content form');
-    const openButton = document.querySelector('.home_represent_form_container_button');
+    const openButtons = document.querySelectorAll('.home_represent_form_container_button, .open_modal');
     const timerElement = document.querySelector('.home_popup_content_label_wrapper_counter');
 
     let timerInterval = null;
@@ -79,11 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    if (openButton) {
-        openButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            openPopup();
-        });
+    if (openButtons) {
+        openButtons.forEach(openButton=>{
+            openButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                openPopup();
+            });
+        })
     }
 
     if (closeButton) {

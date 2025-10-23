@@ -13,15 +13,6 @@
     }
   }
 
-  @media(max-width: $tablet-width){
-    max-height: 16px;
-
-    img{
-      max-width: 35px;
-      max-height: 14px;
-    }
-  }
-
   span{
     @include body-small-font();
     color: #F8FAFFE5;
@@ -34,13 +25,13 @@
 
 .home_gear1{
   @include home_gear();
+  position: relative;
 
   .home_gear1_wrapper{
     margin-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 80px;
-
 
     @media(max-width: $tablet-width){
       margin-top: 50px;
@@ -55,6 +46,7 @@
     .home_gear1_info_container{
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       @media(max-width: $mobile-width){
         flex-direction: column;
@@ -65,18 +57,18 @@
       .home_gear1_info_label{
         @include body-large-font();
         color: #F8FAFF;
-        transition: color ease 0.3s;
         cursor: default;
         height: fit-content;
         min-width: 50%;
-
-        &:hover{
-          color: #0F5EF7;
-        }
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+        transition: all ease 0.3s;
 
         @media(max-width: $tablet-width){
           font-size: 20px;
           color: #0F5EF7;
+          top: 80px;
         }
 
         @media(max-width: 420px){
@@ -85,6 +77,13 @@
 
         @media(max-width: $mobile-width){
           font-size: 16px;
+          position: relative;
+          top: 0;
+        }
+
+        &.hover {
+          color: #0F5EF7 !important;
+          transform: scale(1.05);
         }
       }
 
@@ -127,4 +126,9 @@
       }
     }
   }
+}
+
+// Дополнительные стили для плавного скролла
+html {
+  scroll-behavior: smooth;
 }
