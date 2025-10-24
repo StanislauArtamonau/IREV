@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="gear 6 over">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="partner platform 1 comp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/page-partner-platform.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/page-partner-platform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear1.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
     </list>
@@ -26,8 +32,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="SCSS File" />
         <option value="PHP File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -159,7 +165,10 @@
       <workItem from="1761147804029" duration="5624000" />
       <workItem from="1761154705537" duration="3547000" />
       <workItem from="1761162759668" duration="11005000" />
-      <workItem from="1761208734850" duration="4220000" />
+      <workItem from="1761208734850" duration="4529000" />
+      <workItem from="1761221518933" duration="5336000" />
+      <workItem from="1761235629374" duration="11706000" />
+      <workItem from="1761264931877" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -425,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761179990054</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="partner platform 1 comp">
+      <option name="closed" value="true" />
+      <created>1761213140650</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1761213140650</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home page template" />
     <MESSAGE value="fix template" />
     <MESSAGE value="поставил относительные импорты в подключении шрифтов" />
     <MESSAGE value="фикс относительных импортов в подключении шрифтов" />
@@ -468,7 +484,8 @@
     <MESSAGE value="gear 4" />
     <MESSAGE value="gear 5" />
     <MESSAGE value="gear 6 over" />
-    <option name="LAST_COMMIT_MESSAGE" value="gear 6 over" />
+    <MESSAGE value="partner platform 1 comp" />
+    <option name="LAST_COMMIT_MESSAGE" value="partner platform 1 comp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

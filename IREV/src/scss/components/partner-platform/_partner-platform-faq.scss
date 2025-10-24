@@ -1,0 +1,229 @@
+.partner_platform_faq{
+  @include home_gear();
+
+  .home_gear5_lower_container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media(max-width: $tablet-width){
+      margin-top: 120px;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 72px;
+    }
+
+    h2{
+      max-width: 308px;
+      color: #F8FAFF;
+      margin-top: 0;
+
+      @media(max-width: $tablet-width){
+        max-width: 347px;
+        font-size: 36px;
+        margin-top: 0;
+      }
+    }
+
+    .home_gear5_accordion{
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      @media(max-width: $tablet-width){
+        margin-top: 50px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin-top: 36px;
+      }
+
+      .accordion_item{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        padding: 22px 48px;
+        border-radius: 10px;
+        background: #1C1E25;
+
+        @media(max-width: $tablet-width){
+          padding: 12px 27px;
+        }
+
+        .text_opened{
+          max-width: 468px;
+          @include caption-small-font();
+          font-size: 16px;
+          display: none;
+          color: #F8FAFF;
+
+          @media(max-width: $tablet-width){
+            font-size: 10px;
+          }
+
+          @media(max-width: $mobile-width){
+            font-size: 8px;
+          }
+        }
+
+        .close{
+          display: none;
+        }
+
+        &.opened{
+          .close{
+            display: flex;
+            width: 26px;
+            height: 26px;
+            position: initial;
+
+            @media(max-width: $tablet-width){
+              width: 15px;
+              height: 15px;
+            }
+
+            @media(max-width: $mobile-width){
+              width: 7px;
+              height: 7px;
+            }
+          }
+
+          .open{
+            display: none;
+          }
+
+          .text_opened{
+            display: flex;
+          }
+
+          .open{
+            display: none;
+          }
+        }
+
+        button{
+          width: 26px;
+          height: 26px;
+
+          @media(max-width: $tablet-width){
+            width: 15px;
+            height: 15px;
+          }
+
+          .open{
+            position: initial;
+            width: 26px;
+            height: 26px;
+
+            @media(max-width: $tablet-width){
+              width: 15px;
+              height: 15px;
+            }
+
+            @media(max-width: $mobile-width){
+              width: 7px;
+              height: 7px;
+            }
+          }
+        }
+
+        span{
+          @include body-small-font();
+          font-size: 20px;
+          color: #F8FAFF;
+
+          @media(max-width: $tablet-width){
+            font-size: 12px;
+          }
+
+          @media(max-width: $mobile-width){
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .home_gear6_container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    min-height: 229px;
+    margin-bottom: 90px;
+    position: relative;
+
+    @media(max-width: $tablet-width){
+      margin-top: 120px;
+      gap: 21px;
+      min-height: 137px;
+      margin-bottom: 48px;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 36px;
+      gap: 16px;
+      min-height: fit-content;
+      margin-bottom: 38px;
+    }
+
+    img{
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -2;
+
+      @media(max-width: $mobile-width){
+        width: 100%;
+        top: 0;
+      }
+    }
+
+    h2{
+      max-width: 615px;
+      color: #F8FAFF;
+
+      @media(max-width: $tablet-width){
+        max-width: 311px;
+        font-size: 36px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin-top: 157px;
+      }
+    }
+
+    button{
+      max-width: 378px;
+      height: 50px;
+      padding: 11px 16px 11px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include body-medium-font();
+      font-size: 16px;
+      color: #F8FAFF;
+      background: #0F5EF7;
+      border-radius: 60px;
+
+      @media(max-width: $tablet-width){
+        max-width: 226px;
+        height: 29px;
+        padding: 6px 9px 6px 9px;
+        font-size: 10px;
+      }
+
+      @media(max-width: $mobile-width){
+        max-width: 100%;
+      }
+    }
+  }
+}

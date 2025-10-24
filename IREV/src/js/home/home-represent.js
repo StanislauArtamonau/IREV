@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.home');
+
+    if (!partnerSection) {
+        return;
+    }
+
     const counterElement = document.querySelector('.home_represent_counter span');
     const counterDiv = document.querySelector('.home_represent_counter');
     const signInButton = document.querySelector('.header_signIn');
@@ -43,19 +49,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setTimeout(updateTimer, 10);
+});
 
 
+document.addEventListener('DOMContentLoaded', ()=> {
     // email save
 
     const mainEmailInput = document.querySelector('.home_represent_form_container_input');
     const popupEmailInput = document.querySelector('.home_popup_content_form_inputs input[type="email"]');
 
     if (mainEmailInput && popupEmailInput) {
-        mainEmailInput.addEventListener('input', function() {
+        mainEmailInput.addEventListener('input', function () {
             popupEmailInput.value = this.value;
         });
 
-        popupEmailInput.addEventListener('input', function() {
+        popupEmailInput.addEventListener('input', function () {
             mainEmailInput.value = this.value;
         });
 
@@ -70,13 +78,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = document.getElementById('submitButton');
 
     if (policyCheckbox && submitButton) {
-        policyCheckbox.addEventListener('change', function() {
+        policyCheckbox.addEventListener('change', function () {
             updateButtonState();
         });
 
         const customCheckbox = policyCheckbox.closest('.checkbox');
         if (customCheckbox) {
-            customCheckbox.addEventListener('click', function(e) {
+            customCheckbox.addEventListener('click', function (e) {
                 policyCheckbox.checked = !policyCheckbox.checked;
                 policyCheckbox.dispatchEvent(new Event('change'));
             });
@@ -92,11 +100,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-
 });
 
 // paralax
 document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.home');
+
+    if (!partnerSection) {
+        return;
+    }
     const parallaxImg = document.querySelector('.home_represent_backgroundImg');
 
     if (parallaxImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

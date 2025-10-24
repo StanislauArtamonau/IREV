@@ -1,0 +1,17 @@
+.partner_platform_c6{
+  @include home_gear();
+  position: relative;
+
+  .form_container{
+    width: 605px;
+    height: 744px;
+    display: flex;
+    flex-direction: column;
+    background: #1C1E25;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+}

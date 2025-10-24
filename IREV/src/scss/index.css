@@ -1986,6 +1986,9 @@ footer .footer_wrapper .footer_lower {
   align-self: flex-start;
   transition: all ease 0.3s;
 }
+.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label:hover {
+  color: #0F5EF7 !important;
+}
 @media (max-width: 751px) {
   .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
     font-size: 20px;
@@ -2004,10 +2007,6 @@ footer .footer_wrapper .footer_lower {
     position: relative;
     top: 0;
   }
-}
-.home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label.hover {
-  color: #0F5EF7 !important;
-  transform: scale(1.05);
 }
 .home_gear1 .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
   max-width: 651px;
@@ -2404,6 +2403,8 @@ html {
 
 .home_gear3 {
   margin-top: 200px;
+  width: 100%;
+  overflow: hidden;
 }
 .home_gear3 header {
   max-width: min(1220px, 100vw - 60px);
@@ -2416,7 +2417,6 @@ html {
   margin: 120px auto 0 auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 690px;
 }
 @media (max-width: 751px) {
@@ -4725,6 +4725,1775 @@ html {
     margin-top: 36px;
     margin-left: 170px;
     font-size: 12px;
+  }
+}
+
+.partner_platform_list {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 751px) {
+  .partner_platform_list {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_list {
+    margin-top: 75px;
+  }
+}
+.partner_platform_list h2 {
+  max-width: 607px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_list h2 {
+    max-width: 384px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_list h2 {
+    max-width: 244px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (max-width: 751px) {
+  .partner_platform_list .home_gear1_wrapper {
+    margin-top: 50px;
+    gap: 36px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_list .home_gear1_wrapper {
+    margin-top: 36px;
+    gap: 24px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 376px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #F8FAFF;
+  cursor: default;
+  height: fit-content;
+  min-width: 50%;
+  align-self: flex-start;
+  transition: all ease 0.3s;
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label:hover {
+  color: #7AFFF6 !important;
+}
+@media (max-width: 751px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 20px;
+    top: 80px;
+  }
+}
+@media (max-width: 420px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 17px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_label {
+    font-size: 16px;
+    position: relative;
+    color: #7AFFF6;
+    top: 0;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+  max-width: 651px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+@media (max-width: 751px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+    max-width: 376px;
+    gap: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container {
+    max-width: 335px;
+    gap: 16px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container h2 {
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container h2 {
+    font-size: 30px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text {
+    font-size: 12px;
+  }
+}
+.partner_platform_list .home_gear1_wrapper .home_gear1_info_container .home_gear1_info_text_container .home_gear1_info_text_container_text .home_gear1_info_text_container_text_colored {
+  color: #7AFFF6;
+}
+
+.partner_platform_c3 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c3 {
+    margin-top: 75px;
+  }
+}
+.partner_platform_c3 img {
+  position: absolute;
+  max-width: 38%;
+  top: 0;
+  right: 15px;
+  z-index: -2;
+}
+.partner_platform_c3 h2 {
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 h2 {
+    font-size: 36px;
+  }
+}
+.partner_platform_c3 .home_represent_form_container {
+  max-width: 605px;
+  margin-left: 0;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 .home_represent_form_container {
+    max-width: 349px;
+    height: 51px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c3 .home_represent_form_container {
+    width: 100%;
+    margin-left: 0;
+    height: 50px;
+  }
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 .home_represent_form_container .home_represent_form {
+    gap: 9px;
+  }
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form input {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+  flex: 1;
+  max-width: 360px;
+  height: 50px;
+  padding: 16px 24px 16px 24px;
+  background: #1C1E25;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 .home_represent_form_container .home_represent_form input {
+    max-width: 207px;
+    font-size: 10px;
+    height: 28px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c3 .home_represent_form_container .home_represent_form input {
+    max-width: 199px;
+    height: 27px;
+  }
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form input::placeholder {
+  color: rgba(248, 250, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form input.two::placeholder {
+  color: #F8FAFF;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form input.one::placeholder, .partner_platform_c3 .home_represent_form_container .home_represent_form input.go::placeholder {
+  color: #FF4D4D;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button {
+  flex: 1;
+  max-width: 229px;
+  height: 50px;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(248, 250, 255, 0.8980392157);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 .home_represent_form_container .home_represent_form button {
+    max-width: 132px;
+    font-size: 10px;
+    height: 28px;
+    padding: 6px 9px 6px 9px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c3 .home_represent_form_container .home_represent_form button {
+    max-width: 128px;
+    height: 27px;
+  }
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F5EF7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F5EF7 0%, #6F31F0 50%, #7AFFF6 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button.two::before {
+  opacity: 1;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button.one::after, .partner_platform_c3 .home_represent_form_container .home_represent_form button.go::after {
+  opacity: 1;
+}
+.partner_platform_c3 .home_represent_form_container span {
+  margin-right: auto;
+  color: rgba(248, 250, 255, 0.8);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_c3 .home_represent_form_container span {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c3 .home_represent_form_container span {
+    margin-left: 0;
+  }
+}
+
+.partner_platform_reviews {
+  margin-top: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews {
+    margin-top: 36px;
+  }
+}
+.partner_platform_reviews .home_gear3_container {
+  position: relative;
+  max-width: min(1220px, 100vw - 60px);
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container {
+    max-width: min(750px, 100vw - 40px);
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews .home_gear3_container {
+    max-width: min(750px, 100vw - 40px);
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients {
+  margin-top: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8);
+  font-size: 16px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients span {
+    display: none;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients {
+    margin-top: 0;
+    gap: 9px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients {
+    margin: 0px auto 0 auto;
+    gap: 6px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+    gap: 4px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+    gap: 8px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+    width: 26px;
+    height: 26px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item .tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1C1E25;
+  color: rgba(248, 250, 255, 0.8980392157);
+  padding: 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item .tooltip {
+    padding: 9px;
+    font-size: 12px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item.selected {
+  border: 2px solid #7AFFF6;
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item.selected .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  margin-top: 85px;
+  height: 288px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews {
+    height: 192px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0 !important;
+  cursor: pointer;
+  gap: 36px;
+  width: 344px;
+  height: 288px;
+  background: rgba(28, 30, 37, 0.8);
+  border-radius: 20px;
+  padding: 36px 16px 36px 16px;
+  pointer-events: auto;
+  opacity: 0.8;
+  transition: opacity ease 0.3s;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
+    gap: 23px;
+    width: 228px;
+    height: 191px;
+    padding: 23px 10px 23px 10px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review.selected {
+  opacity: 1;
+  border: 1px solid #7AFFF6;
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 14px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
+    font-size: 10px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
+    gap: 10px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+    width: 36px;
+    height: 36px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+    gap: 2px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+    font-size: 10px;
+  }
+}
+.partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+    font-size: 13px;
+  }
+}
+.partner_platform_reviews .logo_container {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .logo_container {
+    height: 55px;
+    margin-top: 120px;
+    gap: 90px;
+  }
+  .partner_platform_reviews .logo_container img {
+    max-height: 55px;
+    max-width: 120px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_reviews .logo_container {
+    height: 36px;
+    margin-top: 72px;
+    gap: 60px;
+  }
+  .partner_platform_reviews .logo_container img {
+    max-height: 36px;
+    max-width: 79px;
+  }
+}
+
+.partner_platform_c5 .home_gear3_lower_container {
+  margin: 200px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: min(1220px, 100vw - 60px);
+  height: 1143px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container {
+    margin-top: 120px;
+    max-width: min(704px, 100vw - 40px);
+    height: 660px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container {
+    margin-top: 72px;
+    height: 755px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .back {
+  position: absolute;
+  max-width: 227px;
+  height: 227px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+  top: 150px;
+  animation: multiColorFlow 8s ease-in-out infinite;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .back {
+    max-width: 130px;
+    height: 130px;
+    top: 86px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .back {
+    top: 355px;
+  }
+}
+@keyframes multiColorFlow {
+  0% {
+    filter: hue-rotate(0deg) saturate(1.2);
+  }
+  25% {
+    filter: hue-rotate(90deg) saturate(1.3);
+  }
+  50% {
+    filter: hue-rotate(180deg) saturate(1.1);
+  }
+  75% {
+    filter: hue-rotate(270deg) saturate(1.4);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(1.2);
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container h2 {
+  color: rgba(248, 250, 255, 0.8980392157);
+  margin: 0 auto;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container h2 {
+    margin-left: 0;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .dashed_vertical {
+  width: 50%;
+  height: 72px;
+  border-right: 1px dashed rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .dashed_vertical {
+    height: 41px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .dashed_vertical {
+    display: none;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .dashed_horizontal {
+  width: min(958px, 100% - min(147px, 12.0481927711vw) - min(115px, 9.4339622642vw));
+  margin-left: min(147px, 12.0481927711vw);
+  border-top: 1px dashed rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .dashed_horizontal {
+    width: min(552px, 100% - min(84px, 11.2359550562vw) - min(66px, 8.8495575221vw));
+    margin-left: min(84px, 11.2359550562vw);
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .dashed_horizontal {
+    display: none;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .lower_wrapper {
+  display: flex;
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .lower_wrapper {
+    flex-direction: column;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+@media (max-width: 1000px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left {
+    max-width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left {
+    max-width: 100%;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .dashed_vertical {
+  width: min(147px, 12.0481927711vw);
+  height: 116px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .dashed_vertical {
+    width: min(84px, 11.2359550562vw);
+    height: 67px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label {
+  display: flex;
+  gap: 8px;
+  margin-top: 23px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label {
+    gap: 5px;
+    margin-top: 9px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label img {
+  max-width: 56px;
+  height: 40px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label img {
+    max-width: 32px;
+    height: 23px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label div {
+  max-width: 230px;
+  width: 100%;
+  height: 40px;
+  padding: 7px 22px 7px 22px;
+  border: 1px solid rgba(248, 250, 255, 0.8980392157);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(248, 250, 255, 0.8980392157);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .label div {
+    max-width: 133px;
+    height: 23px;
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left span {
+  margin-top: 24px;
+  max-width: 294px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left span {
+    max-width: 170px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper {
+  margin-top: 60px;
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper {
+    margin-top: 36px;
+    gap: 34px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case {
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  flex: 1;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case {
+    max-width: 118px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .dashed_vertical {
+  width: 76px;
+  height: 38px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .dashed_vertical {
+    width: 57px;
+    height: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .dashed_vertical {
+    display: flex;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label {
+  max-height: 40px;
+  flex: 1;
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  padding: 7px 22px 7px 22px;
+  background: #A980FF;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label {
+    max-height: 23px;
+    margin-top: 12px;
+    gap: 9px;
+    padding: 4px 12px 4px 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label img {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label img {
+    width: 17px;
+    height: 17px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+  color: #1C1E25;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case .case_label span {
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case span {
+  margin-top: 24px;
+  max-width: 204px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-transform: none;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left .cases_wraper .case span {
+    margin-top: 12px;
+    max-width: 118px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left button {
+  max-width: 340px;
+  margin: 76px auto 0 auto;
+  height: 50px;
+  width: 100%;
+  background: #0F5EF7;
+  border-radius: 60px;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_left button {
+    max-width: 391px;
+    margin-top: 30px;
+    height: 28px;
+    padding: 4px 10px 4px 10px;
+    font-size: 10px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .lower_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_wrapper {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right {
+    width: 100%;
+    margin-top: 170px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper {
+    display: none;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper .label {
+  max-width: 380px;
+  border: 1px solid #F8FAFF;
+  padding: 7px 22px 7px 22px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #F8FAFF;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper .label {
+    max-width: 218px;
+    height: 22px;
+    padding: 3px 11px 3px 11px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper .label {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #F8FAFF;
+  text-align: start;
+  margin-left: 0;
+  text-transform: none;
+  margin-left: auto;
+  max-width: 380px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_label_wrapper span {
+    max-width: 218px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical {
+  width: calc(25% - min(115px, 9.4339622642vw));
+  height: 555px;
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical.first {
+  width: 60%;
+  height: 245px;
+}
+@media (max-width: 1000px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical.first {
+    height: 145px;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical.first {
+    height: 131px;
+  }
+}
+@media (max-width: 650px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical.first {
+    height: 90px;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical {
+    width: calc(25% - min(66px, 8.8495575221vw));
+    height: 320px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .dashed_vertical {
+    width: calc(100% - min(66px, 8.8495575221vw));
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label {
+  display: flex;
+  gap: 8px;
+  margin-top: 23px;
+  margin-left: auto;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label {
+    gap: 5px;
+    margin-top: 9px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label img {
+  max-width: 56px;
+  height: 40px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label img {
+    max-width: 32px;
+    height: 23px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label div {
+  width: 230px;
+  height: 40px;
+  padding: 7px 22px 7px 22px;
+  border: 1px solid rgba(248, 250, 255, 0.8980392157);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(248, 250, 255, 0.8980392157);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right .label div {
+    width: 132px;
+    height: 23px;
+    font-size: 12px;
+    padding: 4px 12px 4px 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right span {
+  margin-left: auto;
+  text-align: end;
+  margin-top: 24px;
+  max-width: 294px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .home_gear3_lower_right span {
+    margin-top: 13px;
+    max-width: 169px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_bottom {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: auto;
+}
+.partner_platform_c5 .home_gear3_lower_container .right_bottom button {
+  max-width: 340px;
+  margin: 76px auto 0 auto;
+  height: 50px;
+  width: 100%;
+  background: #0F5EF7;
+  border-radius: 60px;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_bottom button {
+    max-width: 391px;
+    margin-top: 30px;
+    height: 28px;
+    padding: 4px 10px 4px 10px;
+    font-size: 10px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper {
+  display: flex;
+  margin-top: 60px;
+  gap: 60px;
+  margin-left: auto;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper {
+    margin-top: 36px;
+    gap: 34px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case {
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  flex: 1;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case {
+    max-width: 115px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .dashed_vertical {
+  width: 82px;
+  height: 38px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .dashed_vertical {
+    width: 56px;
+    height: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .dashed_vertical {
+    display: flex;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .case_label {
+  max-height: 40px;
+  flex: 1;
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  padding: 7px 22px 7px 22px;
+  background: rgba(122, 255, 246, 0.8980392157);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .case_label {
+    max-height: 23px;
+    margin-top: 12px;
+    padding: 4px 12px 4px 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .case_label span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+  color: #1C1E25;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case .case_label span {
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case span {
+  margin-top: 24px;
+  max-width: 204px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-transform: none;
+  text-align: end;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear3_lower_container .right_cases_wrapper .case span {
+    margin-top: 13px;
+    max-width: 117px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear4_container {
+  max-width: min(1200px, 100vw - 60px);
+  margin: 150px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 376px;
+  position: relative;
+  gap: 30px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container img {
+    width: 161px;
+    height: 170px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container img {
+    width: 77px;
+    height: 81px;
+  }
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container {
+    max-width: min(710px, 100vw - 40px);
+    margin-top: 120px;
+    height: 218px;
+    gap: 17px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container {
+    margin-top: 72px;
+    height: 104px;
+    gap: 8px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .star1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .star1 {
+    width: 54px;
+    height: 57px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .star1 {
+    width: 25px;
+    height: 25px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .star2 {
+  position: absolute;
+  width: 191px;
+  height: 204px;
+  transform: rotate(23deg);
+  left: 46px;
+  bottom: 0;
+  z-index: -2;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .star2 {
+    width: 111px;
+    height: 119px;
+    left: 26px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .star2 {
+    width: 53px;
+    height: 57px;
+    left: 12px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .star3 {
+  position: absolute;
+  width: 104px;
+  height: 117px;
+  transform: rotate(45deg);
+  bottom: 10px;
+  right: 27.4725274725%;
+  z-index: -2;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .star3 {
+    width: 60px;
+    height: 64px;
+    right: 27.027027027%;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .star3 {
+    width: 29px;
+    height: 31px;
+    right: 17.8571428571%;
+  }
+}
+.partner_platform_c5 .home_gear4_container .star4 {
+  position: absolute;
+  width: 143px;
+  height: 153px;
+  transform: rotate(-15deg);
+  right: 0;
+  top: 22px;
+  z-index: -2;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .star4 {
+    width: 83px;
+    height: 89px;
+    top: 13px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .star4 {
+    width: 40px;
+    height: 42px;
+    top: 6px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .text_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper {
+    gap: 3px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper {
+    gap: 2px;
+    max-width: 130px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .text_wrapper .text_main {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgba(248, 250, 255, 0.8980392157);
+  text-transform: none;
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper .text_main {
+    font-size: 24px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper .text_main {
+    font-size: 12px;
+  }
+}
+.partner_platform_c5 .home_gear4_container .text_wrapper .text_additional {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper .text_additional {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c5 .home_gear4_container .text_wrapper .text_additional {
+    font-size: 8px;
+  }
+}
+
+.home_gear3_lower_container .case {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.home_gear3_lower_container .case.case-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home_gear3_lower_container .case.case-hidden {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+@media (max-width: 768px) {
+  .home_gear3_lower_container .case {
+    transform: translateY(20px);
+  }
+  .home_gear3_lower_container .case.case-hidden {
+    transform: translateY(-20px);
+  }
+}
+.partner_platform_c6 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_c6 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c6 {
+    margin-top: 75px;
+  }
+}
+.partner_platform_c6 .form_container {
+  width: 605px;
+  height: 744px;
+  display: flex;
+  flex-direction: column;
+  background: #1C1E25;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.partner_platform_faq {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq {
+    margin-top: 75px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container {
+    margin-top: 72px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container h2 {
+  max-width: 308px;
+  color: #F8FAFF;
+  margin-top: 0;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container h2 {
+    max-width: 347px;
+    font-size: 36px;
+    margin-top: 0;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion {
+    margin-top: 36px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 22px 48px;
+  border-radius: 10px;
+  background: #1C1E25;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item {
+    padding: 12px 27px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+  max-width: 468px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  display: none;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item .text_opened {
+    font-size: 8px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item .close {
+  display: none;
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  position: initial;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .close {
+    width: 7px;
+    height: 7px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .open {
+  display: none;
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .text_opened {
+  display: flex;
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item.opened .open {
+  display: none;
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item button {
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item button {
+    width: 15px;
+    height: 15px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+  position: initial;
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item button .open {
+    width: 7px;
+    height: 7px;
+  }
+}
+.partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear5_lower_container .home_gear5_accordion .accordion_item span {
+    font-size: 8px;
+  }
+}
+.partner_platform_faq .home_gear6_container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  min-height: 229px;
+  margin-bottom: 90px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear6_container {
+    margin-top: 120px;
+    gap: 21px;
+    min-height: 137px;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear6_container {
+    margin-top: 36px;
+    gap: 16px;
+    min-height: fit-content;
+    margin-bottom: 38px;
+  }
+}
+.partner_platform_faq .home_gear6_container img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear6_container img {
+    width: 100%;
+    top: 0;
+  }
+}
+.partner_platform_faq .home_gear6_container h2 {
+  max-width: 615px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear6_container h2 {
+    max-width: 311px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear6_container h2 {
+    margin-top: 157px;
+  }
+}
+.partner_platform_faq .home_gear6_container button {
+  max-width: 378px;
+  height: 50px;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #F8FAFF;
+  background: #0F5EF7;
+  border-radius: 60px;
+}
+@media (max-width: 751px) {
+  .partner_platform_faq .home_gear6_container button {
+    max-width: 226px;
+    height: 29px;
+    padding: 6px 9px 6px 9px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_faq .home_gear6_container button {
+    max-width: 100%;
   }
 }
 

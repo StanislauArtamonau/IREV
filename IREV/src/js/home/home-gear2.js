@@ -3,6 +3,13 @@ const nitroImg = document.querySelector('.nitro-effect img');
 const revText = document.querySelector('.home_gear2_lower_container_rev');
 
 function updateScrollAnimation() {
+
+    const partnerSection = document.querySelector('.home');
+
+    if (!partnerSection) {
+        return;
+    }
+
     const rect = container.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
@@ -20,6 +27,11 @@ function updateScrollAnimation() {
 }
 
 function onScroll() {
+    const partnerSection = document.querySelector('.home');
+
+    if (!partnerSection) {
+        return;
+    }
     requestAnimationFrame(updateScrollAnimation);
 }
 
