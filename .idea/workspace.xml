@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="partner platform 1 comp">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="без одного компонента partner platform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/page-partner-platform.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/page-partner-platform.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear1.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component6.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-component6.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-component6.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,8 @@
       <workItem from="1761208734850" duration="4529000" />
       <workItem from="1761221518933" duration="5336000" />
       <workItem from="1761235629374" duration="11706000" />
-      <workItem from="1761264931877" duration="1221000" />
+      <workItem from="1761264931877" duration="1432000" />
+      <workItem from="1761298505084" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -442,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761213140650</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="без одного компонента partner platform">
+      <option name="closed" value="true" />
+      <created>1761266370406</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1761266370406</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix template" />
     <MESSAGE value="поставил относительные импорты в подключении шрифтов" />
     <MESSAGE value="фикс относительных импортов в подключении шрифтов" />
     <MESSAGE value="desktop header, footer" />
@@ -485,7 +489,8 @@
     <MESSAGE value="gear 5" />
     <MESSAGE value="gear 6 over" />
     <MESSAGE value="partner platform 1 comp" />
-    <option name="LAST_COMMIT_MESSAGE" value="partner platform 1 comp" />
+    <MESSAGE value="без одного компонента partner platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="без одного компонента partner platform" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

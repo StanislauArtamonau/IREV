@@ -6214,7 +6214,8 @@ html {
 .partner_platform_c6 {
   max-width: min(1220px, 100% - 60px);
   margin: 200px auto 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 751px) {
   .partner_platform_c6 {
@@ -6227,17 +6228,266 @@ html {
     margin-top: 75px;
   }
 }
+.partner_platform_c6 .pp_c6_cont {
+  position: relative;
+  background: #F8FAFF;
+  border-radius: 20px;
+}
+.partner_platform_c6 img {
+  min-height: 744px;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 img {
+    min-height: 430px;
+  }
+}
+@media (max-width: 520px) {
+  .partner_platform_c6 img {
+    display: none;
+  }
+}
 .partner_platform_c6 .form_container {
-  width: 605px;
-  height: 744px;
-  display: flex;
-  flex-direction: column;
+  width: 50%;
+  height: 100%;
   background: #1C1E25;
   border-radius: 20px;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container {
+    padding: 17px;
+  }
+}
+@media (max-width: 520px) {
+  .partner_platform_c6 .form_container {
+    width: 100%;
+    height: 430px;
+    position: initial;
+  }
+}
+.partner_platform_c6 .form_container .funds {
+  margin-top: 36px;
+  border: 1px solid rgba(248, 250, 255, 0.5019607843);
+  border-radius: 10px;
+  padding: 16px;
+  height: 54px;
+  width: 420px;
+  max-width: 100%;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #F8FAFF;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .funds {
+    margin-top: 20px;
+    height: 31px;
+    width: 280px;
+    font-size: 12px;
+  }
+}
+.partner_platform_c6 .form_container .funds span {
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .funds span {
+    font-size: 12px;
+  }
+}
+.partner_platform_c6 .form_container .funds input {
+  max-width: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #F8FAFF;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: #F8FAFF;
+}
+.partner_platform_c6 .form_container .funds input:focus {
+  outline: none;
+}
+.partner_platform_c6 .form_container h2 {
+  max-width: 433px;
+  color: #F8FAFF;
+  margin-top: 46px;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container h2 {
+    margin-top: 44px;
+    font-size: 28px;
+  }
+}
+.partner_platform_c6 .form_container .form_item {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_item {
+    margin-top: 20px;
+    gap: 9px;
+  }
+}
+.partner_platform_c6 .form_container .form_item span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_item span {
+    font-size: 12px;
+  }
+}
+.partner_platform_c6 .form_container .form_item input {
+  height: 22px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  background: transparent;
+  font-size: 16px;
+  border: none;
+  color: #F8FAFF;
+  border-bottom: 1px solid rgba(248, 250, 255, 0.5019607843);
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_item input {
+    height: 13px;
+    font-size: 9px;
+  }
+}
+.partner_platform_c6 .form_container .form_item input:focus {
+  outline: none;
+}
+.partner_platform_c6 .form_container .form_input_container {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 10px;
+}
+.partner_platform_c6 .form_container .form_input_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_input_container div {
+    gap: 9px;
+  }
+}
+.partner_platform_c6 .form_container .form_input_container div span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_input_container div span {
+    font-size: 12px;
+  }
+}
+.partner_platform_c6 .form_container .form_input_container div input {
+  height: 22px;
+  max-width: 319px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(248, 250, 255, 0.5019607843);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #F8FAFF;
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_input_container div input {
+    max-width: 184px;
+    font-size: 9px;
+  }
+}
+.partner_platform_c6 .form_container .form_input_container div input::placeholder {
+  color: rgba(248, 250, 255, 0.3490196078);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_input_container div input::placeholder {
+    font-size: 9px;
+  }
+}
+.partner_platform_c6 .form_container .form_input_container button {
+  max-width: 210px;
+  height: 50px;
+  border-radius: 60px;
+  padding: 11px 16px 11px 16px;
+  border: 2px solid #0F5EF7;
+  display: flex;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+@media (max-width: 800px) {
+  .partner_platform_c6 .form_container .form_input_container button {
+    max-width: 121px;
+    height: 28px;
+    font-size: 10px;
+  }
+}
+.partner_platform_c6 h3 {
+  margin-top: 200px;
+  font-size: 88px;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .partner_platform_c6 h3 {
+    margin-top: 120px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 376px) {
+  .partner_platform_c6 h3 {
+    margin-top: 72px;
+    font-size: 48px;
+  }
 }
 
 .partner_platform_faq {
