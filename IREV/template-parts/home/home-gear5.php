@@ -14,22 +14,15 @@
     <div class="home_gear5_container">
         <h2>Twin-turbo solutions for affiliate domination</h2>
         <div class="home_gear5_cards_container">
-            <div class="cards_card">
-                <img
-                        src="<?php echo esc_url(get_theme_file_uri('src/icons/card1.svg')); ?>"
-                />
+            <div class="cards_card" data-card-index="0">
+                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/card1.svg')); ?>" />
                 <div class="card_label">
                     <div class="card_label_wrapper">
-                        <img
-                                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear5partnerplatform.svg')); ?>"
-                        />
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/gear5partnerplatform.svg')); ?>" />
                         <div>partner platform</div>
                     </div>
-                    <span>
-                        Start or scale your partner program
-                    </span>
+                    <span>Start or scale your partner program</span>
                 </div>
-
                 <ul>
                     <li>
                         <span class="label_list_main">[1] Advanced Analytics</span>
@@ -47,22 +40,41 @@
                 <button>learn more</button>
             </div>
 
-            <div class="cards_card">
-                <img
-                        src="<?php echo esc_url(get_theme_file_uri('src/icons/card2.svg')); ?>"
-                />
+            <div class="cards_card" data-card-index="1">
+                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/card1.svg')); ?>" />
                 <div class="card_label">
                     <div class="card_label_wrapper">
-                        <img
-                                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear5lead.svg')); ?>"
-                        />
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/gear5partnerplatform.svg')); ?>" />
+                        <div>partner platform</div>
+                    </div>
+                    <span>Start or scale your partner program</span>
+                </div>
+                <ul>
+                    <li>
+                        <span class="label_list_main">[1] Advanced Analytics</span>
+                        <span class="label_list_additional">Data-driven insights, robust partner management control</span>
+                    </li>
+                    <li>
+                        <span class="label_list_main">[2] Efficient Partner Management</span>
+                        <span class="label_list_additional">Innovative tool for better affiliate partnerships</span>
+                    </li>
+                    <li>
+                        <span class="label_list_main">[3] Customisation and 360° Integration</span>
+                        <span class="label_list_additional">Customisable options for efficient scaling</span>
+                    </li>
+                </ul>
+                <button>learn more</button>
+            </div>
+
+            <div class="cards_card" data-card-index="2">
+                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/card2.svg')); ?>" />
+                <div class="card_label">
+                    <div class="card_label_wrapper">
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/gear5lead.svg')); ?>" />
                         <div>Lead Distribution</div>
                     </div>
-                    <span>
-                        Start or scale your partner program
-                    </span>
+                    <span>Start or scale your partner program</span>
                 </div>
-
                 <ul>
                     <li>
                         <span class="label_list_main">[1] Advanced Analytics</span>

@@ -2,18 +2,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const accordionItems = document.querySelectorAll('.accordion_item');
 
     accordionItems.forEach((item) => {
-        const openBtn = item.querySelector('.open');
-        const closeBtn = item.querySelector('.close');
+        const button = item.querySelector('button');
 
-        if (openBtn) {
-            openBtn.addEventListener('click', () => {
-                item.classList.add('opened');
-            });
-        }
-
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => {
-                item.classList.remove('opened');
+        if (button) {
+            button.addEventListener('click', () => {
+                if (item.classList.contains('opened')) {
+                    item.classList.remove('opened');
+                } else {
+                    accordionItems.forEach((otherItem) => {
+                        otherItem.classList.remove('opened');
+                    });
+                    item.classList.add('opened');
+                }
             });
         }
     });

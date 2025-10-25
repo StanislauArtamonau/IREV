@@ -457,6 +457,11 @@
       gap: 12px;
     }
 
+    @media(max-width: 450px){
+      flex-direction: column;
+    }
+
+
     .home_represent_lowerWrapper_text{
       max-width: 269px;
       height: 99px;
@@ -490,13 +495,25 @@
       flex-direction: column;
       gap: 10px;
 
+      @media(max-width: 450px){
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
       .video_cont{
         max-width: 420px;
-        height: 200px;
+        height: auto;
         border-radius: 2px;
         background: black;
         overflow: hidden;
         position: relative;
+
+        @media(max-width: 510px){
+          video{
+            height: 100%;
+          }
+        }
 
         img{
           position: absolute;

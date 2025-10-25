@@ -1,4 +1,5 @@
 .home_gear5{
+  overflow: hidden;
   @include home_gear();
 
   .home_gear5_container{
@@ -30,6 +31,11 @@
       margin-top: 120px;
       display: flex;
       gap: 40px;
+      overflow: visible;
+      margin-right: auto;
+      justify-content: center;
+      position: relative;
+      height: 915px;
 
       @media(max-width: $tablet-width){
         margin-top: 0;
@@ -43,6 +49,23 @@
       .cards_card{
         display: flex;
         flex-direction: column;
+        opacity: 0.5;
+        max-width: 590px;
+        cursor: pointer;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+          z-index: 2;
+        }
+
+        &.selected{
+          opacity: 1;
+          transform: scale(1.1);
+          z-index: 2;
+        }
 
         @media(max-width: $tablet-width){
           max-width: 341px;
@@ -272,10 +295,13 @@
 
         .text_opened{
           max-width: 468px;
+          max-height: 0;
+          opacity: 0;
           @include caption-small-font();
           font-size: 16px;
-          display: none;
+          overflow: hidden;
           color: #F8FAFF;
+          transition: opacity 0.3s ease, max-height 1s ease;
 
           @media(max-width: $tablet-width){
             font-size: 10px;
@@ -313,8 +339,10 @@
           }
 
           .text_opened{
-            display: flex;
+            max-height: 500px;
+            opacity: 1;
           }
+
 
           .open{
             display: none;
@@ -364,3 +392,4 @@
     }
   }
 }
+

@@ -43,7 +43,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
+      transition: opacity ease 0.3s;
 
       &.two{
         background: #1C1E2580;
@@ -156,12 +156,14 @@
         top: 21px;
         visibility: hidden;
         opacity: 0;
-        transition: opacity 0.8s ease 0.1s;
+        transition: all 0.3s ease 0.1s;
+        scale: 0;
         z-index: 1000;
 
         &.active {
           display: block;
           visibility: visible;
+          scale: 1;
           opacity: 1;
         }
 
