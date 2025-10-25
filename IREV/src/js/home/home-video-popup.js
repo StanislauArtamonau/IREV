@@ -154,25 +154,58 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const submitButton = document.querySelector('.form-button');
-    const emailInput = document.querySelector('.form-input');
+    
+    const submitButton = document.querySelector('#submitButton');
+    const emailInput = document.querySelector('input[type="email"]');
+    const form = document.querySelector('.wpcf7-form');
+    const checkboxes = document.querySelectorAll('.home_popup_content_form_checkbox .wpcf7-form-control-wrap');
 
-    if (submitButton && emailInput) {
-        submitButton.addEventListener('click', function(e) {
-            e.preventDefault();
+    function isPolicyChecked() {
+        const policyCheckbox = document.querySelector('#policyCheckbox');
+        return policyCheckbox ? policyCheckbox.checked : false;
+    }
+
+    function updateButtonState() {
+        if (submitButton) {
+            if (isPolicyChecked()) {
+                submitButton.classList.add('selected');
+            } else {
+                submitButton.classList.remove('selected');
+            }
+        }
+    }
+
+    checkboxes.forEach(checkboxWrap => {
+        const checkbox = checkboxWrap.querySelector('.wpcf7-checkbox');
+        if (checkbox) {
+            checkbox.addEventListener('change', updateButtonState);
+            
+            const customCheckbox = checkboxWrap.closest('.checkbox').querySelector('.custom-checkbox');
+            if (customCheckbox) {
+                customCheckbox.addEventListener('click', function() {
+                    checkbox.checked = !checkbox.checked;
+                    checkbox.dispatchEvent(new Event('change'));
+                });
+            }
+        }
+    });
+
+    if (submitButton && emailInput && form) {
+        form.addEventListener('submit', function(e) {
             const email = emailInput.value.trim();
 
-            if (validateEmail(email)) {
-                console.log('Email submitted:', email);
-                closeModal();
-            } else {
-                showErrorInPlaceholder();
+            if (!validateEmail(email)) {
+                e.preventDefault();
+                emailInput.classList.add('wpcf7-not-valid');
+                emailInput.value = '';
+                emailInput.placeholder = 'Please enter a valid email address';
             }
         });
 
         emailInput.addEventListener('input', function() {
-            if (this.classList.contains('error')) {
-                resetForm();
+            if (this.classList.contains('wpcf7-not-valid')) {
+                this.classList.remove('wpcf7-not-valid');
+                this.placeholder = 'E-mail';
             }
         });
     }
@@ -182,21 +215,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailRegex.test(email);
     }
 
-    function showErrorInPlaceholder() {
-        if (emailInput) {
-            emailInput.value = '';
-            emailInput.placeholder = 'Please enter a valid email address';
-            emailInput.classList.add('error');
-        }
-    }
+    updateButtonState();
 
-    function resetForm() {
-        if (emailInput) {
-            emailInput.value = '';
-            emailInput.placeholder = 'Enter e-mail';
-            emailInput.classList.remove('error');
-        }
-    }
+    
 });
 
 

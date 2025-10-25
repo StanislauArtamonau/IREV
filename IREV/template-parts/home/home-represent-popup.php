@@ -21,7 +21,7 @@
             </div>
         <h2>Irev puts your partner program on the fast track to real growth</h2>
         <div class="home_popup_content_lower">
-            <form>
+            <!-- <form>
                 <div class="home_popup_content_form_inputs">
                     <input type="text" placeholder="Business name"/>
                     <input type="text" placeholder="Name"/>
@@ -48,7 +48,8 @@
                         <span>I agree to receive promotional texts</span>
                     </div>
                 </div>
-            </form>
+            </form>  -->
+            <?php echo do_shortcode('[contact-form-7 id="332aa47" title="Home Present Popup"]'); ?>
             <div class="home_popup_content_lower_rightcont">
                 <div class="home_popup_content_lower_rightcont_video">
                     <video width="100%" id="popupVideo">
