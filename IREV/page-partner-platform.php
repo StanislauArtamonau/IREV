@@ -4,7 +4,7 @@
  * Template Post Type: page
  */
 get_header(); ?>
-    <main class="home_main">
+    <main class="home_main pp">
         <?php get_template_part('template-parts/partner-platform/partner-platform-represent'); ?>
         <?php get_template_part('template-parts/partner-platform/partner-platform-list'); ?>
         <?php get_template_part('template-parts/partner-platform/partner-platform-component3'); ?>

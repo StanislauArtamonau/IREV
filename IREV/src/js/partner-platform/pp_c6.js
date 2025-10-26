@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.pp');
+
+    if (!partnerSection) {
+        return;
+    }
+
+
     const conversionsInput = document.getElementById('conversions');
     const clicksInput = document.getElementById('clicks');
     const fundsInput = document.getElementById('funds');

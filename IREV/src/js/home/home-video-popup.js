@@ -158,37 +158,36 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = document.querySelector('#submitButton');
     const emailInput = document.querySelector('input[type="email"]');
     const form = document.querySelector('.wpcf7-form');
-    const checkboxes = document.querySelectorAll('.home_popup_content_form_checkbox .wpcf7-form-control-wrap');
-
-    function isPolicyChecked() {
-        const policyCheckbox = document.querySelector('#policyCheckbox');
-        return policyCheckbox ? policyCheckbox.checked : false;
-    }
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
     function updateButtonState() {
+        const submitButton = document.querySelector('.wpcf7-submit');
         if (submitButton) {
-            if (isPolicyChecked()) {
+            if (checkboxes[0].checked && checkboxes[1].checked) {
+                submitButton.disabled = false;
                 submitButton.classList.add('selected');
             } else {
+                submitButton.disabled = true;
                 submitButton.classList.remove('selected');
             }
         }
     }
 
-    checkboxes.forEach(checkboxWrap => {
-        const checkbox = checkboxWrap.querySelector('.wpcf7-checkbox');
-        if (checkbox) {
-            checkbox.addEventListener('change', updateButtonState);
-            
-            const customCheckbox = checkboxWrap.closest('.checkbox').querySelector('.custom-checkbox');
-            if (customCheckbox) {
-                customCheckbox.addEventListener('click', function() {
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateButtonState);
+
+        const customCheckbox = checkbox.closest('.checkbox');
+        if (customCheckbox) {
+            customCheckbox.addEventListener('click', function(e) {
+                if (e.target !== checkbox) {
                     checkbox.checked = !checkbox.checked;
                     checkbox.dispatchEvent(new Event('change'));
-                });
-            }
+                }
+            });
         }
     });
+
+    updateButtonState();
 
     if (submitButton && emailInput && form) {
         form.addEventListener('submit', function(e) {

@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const testDriveButton = document.querySelector('.home_represent_form_container_button');
+    const input = document.querySelector('.home_represent_form_container_input');
+
+    function checkInputValue() {
+        if (input.value.trim() !== '') {
+            testDriveButton.classList.add('has-value');
+        } else {
+            testDriveButton.classList.remove('has-value');
+        }
+    }
+
+    input.addEventListener('input', checkInputValue);
+
+    checkInputValue();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const partnerSection = document.querySelector('.home');
 
     if (!partnerSection) {
@@ -8,10 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const counterElement = document.querySelector('.home_represent_counter span');
     const counterDiv = document.querySelector('.home_represent_counter');
     const signInButton = document.querySelector('.header_signIn');
-    const testDriveButton = document.querySelector('.home_represent_form_container_button');
     const input = document.querySelector('.home_represent_form_container_input');
 
-    const elements = [counterDiv, signInButton, testDriveButton, input];
+    const elements = [counterDiv, signInButton, input];
 
     let totalSeconds = 3 * 100;
 
@@ -74,32 +90,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     // checkbox save
 
-    const policyCheckbox = document.getElementById('policyCheckbox');
-    const submitButton = document.getElementById('submitButton');
-
-    if (policyCheckbox && submitButton) {
-        policyCheckbox.addEventListener('change', function () {
-            updateButtonState();
-        });
-
-        const customCheckbox = policyCheckbox.closest('.checkbox');
-        if (customCheckbox) {
-            customCheckbox.addEventListener('click', function (e) {
-                policyCheckbox.checked = !policyCheckbox.checked;
-                policyCheckbox.dispatchEvent(new Event('change'));
-            });
-        }
-
-        updateButtonState();
-
-        function updateButtonState() {
-            if (policyCheckbox.checked) {
-                submitButton.classList.add('selected');
-            } else {
-                submitButton.classList.remove('selected');
-            }
-        }
-    }
 });
 
 // paralax

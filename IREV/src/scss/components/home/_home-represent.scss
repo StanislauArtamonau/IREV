@@ -275,12 +275,22 @@
               z-index: -1;
             }
 
-            &.two::before {
-              opacity: 1;
+            &.has-value{
+              &::before{
+                opacity: 1;
+              }
             }
 
-            &.one::after, &.go::after {
+            &:hover{
               opacity: 1;
+
+              &::before{
+                opacity: 1;
+              }
+
+              &::after{
+                opacity: 1;
+              }
             }
           }
         }

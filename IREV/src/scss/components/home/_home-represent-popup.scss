@@ -316,8 +316,38 @@
     }
 
     .wpcf7-form-control-wrap {
+      .wpcf7-list-item-label{
         display: none !important;
+      }
+      input{
+        appearance: none;
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        background: #1C1E251A;
+        position: relative;
+
+
+        &:checked {
+        }
+
+        &:checked::before {
+          content: "✓";
+          position: absolute;
+          color: black;
+          font-size: 14px;
+          font-weight: bold;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
     }
+
+
 
     .checkbox {
         display: flex;
@@ -326,13 +356,6 @@
         cursor: pointer;
         margin: 0;
         position: relative;
-        
-        &::before {
-            content: '';
-            position: absolute;
-            opacity: 0;
-            pointer-events: none;
-        }
     }
 
     .checkbox-text {
@@ -345,7 +368,31 @@
         }
     }
 
-    .custom-checkbox {
+      .wpcf7-checkbox .wpcf7-list-item .custom-checkbox {
+        width: 16px;
+        height: 16px;
+        background: #1C1E251A;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.2s, border-color 0.2s;
+        flex-shrink: 0;
+        order: 1;
+
+        @media(max-width: $tablet-width){
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .wpcf7-list-item:hover .custom-checkbox {
+        border-color: #999;
+      }
+
+
+      .custom-checkbox {
         width: 16px;
         height: 16px;
         background: #1C1E251A;
@@ -875,3 +922,4 @@
     transform: translateY(1px);
   }
 }
+

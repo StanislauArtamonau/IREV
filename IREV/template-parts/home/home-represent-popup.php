@@ -36,14 +36,12 @@
                     <div class="home_popup_content_form_checkbox">
                         <label class="checkbox">
                             <input type="checkbox" id="policyCheckbox">
-                            <span class="custom-checkbox"></span>
                         </label>
                         <span>By signing up you agree to <a>IREV Policy</a></span>
                     </div>
                     <div class="home_popup_content_form_checkbox">
                         <label class="checkbox">
-                            <input type="checkbox">
-                            <span class="custom-checkbox"></span>
+                            <input type="checkbox" id="agreeCheckbox">
                         </label>
                         <span>I agree to receive promotional texts</span>
                     </div>
