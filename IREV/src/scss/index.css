@@ -5168,10 +5168,13 @@ html {
   transition: opacity 0.5s ease;
   z-index: -1;
 }
-.partner_platform_c3 .home_represent_form_container .home_represent_form button.two::before {
+.partner_platform_c3 .home_represent_form_container .home_represent_form button.has-value::before {
   opacity: 1;
 }
-.partner_platform_c3 .home_represent_form_container .home_represent_form button.one::after, .partner_platform_c3 .home_represent_form_container .home_represent_form button.go::after {
+.partner_platform_c3 .home_represent_form_container .home_represent_form button:hover::before {
+  opacity: 1;
+}
+.partner_platform_c3 .home_represent_form_container .home_represent_form button:hover::after {
   opacity: 1;
 }
 .partner_platform_c3 .home_represent_form_container span {
@@ -5217,6 +5220,19 @@ html {
   margin: 0 auto 0 auto;
   display: flex;
   flex-direction: column;
+}
+.partner_platform_reviews .home_gear3_container.ld {
+  margin-top: 200px;
+}
+@media (max-width: 751px) {
+  .partner_platform_reviews .home_gear3_container.ld {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 400px) {
+  .partner_platform_reviews .home_gear3_container.ld {
+    margin-top: 72px;
+  }
 }
 @media (max-width: 751px) {
   .partner_platform_reviews .home_gear3_container {
@@ -6883,6 +6899,1506 @@ html {
 @media (max-width: 400px) {
   .partner_platform_faq .home_gear6_container button {
     max-width: 100%;
+  }
+}
+
+.lead_distribution_represent {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 67px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent {
+    margin-top: 36px;
+    min-height: 445px;
+  }
+}
+.lead_distribution_represent .back {
+  position: absolute;
+  top: 90px;
+  max-height: 470px;
+  height: 470px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -2;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .back {
+    max-height: 260px;
+    top: 44px;
+  }
+}
+.lead_distribution_represent .represent_label {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin-left: 22.2222222222%;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .represent_label {
+    gap: 16px;
+    margin-left: 22.7272727273%;
+  }
+}
+@media (max-width: 480px) {
+  .lead_distribution_represent .represent_label {
+    gap: 16px;
+    margin-left: 14.2857142857%;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .represent_label {
+    flex-direction: column;
+    gap: 9px;
+    margin-left: 0;
+  }
+}
+.lead_distribution_represent .represent_label h1 {
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .represent_label h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .lead_distribution_represent .represent_label h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .represent_label h1 {
+    width: 100%;
+    font-size: 48px;
+  }
+}
+.lead_distribution_represent .represent_label span {
+  max-width: 212px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: rgba(248, 250, 255, 0.8);
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .represent_label span {
+    max-width: 133px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .represent_label span {
+    margin-left: auto;
+    max-width: 105px;
+  }
+}
+.lead_distribution_represent .home_represent_rate {
+  margin-top: 153px;
+  max-width: 256px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_rate {
+    margin-top: 96px;
+    max-width: 147px;
+    height: auto;
+    gap: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .home_represent_rate {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    max-width: 147px;
+    height: auto;
+  }
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars {
+  max-width: 170px;
+  height: 40px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars {
+    max-width: 98px;
+    height: 23px;
+  }
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(1) {
+  left: 0;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(2) {
+  left: 26px;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(3) {
+  left: 52px;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(4) {
+  left: 78px;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(5) {
+  left: 104px;
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(6) {
+  left: 130px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img {
+    max-width: 23px;
+    height: 23px;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(1) {
+    left: 0;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(2) {
+    left: 15px;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(3) {
+    left: 30px;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(4) {
+    left: 45px;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(5) {
+    left: 60px;
+  }
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_avatars img:nth-child(6) {
+    left: 75px;
+  }
+}
+.lead_distribution_represent .home_represent_rate .home_represent_rate_rating {
+  max-width: 120px;
+  height: 24px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_rate .home_represent_rate_rating {
+    max-width: 69px;
+    height: 14px;
+  }
+}
+.lead_distribution_represent .home_represent_rate span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8);
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_rate span {
+    font-size: 10px;
+  }
+}
+.lead_distribution_represent .home_represent_form_container {
+  margin-top: 115px;
+  max-width: 605px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 25%;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_form_container {
+    margin-top: 58px;
+    max-width: 349px;
+    height: 51px;
+    margin-left: 22.7272727273%;
+  }
+}
+@media (max-width: 480px) {
+  .lead_distribution_represent .home_represent_form_container {
+    margin-left: 14.2857142857%;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .home_represent_form_container {
+    margin-top: 234px;
+    width: 100%;
+    margin-left: 0;
+    height: 50px;
+  }
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_form_container .home_represent_form {
+    gap: 9px;
+  }
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form input {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8980392157);
+  flex: 1;
+  max-width: 360px;
+  height: 50px;
+  padding: 16px 24px 16px 24px;
+  background: #1C1E25;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_form_container .home_represent_form input {
+    max-width: 207px;
+    font-size: 10px;
+    height: 28px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .home_represent_form_container .home_represent_form input {
+    max-width: 199px;
+    height: 27px;
+  }
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form input::placeholder {
+  color: rgba(248, 250, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form input.two::placeholder {
+  color: #F8FAFF;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form input.one::placeholder, .lead_distribution_represent .home_represent_form_container .home_represent_form input.go::placeholder {
+  color: #FF4D4D;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button {
+  flex: 1;
+  max-width: 229px;
+  height: 50px;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(248, 250, 255, 0.8980392157);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_form_container .home_represent_form button {
+    max-width: 132px;
+    font-size: 10px;
+    height: 28px;
+    padding: 6px 9px 6px 9px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .home_represent_form_container .home_represent_form button {
+    max-width: 128px;
+    height: 27px;
+  }
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F5EF7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F5EF7 0%, #6F31F0 50%, #7AFFF6 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button.has-value::before {
+  opacity: 1;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button:hover {
+  opacity: 1;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button:hover::before {
+  opacity: 1;
+}
+.lead_distribution_represent .home_represent_form_container .home_represent_form button:hover::after {
+  opacity: 1;
+}
+.lead_distribution_represent .home_represent_form_container span {
+  margin-right: auto;
+  color: rgba(248, 250, 255, 0.8);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .home_represent_form_container span {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_represent .home_represent_form_container span {
+    margin-left: 0;
+  }
+}
+.lead_distribution_represent .represent_text_lower {
+  max-width: 317px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+  margin-top: 80px;
+  margin-left: 305px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_represent .represent_text_lower {
+    max-width: 189px;
+    margin-top: 36px;
+    margin-left: 170px;
+    font-size: 12px;
+  }
+}
+
+.lead_distribution_c2 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  position: relative;
+  display: flex;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 {
+    margin-top: 75px;
+  }
+}
+.lead_distribution_c2 .ld_c2_car_container {
+  position: relative;
+  min-height: 1765px;
+  width: 40%;
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_car_container {
+    display: none;
+  }
+}
+.lead_distribution_c2 .animated-car {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  max-height: 774px;
+  z-index: 10;
+  left: 2%;
+  animation: driveDown 7s ease-in-out forwards;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .animated-car {
+    left: -5vw;
+    width: 50%;
+  }
+}
+.lead_distribution_c2 .ld_c2_container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 715px;
+  max-width: 65%;
+  margin-left: auto;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container {
+    width: 525px;
+    gap: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_container {
+    max-width: 100%;
+    margin-left: 0;
+    gap: 36px;
+  }
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-in-out;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item {
+    gap: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item {
+    gap: 16px;
+    opacity: 1;
+    transform: none;
+  }
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item h2 {
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item h2 {
+    font-size: 24px;
+  }
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item .ld_c2_label_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item .ld_c2_label_wrapper {
+    gap: 15px;
+  }
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item .ld_c2_label_wrapper div {
+  flex: 1;
+  display: flex;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid rgba(248, 250, 255, 0.8980392157);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #A980FF;
+  font-size: 16px;
+  text-align: center;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item .ld_c2_label_wrapper div {
+    min-height: 30px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item .ld_c2_label_wrapper div {
+    font-size: 8px;
+    min-height: 19px;
+  }
+}
+.lead_distribution_c2 .ld_c2_container .ld_c2_container_item span {
+  color: #F8FAFF;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  text-transform: none;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c2 .ld_c2_container .ld_c2_container_item span {
+    font-size: 10px;
+  }
+}
+
+@keyframes driveDown {
+  0% {
+    top: -200px;
+    transform: translateX(0) scale(1);
+  }
+  10% {
+    top: 10%;
+    transform: translateX(20px) scale(1.05);
+  }
+  25% {
+    top: 25%;
+    transform: translateX(-10px) scale(1.02);
+  }
+  40% {
+    top: 40%;
+    transform: translateX(15px) scale(1.04);
+  }
+  55% {
+    top: 55%;
+    transform: translateX(-5px) scale(1.01);
+  }
+  70% {
+    top: 70%;
+    transform: translateX(10px) scale(1.03);
+  }
+  85% {
+    top: 85%;
+    transform: translateX(-3px) scale(1.01);
+  }
+  90% {
+    top: 90%;
+    opacity: 1;
+  }
+  100% {
+    top: 95%;
+    transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+}
+.lead_distribution_c3 {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+  min-height: 327px;
+  justify-content: center;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 {
+    margin-top: 75px;
+  }
+}
+.lead_distribution_c3 .ld_c3_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-left: auto;
+  max-width: 50%;
+  width: 605px;
+}
+@media (max-width: 550px) {
+  .lead_distribution_c3 .ld_c3_wrapper {
+    max-width: 65%;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .ld_c3_wrapper {
+    min-height: 212px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.lead_distribution_c3 img {
+  position: absolute;
+  max-width: 38%;
+  left: 0;
+  z-index: -2;
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 img {
+    max-height: 110px;
+    max-width: 148px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+  }
+}
+.lead_distribution_c3 h2 {
+  color: #F8FAFF;
+  max-width: 100%;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 h2 {
+    font-size: 36px;
+  }
+}
+.lead_distribution_c3 .home_represent_form_container {
+  max-width: 605px;
+  margin-left: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 .home_represent_form_container {
+    max-width: 349px;
+    height: 30px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .home_represent_form_container {
+    margin-top: 162px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .home_represent_form_container {
+    width: 100%;
+    margin-left: 0;
+    height: 27px;
+  }
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100%;
+  height: 100%;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 .home_represent_form_container .home_represent_form {
+    gap: 9px;
+  }
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form input {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  flex: 1;
+  color: rgba(248, 250, 255, 0.8980392157);
+  width: 360px;
+  max-height: 100%;
+  height: 100%;
+  padding: 11px 24px 11px 24px;
+  background: #1C1E25;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 .home_represent_form_container .home_represent_form input {
+    max-width: 207px;
+    font-size: 10px;
+    max-height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .home_represent_form_container .home_represent_form input {
+    max-width: 199px;
+    max-height: 27px;
+    height: 27px;
+  }
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form input::placeholder {
+  color: rgba(248, 250, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form input.two::placeholder {
+  color: #F8FAFF;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form input.one::placeholder, .lead_distribution_c3 .home_represent_form_container .home_represent_form input.go::placeholder {
+  color: #FF4D4D;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button {
+  flex: 1;
+  max-width: 229px;
+  max-height: 50px;
+  height: 100%;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(248, 250, 255, 0.8980392157);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 .home_represent_form_container .home_represent_form button {
+    max-width: 132px;
+    font-size: 10px;
+    max-height: 30px;
+    padding: 6px 9px 6px 9px;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .home_represent_form_container .home_represent_form button {
+    max-width: 128px;
+    max-height: 27px;
+  }
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F5EF7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F5EF7 0%, #6F31F0 50%, #7AFFF6 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button.has-value::before {
+  opacity: 1;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button:hover::before {
+  opacity: 1;
+}
+.lead_distribution_c3 .home_represent_form_container .home_represent_form button:hover::after {
+  opacity: 1;
+}
+.lead_distribution_c3 .home_represent_form_container span {
+  margin-right: auto;
+  color: rgba(248, 250, 255, 0.8);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .lead_distribution_c3 .home_represent_form_container span {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .lead_distribution_c3 .home_represent_form_container span {
+    margin-left: 0;
+  }
+}
+
+.ld_c4 {
+  margin-top: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 751px) {
+  .ld_c4 {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 {
+    margin-top: 36px;
+  }
+}
+.ld_c4 .home_gear3_container {
+  position: relative;
+  max-width: min(1220px, 100vw - 60px);
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.ld_c4 .home_gear3_container.ld {
+  margin-top: 200px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container.ld {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .home_gear3_container.ld {
+    margin-top: 72px;
+  }
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container {
+    max-width: min(750px, 100vw - 40px);
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .home_gear3_container {
+    max-width: min(750px, 100vw - 40px);
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_clients {
+  margin-top: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.ld_c4 .home_gear3_container .home_gear3_clients span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(248, 250, 255, 0.8);
+  font-size: 16px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients span {
+    display: none;
+  }
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients {
+    margin-top: 0;
+    gap: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients {
+    margin: 0px auto 0 auto;
+    gap: 6px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+    gap: 4px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar {
+    gap: 8px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item button img {
+    width: 26px;
+    height: 26px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item .tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1C1E25;
+  color: rgba(248, 250, 255, 0.8980392157);
+  padding: 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item .tooltip {
+    padding: 9px;
+    font-size: 12px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item.selected {
+  border: 2px solid #A980FF;
+}
+.ld_c4 .home_gear3_container .home_gear3_clients .home_gear3_clients_avatar .avatar-item.selected .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  margin-top: 85px;
+  height: 288px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews {
+    height: 192px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0 !important;
+  cursor: pointer;
+  gap: 36px;
+  width: 344px;
+  height: 288px;
+  background: rgba(28, 30, 37, 0.8);
+  border-radius: 20px;
+  padding: 36px 16px 36px 16px;
+  pointer-events: auto;
+  opacity: 0.8;
+  transition: opacity ease 0.3s;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review {
+    gap: 23px;
+    width: 228px;
+    height: 191px;
+    padding: 23px 10px 23px 10px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review.selected {
+  opacity: 1;
+  border: 1px solid #A980FF;
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 14px;
+  color: rgba(248, 250, 255, 0.8980392157);
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review span {
+    font-size: 10px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client {
+    gap: 10px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+  width: 54px;
+  height: 54px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client img {
+    width: 36px;
+    height: 36px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info {
+    gap: 2px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_name {
+    font-size: 10px;
+  }
+}
+.ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .home_gear3_container .home_gear3_reviews .home_gear3_reviews_review .client .client_info .client_additional {
+    font-size: 13px;
+  }
+}
+.ld_c4 .logo_container {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+}
+@media (max-width: 751px) {
+  .ld_c4 .logo_container {
+    height: 55px;
+    margin-top: 120px;
+    gap: 90px;
+  }
+  .ld_c4 .logo_container img {
+    max-height: 55px;
+    max-width: 120px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_c4 .logo_container {
+    height: 36px;
+    margin-top: 72px;
+    gap: 60px;
+  }
+  .ld_c4 .logo_container img {
+    max-height: 36px;
+    max-width: 79px;
+  }
+}
+
+.ld_c5 {
+  max-width: min(1045px, 100vw - 60px);
+  max-height: 848px;
+  margin: 200px auto 0 auto;
+  position: relative;
+}
+.ld_c5 img {
+  margin: 0 auto;
+  width: 100%;
+}
+.ld_c5 div {
+  border: 1px solid #F8FAFF;
+  padding: 7px 22px 7px 22px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #F8FAFF;
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1050px) {
+  .ld_c5 div {
+    padding: 4px 14px 4px 14px;
+    font-size: 20px;
+    height: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .ld_c5 div {
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .ld_c5 div {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .ld_c5 div {
+    font-size: 14px;
+  }
+}
+@media (max-width: 751px) {
+  .ld_c5 div {
+    padding: 4px 14px 4px 14px;
+    font-size: 13px;
+    height: 27px;
+  }
+}
+@media (max-width: 650px) {
+  .ld_c5 div {
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .ld_c5 div {
+    padding: 2px 10px 2px 10px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .ld_c5 div {
+    padding: 2px 7px 2px 7px;
+    font-size: 9px;
+    height: 13px;
+  }
+}
+.ld_c5 div.finance {
+  top: 0;
+  transform: translateY(-120%);
+  left: 10.6157112527%;
+}
+.ld_c5 div.coins {
+  top: 9.765625%;
+  left: 41.3736036409%;
+}
+.ld_c5 div.igaming {
+  top: 20.0561572403%;
+  left: 70.5716302047%;
+}
+.ld_c5 div.e_commerce {
+  bottom: 22.8623685414%;
+}
+.ld_c5 div.agencies {
+  top: 54.5553737043%;
+  right: 5.4564304032%;
+}
+.ld_c5 div.buying {
+  bottom: 4.9460876447%;
+  right: 0;
+}
+.ld_c5 div.networks {
+  left: 31.8572793883%;
+}
+
+.ld_finish {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  max-width: min(1132px, 100vw - 60px);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+  min-height: 327px;
+  justify-content: center;
+}
+@media (max-width: 751px) {
+  .ld_finish {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish {
+    margin-top: 75px;
+  }
+}
+.ld_finish .ld_c3_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-left: 0;
+  max-width: 50%;
+  width: 605px;
+}
+@media (max-width: 550px) {
+  .ld_finish .ld_c3_wrapper {
+    max-width: 65%;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .ld_c3_wrapper {
+    min-height: 212px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.ld_finish img {
+  position: absolute;
+  max-width: 38%;
+  right: 0;
+  z-index: -2;
+}
+@media (max-width: 400px) {
+  .ld_finish img {
+    max-height: 110px;
+    max-width: 148px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+  }
+}
+.ld_finish h2 {
+  color: #F8FAFF;
+  max-width: 376px;
+}
+@media (max-width: 751px) {
+  .ld_finish h2 {
+    font-size: 36px;
+  }
+}
+.ld_finish .home_represent_form_container {
+  max-width: 605px;
+  margin-left: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 751px) {
+  .ld_finish .home_represent_form_container {
+    max-width: 349px;
+    height: 30px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .home_represent_form_container {
+    margin-top: 162px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .home_represent_form_container {
+    width: 100%;
+    margin-left: 0;
+    height: 27px;
+  }
+}
+.ld_finish .home_represent_form_container .home_represent_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100%;
+  height: 100%;
+  gap: 16px;
+}
+@media (max-width: 751px) {
+  .ld_finish .home_represent_form_container .home_represent_form {
+    gap: 9px;
+  }
+}
+.ld_finish .home_represent_form_container .home_represent_form input {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  flex: 1;
+  color: rgba(248, 250, 255, 0.8980392157);
+  width: 360px;
+  max-height: 100%;
+  height: 100%;
+  padding: 11px 24px 11px 24px;
+  background: #1C1E25;
+  border: none;
+  border-radius: 10px;
+}
+@media (max-width: 751px) {
+  .ld_finish .home_represent_form_container .home_represent_form input {
+    max-width: 207px;
+    font-size: 10px;
+    max-height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .home_represent_form_container .home_represent_form input {
+    max-width: 199px;
+    max-height: 27px;
+    height: 27px;
+  }
+}
+.ld_finish .home_represent_form_container .home_represent_form input::placeholder {
+  color: rgba(248, 250, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.ld_finish .home_represent_form_container .home_represent_form input.two::placeholder {
+  color: #F8FAFF;
+}
+.ld_finish .home_represent_form_container .home_represent_form input.one::placeholder, .ld_finish .home_represent_form_container .home_represent_form input.go::placeholder {
+  color: #FF4D4D;
+}
+.ld_finish .home_represent_form_container .home_represent_form button {
+  flex: 1;
+  max-width: 229px;
+  min-width: 80px;
+  max-height: 50px;
+  height: 100%;
+  border: 2px solid #0F5EF7;
+  border-radius: 60px;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(248, 250, 255, 0.8980392157);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  padding: 11px 16px 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 751px) {
+  .ld_finish .home_represent_form_container .home_represent_form button {
+    max-width: 132px;
+    font-size: 10px;
+    max-height: 30px;
+    padding: 6px 9px 6px 9px;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .home_represent_form_container .home_represent_form button {
+    max-width: 128px;
+    max-height: 27px;
+  }
+}
+.ld_finish .home_represent_form_container .home_represent_form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F5EF7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.ld_finish .home_represent_form_container .home_represent_form button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F5EF7 0%, #6F31F0 50%, #7AFFF6 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.ld_finish .home_represent_form_container .home_represent_form button.has-value::before {
+  opacity: 1;
+}
+.ld_finish .home_represent_form_container .home_represent_form button:hover::before {
+  opacity: 1;
+}
+.ld_finish .home_represent_form_container .home_represent_form button:hover::after {
+  opacity: 1;
+}
+.ld_finish .home_represent_form_container span {
+  margin-right: auto;
+  color: rgba(248, 250, 255, 0.8);
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (max-width: 751px) {
+  .ld_finish .home_represent_form_container span {
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .ld_finish .home_represent_form_container span {
+    margin-left: 0;
   }
 }
 

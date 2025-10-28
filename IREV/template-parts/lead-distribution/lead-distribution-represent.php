@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="partner_platform_represent">
+<section class="lead_distribution_represent">
     <img
         class="back ld"
         src="<?php echo esc_url(get_theme_file_uri('src/icons/ld-back.svg')); ?>"

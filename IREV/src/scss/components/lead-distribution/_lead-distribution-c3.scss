@@ -1,20 +1,51 @@
-.partner_platform_c3{
+.lead_distribution_c3{
   @include home_gear();
   display: flex;
   flex-direction: column;
   gap: 36px;
   position: relative;
+  min-height: 327px;
+  justify-content: center;
+
+  .ld_c3_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-left: auto;
+    max-width: 50%;
+    width: 605px;
+
+    @media(max-width: 550px){
+      max-width: 65%;
+    }
+
+    @media(max-width: $mobile-width){
+      min-height: 212px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
 
   img{
     position: absolute;
     max-width: 38%;
-    top: 0;
-    right: 15px;
+    left: 0;
     z-index: -2;
+
+    @media(max-width: $mobile-width){
+      max-height: 110px;
+      max-width: 148px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 110px;
+    }
   }
 
   h2{
     color: #F8FAFF;
+    max-width: 100%;
+
 
     @media(max-width: $tablet-width){
       font-size: 36px;
@@ -24,25 +55,33 @@
   .home_represent_form_container{
     max-width: 605px;
     margin-left: 0;
-    height: 87px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media(max-width: $tablet-width){
       max-width: 349px;
-      height: 51px;
+      height: 30px;
       margin-left: 0;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 162px;
     }
 
     @media(max-width: $mobile-width){
       width: 100%;
       margin-left: 0;
-      height: 50px;
+      height: 27px;
     }
 
     .home_represent_form{
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 100%;
+      height: 100%;
       gap: 16px;
 
       @media(max-width: $tablet-width){
@@ -51,11 +90,12 @@
 
       input{
         @include caption-small-font();
-        color: #F8FAFFE5;
         flex: 1;
-        max-width: 360px;
-        height: 50px;
-        padding: 16px 24px 16px 24px;
+        color: #F8FAFFE5;
+        width: 360px;
+        max-height: 100%;
+        height: 100%;
+        padding: 11px 24px 11px 24px;
         background: #1C1E25;
         border: none;
         border-radius: 10px;
@@ -63,11 +103,12 @@
         @media(max-width: $tablet-width){
           max-width: 207px;
           font-size: 10px;
-          height: 28px;
+          max-height: 30px;
         }
 
         @media(max-width: $mobile-width){
           max-width: 199px;
+          max-height: 27px;
           height: 27px;
         }
 
@@ -92,7 +133,8 @@
       button{
         flex: 1;
         max-width: 229px;
-        height: 50px;
+        max-height: 50px;
+        height: 100%;
         border: 2px solid #0F5EF7;
         border-radius: 60px;
         @include body-medium-font();
@@ -110,13 +152,13 @@
         @media(max-width: $tablet-width){
           max-width: 132px;
           font-size: 10px;
-          height: 28px;
+          max-height: 30px;
           padding: 6px 9px 6px 9px;
         }
 
         @media(max-width: $mobile-width){
           max-width: 128px;
-          height: 27px;
+          max-height: 27px;
         }
 
         &::before {
