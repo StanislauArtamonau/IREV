@@ -14,10 +14,10 @@
                 <input
                         type="email"
                         placeholder="Enter e-mail"
-                        class="home_represent_form_container_input"
+                        class="home_represent_form_container_input ldfinishinput"
                 />
                 <button
-                        class="home_represent_form_container_button"
+                        class="home_represent_form_container_button ldfinishbutton"
                         type="submit">
                     start driving
                 </button>

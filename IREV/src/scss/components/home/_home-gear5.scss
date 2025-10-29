@@ -1,10 +1,8 @@
 .home_gear5{
-  overflow: hidden;
   @include home_gear();
 
   .home_gear5_container{
     margin-top: 120px;
-    height: 1104px;
     display: flex;
     flex-direction: column;
 
@@ -15,7 +13,7 @@
 
     @media(max-width: $mobile-width){
       margin-top: 36px;
-      height: fit-content;
+      height: auto;
     }
 
     h2{
@@ -43,7 +41,9 @@
       }
 
       @media(max-width: $mobile-width){
+        margin-top: 36px;
         flex-direction: column;
+        height: auto;
       }
 
       .cards_card{
@@ -82,6 +82,7 @@
           margin-top: 48px;
           display: flex;
           flex-direction: column;
+          width: 100%;
 
           @media(max-width: $tablet-width){
             margin-top: 24px;
@@ -89,6 +90,7 @@
 
           .card_label_wrapper{
             display: flex;
+            max-width: 100%;
             gap: 8px;
             align-items: center;
 
@@ -124,6 +126,19 @@
                 height: 23px;
                 padding: 4px 12px 4px 12px;
                 font-size: 12px;
+              }
+
+              @media(max-width: 600px){
+                font-size: 10px;
+              }
+
+              @media(max-width: 500px){
+                font-size: 10px;
+                max-width: 67%;
+              }
+
+              @media(max-width: 450px){
+                font-size: 8px;
               }
             }
           }
@@ -245,6 +260,7 @@
       }
 
       @media(max-width: $mobile-width){
+        position: absolute;
         top: 107px;
         width: 100%;
         max-height: 212px;

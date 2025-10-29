@@ -14,10 +14,10 @@
             <input
                 type="email"
                 placeholder="Enter e-mail"
-                class="home_represent_form_container_input"
+                class="home_represent_form_container_input ppc3input"
             />
             <button
-                class="home_represent_form_container_button"
+                class="home_represent_form_container_button ppc3button"
                 type="submit">
                 take lead
             </button>

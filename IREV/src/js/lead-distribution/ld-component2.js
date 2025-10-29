@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!carSection || !animatedCar) return;
 
-    // Позиции блоков относительно секции
     const itemPositions = [];
 
     function calculatePositions() {
@@ -14,15 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         carItems.forEach((item, index) => {
             const itemRect = item.getBoundingClientRect();
-            // Позиция относительно начала секции
             const positionFromTop = itemRect.top - sectionRect.top;
-            // Нормализуем позицию (0-100%)
             const normalizedPosition = (positionFromTop / sectionRect.height) * 100;
             itemPositions.push(normalizedPosition);
         });
     }
 
-    // Функция для проверки видимости элемента
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
@@ -31,15 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     }
 
-    // Функция для отслеживания прогресса анимации
     function trackAnimationProgress() {
         const carRect = animatedCar.getBoundingClientRect();
         const sectionRect = carSection.getBoundingClientRect();
 
-        // Позиция машины относительно секции (0-100%)
         const carProgress = ((carRect.top - sectionRect.top) / sectionRect.height) * 100;
 
-        // Показываем блоки когда машина достигает их позиции
         carItems.forEach((item, index) => {
             const itemPosition = itemPositions[index];
             if (carProgress >= itemPosition - 5 && !item.classList.contains('revealed')) {
@@ -48,42 +41,82 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Функция для активации анимации
     function activateCarAnimation() {
         if (isElementInViewport(carSection)) {
-            // Пересчитываем позиции
             calculatePositions();
 
-            // Запускаем анимацию машины
             animatedCar.style.animationPlayState = 'running';
 
-            // Отслеживаем прогресс анимации
             const animationInterval = setInterval(trackAnimationProgress, 100);
 
-            // Останавливаем отслеживание после завершения анимации
             setTimeout(() => {
                 clearInterval(animationInterval);
-                // Гарантируем, что все блоки показаны
                 carItems.forEach(item => item.classList.add('revealed'));
-            }, 10500); // Чуть больше длительности анимации
+            }, 10500);
 
-            // Убираем обработчик после активации
             window.removeEventListener('scroll', activateCarAnimation);
         }
     }
 
-    // Инициализация - приостанавливаем анимацию до скролла
     animatedCar.style.animationPlayState = 'paused';
 
-    // Пересчитываем позиции при ресайзе
     window.addEventListener('resize', calculatePositions);
 
-    // Активируем при скролле
     window.addEventListener('scroll', activateCarAnimation);
 
-    // Также активируем при загрузке, если элемент уже в viewport
     setTimeout(() => {
         calculatePositions();
         activateCarAnimation();
     }, 100);
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.ld');
+
+    if (!partnerSection) {
+        return;
+    }
+
+    const testDriveButton = document.querySelector('.ldc3button');
+    const input = document.querySelector('.ldc3input');
+
+    function checkInputValue() {
+        if (input.value.trim() !== '') {
+            testDriveButton.classList.add('has-value');
+        } else {
+            testDriveButton.classList.remove('has-value');
+        }
+    }
+
+    input.addEventListener('input', checkInputValue);
+
+    checkInputValue();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.ld');
+
+    if (!partnerSection) {
+        return;
+    }
+
+    const testDriveButton = document.querySelector('.ldfinishbutton');
+    const input = document.querySelector('.ldfinishinput');
+
+    function checkInputValue() {
+        if (input.value.trim() !== '') {
+            testDriveButton.classList.add('has-value');
+        } else {
+            testDriveButton.classList.remove('has-value');
+        }
+    }
+
+    input.addEventListener('input', checkInputValue);
+
+    checkInputValue();
 });

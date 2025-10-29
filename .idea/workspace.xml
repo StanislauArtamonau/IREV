@@ -4,19 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="checkbox fix">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="lead distribution page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/page-lead-distribution.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/page-lead-distribution.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/__components-dir.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/lead-distribution/ld-component2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/lead-distribution/ld-component2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/partner-platform/pp_c6.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/partner-platform/pp_c6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-c3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-c3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-finish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-finish.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-faq.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-represent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-represent.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-represent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/data/db/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/db/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-component3.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-component3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-finish.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-finish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-component3.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-component3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +45,8 @@
       <list>
         <option value="HTML File" />
         <option value="PHP File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -179,7 +193,11 @@
       <workItem from="1761564044149" duration="7140000" />
       <workItem from="1761599362673" duration="284000" />
       <workItem from="1761602618615" duration="6122000" />
-      <workItem from="1761609260376" duration="2518000" />
+      <workItem from="1761609260376" duration="2571000" />
+      <workItem from="1761656759190" duration="3647000" />
+      <workItem from="1761667845147" duration="3957000" />
+      <workItem from="1761673089085" duration="2867000" />
+      <workItem from="1761690042528" duration="6369000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -485,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761488962077</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="lead distribution page">
+      <option name="closed" value="true" />
+      <created>1761611835063</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1761611835063</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="адаптив хедер, футер" />
     <MESSAGE value="fix адаптив" />
     <MESSAGE value="header dropdown" />
     <MESSAGE value="fix header footer" />
@@ -528,7 +553,8 @@
     <MESSAGE value="partner platform finish ( пока без фиксов )" />
     <MESSAGE value="push" />
     <MESSAGE value="checkbox fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkbox fix" />
+    <MESSAGE value="lead distribution page" />
+    <option name="LAST_COMMIT_MESSAGE" value="lead distribution page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

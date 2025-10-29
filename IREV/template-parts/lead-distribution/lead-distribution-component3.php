@@ -15,10 +15,10 @@
                 <input
                         type="email"
                         placeholder="Enter e-mail"
-                        class="home_represent_form_container_input"
+                        class="home_represent_form_container_input ldc3input"
                 />
                 <button
-                        class="home_represent_form_container_button"
+                        class="home_represent_form_container_button ldc3button"
                         type="submit">
                     start driving
                 </button>

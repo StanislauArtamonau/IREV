@@ -4,7 +4,7 @@
  * Template Post Type: page
  */
 get_header(); ?>
-    <main class="home_main">
+    <main class="home_main ld">
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-represent'); ?>
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-component2'); ?>
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-component3'); ?>

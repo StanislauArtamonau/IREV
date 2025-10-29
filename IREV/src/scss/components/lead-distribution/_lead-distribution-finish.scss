@@ -33,6 +33,24 @@
     max-width: 38%;
     right: 0;
     z-index: -2;
+    animation: multiColorFlow 8s ease-in-out infinite;
+    @keyframes multiColorFlow {
+      0% {
+        filter: hue-rotate(0deg) saturate(1.2);
+      }
+      25% {
+        filter: hue-rotate(90deg) saturate(1.3);
+      }
+      50% {
+        filter: hue-rotate(180deg) saturate(1.1);
+      }
+      75% {
+        filter: hue-rotate(270deg) saturate(1.4);
+      }
+      100% {
+        filter: hue-rotate(360deg) saturate(1.2);
+      }
+    }
 
     @media(max-width: $mobile-width){
       max-height: 110px;
@@ -196,6 +214,7 @@
         }
 
         &:hover{
+          opacity: 1;
 
           &::before{
             opacity: 1;

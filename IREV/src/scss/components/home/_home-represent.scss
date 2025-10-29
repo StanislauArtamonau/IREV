@@ -317,7 +317,7 @@
     z-index: -1000;
     bottom: 39px;
     left: 170px;
-    animation: multiColorFlow 8s ease-in-out infinite;
+    animation: multiColorFlow 8s ease-in-out infinite, changeScale 8s ease-in-out infinite;
 
     transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     transform: translateZ(0);
@@ -353,6 +353,24 @@
   @media (prefers-reduced-motion: no-preference) {
     .home_represent_backgroundImg.parallax {
       transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+    }
+  }
+
+  @keyframes changeScale {
+    0% {
+      scale: 1;
+    }
+    25% {
+      scale: 1.05;
+    }
+    50% {
+      scale: 0.95;
+    }
+    75% {
+      scale: 1.1;
+    }
+    100% {
+      scale: 1;
     }
   }
 

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultDiv = document.getElementById('result');
 
     function calculatePercentage() {
-        // Получаем значения
+
         const conversions = parseInt(conversionsInput.value) || 0;
         const clicks = parseInt(clicksInput.value) || 0;
         const funds = parseInt(fundsInput.value) || 7000;
@@ -38,3 +38,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calculatePercentage();
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const partnerSection = document.querySelector('.pp');
+
+    if (!partnerSection) {
+        return;
+    }
+
+    const testDriveButton = document.querySelector('.ppc3button');
+    const input = document.querySelector('.ppc3input');
+
+    function checkInputValue() {
+        if (input.value.trim() !== '') {
+            testDriveButton.classList.add('has-value');
+        } else {
+            testDriveButton.classList.remove('has-value');
+        }
+    }
+
+    input.addEventListener('input', checkInputValue);
+
+    checkInputValue();
+});
+

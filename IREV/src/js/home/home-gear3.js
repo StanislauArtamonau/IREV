@@ -123,3 +123,42 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScrollAnimation();
     window.addEventListener('scroll', onScroll, { passive: true });
 });
+
+
+
+
+// parallax
+document.addEventListener('DOMContentLoaded', function() {
+    const partnersec = document.querySelector('.home');
+    if (!partnersec) return
+
+    const partnerSection = document.querySelector('.home_gear3_container');
+
+    const parallaxImg = document.querySelector('.home_gear3_background');
+
+    if (parallaxImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        parallaxImg.classList.add('parallax');
+
+        function updateParallax() {
+            const rect = partnerSection.getBoundingClientRect();
+            const scrolled = -rect.top;
+            const speed = 0.3;
+            const offset = (scrolled * speed) + 'px';
+
+            partnerSection.style.setProperty('--parallax-offset', offset);
+        }
+
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(function() {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        updateParallax();
+    }
+});
