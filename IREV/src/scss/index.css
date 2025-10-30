@@ -1414,6 +1414,10 @@ footer .footer_wrapper .footer_lower {
   letter-spacing: 0;
   font-size: 12px;
   line-height: 1.2;
+  white-space: nowrap;
+}
+.home_popup_content .home_popup_content_lower .wpcf7-form .home_popup_content_form_checkbox .checkbox-text a {
+  display: inline;
 }
 @media (max-width: 751px) {
   .home_popup_content .home_popup_content_lower .wpcf7-form .home_popup_content_form_checkbox .checkbox-text {
@@ -9452,12 +9456,23 @@ html {
     margin-top: 120px;
   }
 }
+@media (max-width: 400px) {
+  .case_finish .case_finish_lower {
+    margin-top: 72px;
+  }
+}
 .case_finish .case_finish_lower img {
   position: absolute;
   height: 100%;
   max-width: 50%;
   z-index: -2;
   right: 0;
+}
+@media (max-width: 400px) {
+  .case_finish .case_finish_lower img {
+    max-width: 100%;
+    position: initial;
+  }
 }
 .case_finish .case_finish_lower h2 {
   max-width: 419px;
@@ -9467,6 +9482,12 @@ html {
   .case_finish .case_finish_lower h2 {
     max-width: 311px;
     font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .case_finish .case_finish_lower h2 {
+    margin-top: 36px;
+    max-width: 266px;
   }
 }
 .case_finish .case_finish_lower form {
@@ -9479,6 +9500,11 @@ html {
 @media (max-width: 751px) {
   .case_finish .case_finish_lower form {
     gap: 9px;
+  }
+}
+@media (max-width: 400px) {
+  .case_finish .case_finish_lower form {
+    max-width: 100%;
   }
 }
 .case_finish .case_finish_lower form input {

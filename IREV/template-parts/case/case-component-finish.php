@@ -62,15 +62,14 @@
     </div>
 
     <div class="case_finish_lower">
+        <img
+                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
+        />
         <h2>Become a champion with irev</h2>
         <form>
             <input class="casefinishinput" type="email" placeholder="e-mail" />
             <button class="casefinishbutton open_modal">get demo</button>
         </form>
         <span>[Only 5 slots left this month]</span>
-
-        <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
-        />
     </div>
 </section>

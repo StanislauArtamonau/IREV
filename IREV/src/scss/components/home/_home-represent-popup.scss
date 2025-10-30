@@ -362,6 +362,12 @@
         @include body-small-font();
         font-size: 12px;
         line-height: 1.2;
+      white-space: nowrap;
+
+      a{
+        display: inline;
+      }
+
 
         @media(max-width: $tablet-width){
             font-size: 9px;
