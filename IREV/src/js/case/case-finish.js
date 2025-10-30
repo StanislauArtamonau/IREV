@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const testDriveButton = document.querySelector('.casefinishbutton');
     const input = document.querySelector('.casefinishinput');
 
+    if(!testDriveButton || !input){
+        return;
+    }
+
     function checkInputValue() {
         if (input.value.trim() !== '') {
             testDriveButton.classList.add('has-value');

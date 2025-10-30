@@ -316,6 +316,11 @@
     }
 
     .wpcf7-form-control-wrap {
+
+      span{
+        margin: 0;
+      }
+
       .wpcf7-list-item-label{
         display: none !important;
       }
@@ -328,6 +333,11 @@
         border-radius: 2px;
         background: #1C1E251A;
         position: relative;
+        
+        @media(max-width: $tablet-width){
+          height: 20px;
+          width: 20px;
+        }
 
 
         &:checked {
@@ -359,10 +369,12 @@
     }
 
     .checkbox-text {
-        @include body-small-font();
-        font-size: 12px;
-        line-height: 1.2;
-      white-space: nowrap;
+      @include body-small-font();
+      font-size: 12px;
+      line-height: 1.2;
+      display: flex;
+      white-space: pre;
+      flex-wrap: wrap;
 
       a{
         display: inline;
@@ -500,7 +512,7 @@
         }
 
         @media(max-width: 450px){
-          max-width: 140px;
+          max-width: calc(100% - 20px);
         }
 
         @media(max-width: $mobile-width){
@@ -530,6 +542,10 @@
           gap: 8px;
         }
 
+        @media(max-width: 500px){
+          gap: 4px;
+        }
+
         .home_popup_content_lower_rightcont_lower_phrase{
           display: flex;
           flex-direction: column;
@@ -550,6 +566,10 @@
 
           @media(max-width: 575px){
             height: fit-content;
+          }
+
+          @media(max-width: 500px){
+            min-width: 60%;
           }
 
           @media(max-width: 900px){
@@ -574,6 +594,10 @@
             @media(max-width: $tablet-width){
               max-width: 82px;
               max-height: 25px;
+            }
+
+            @media(max-width: 500px){
+              max-width: 100%;
             }
 
             @media(max-width: $mobile-width){
@@ -618,6 +642,10 @@
 
           @media(max-width: 500px){
             height: fit-content;
+          }
+
+          @media(max-width: 440px){
+            max-width: 80px;
           }
 
           @media(max-width: $mobile-width){

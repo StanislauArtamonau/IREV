@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="case page">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix irev policy inline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component-finish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component-finish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/case/case-finish.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/case/case-finish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/case/case-component-finish.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/case/case-component-finish.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,11 @@
       <workItem from="1761751709184" duration="18873000" />
       <workItem from="1761822870518" duration="3565000" />
       <workItem from="1761843598086" duration="3417000" />
-      <workItem from="1761848497704" duration="2017000" />
+      <workItem from="1761848497704" duration="2165000" />
+      <workItem from="1761854648831" duration="1205000" />
+      <workItem from="1761856575429" duration="24000" />
+      <workItem from="1761857092558" duration="1298000" />
+      <workItem from="1761858802736" duration="3956000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -521,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761848721107</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fix irev policy inline">
+      <option name="closed" value="true" />
+      <created>1761851274367</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1761851274367</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix header footer" />
     <MESSAGE value="fix hover" />
     <MESSAGE value="home-first-component/ header fix" />
     <MESSAGE value="фиксы видео и прочее" />
@@ -564,7 +575,8 @@
     <MESSAGE value="lead distribution page" />
     <MESSAGE value="фиксы по свгшкам" />
     <MESSAGE value="case page" />
-    <option name="LAST_COMMIT_MESSAGE" value="case page" />
+    <MESSAGE value="fix irev policy inline" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix irev policy inline" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
