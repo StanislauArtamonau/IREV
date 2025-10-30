@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const partnerSection = document.querySelector('.home_gear6_container');
 
+    if(!partnerSection){
+        return;
+    }
+
     const parallaxImg = document.querySelectorAll('.home_gear6_container img');
 
     if (parallaxImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

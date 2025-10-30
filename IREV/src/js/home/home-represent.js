@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const testDriveButton = document.querySelector('.home_represent_form_container_button');
     const input = document.querySelector('.home_represent_form_container_input');
 
+    if(!testDriveButton || !input){
+        return;
+    }
+
     function checkInputValue() {
         if (input.value.trim() !== '') {
             testDriveButton.classList.add('has-value');

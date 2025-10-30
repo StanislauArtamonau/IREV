@@ -1,6 +1,10 @@
 // parallax
 document.addEventListener('DOMContentLoaded', function() {
 
+    const partnersec = document.querySelector('.home, .pp');
+    if (!partnersec) return
+
+
     const partnerSection = document.querySelector('.home_gear4_container');
 
     const parallaxImg = document.querySelectorAll('.home_gear4_container img');
