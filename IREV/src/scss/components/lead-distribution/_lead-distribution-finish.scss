@@ -34,6 +34,23 @@
     right: 0;
     z-index: -2;
     animation: multiColorFlow 8s ease-in-out infinite;
+
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateZ(0);
+    will-change: transform;
+
+    @media (prefers-reduced-motion: no-preference) {
+      &.parallax {
+        transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      &.parallax {
+        transform: translateX(-50%) translateY(var(--parallax-offset, 0px)) translateZ(0);
+      }
+    }
+
     @keyframes multiColorFlow {
       0% {
         filter: hue-rotate(0deg) saturate(1.2);
@@ -54,7 +71,7 @@
 
     @media(max-width: $mobile-width){
       max-height: 110px;
-      max-width: 148px;
+      max-width: 240px;
       left: 50%;
       transform: translateX(-50%);
       top: 110px;

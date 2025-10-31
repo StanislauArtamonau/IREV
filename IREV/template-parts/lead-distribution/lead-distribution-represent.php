@@ -6,7 +6,7 @@
 
 <section class="lead_distribution_represent">
     <img
-        class="back ld"
+        class="back ld back_ld_represent"
         src="<?php echo esc_url(get_theme_file_uri('src/icons/ld-back.svg')); ?>"
     />
     <div class="represent_label">

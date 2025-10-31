@@ -5,6 +5,7 @@
 ?>
 <section class="ld_finish">
     <img
+            class="ld_finish_back"
             src="<?php echo esc_url(get_theme_file_uri('src/icons/ld-finish-back.svg')); ?>"
     />
     <div class="ld_c3_wrapper">

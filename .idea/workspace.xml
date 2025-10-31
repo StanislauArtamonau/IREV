@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix irev policy inline">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/case/case-finish.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/case/case-finish.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-represent-popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component-finish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component-finish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-component2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/case/_case-represent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-c3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-c3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-finish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-finish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-represent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/lead-distribution/_lead-distribution-represent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-component3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-faq.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-faq.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/case/case-component-finish.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/case/case-component-finish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-component3.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-component3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-finish.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-finish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-represent.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/lead-distribution/lead-distribution-represent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/data/db/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/data/db/dump.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="PHP File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="PHP File" />
       </list>
     </option>
   </component>
@@ -72,6 +87,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JavaScript Debug.home-gear2.php.executor&quot;: &quot;Coverage&quot;,
+    &quot;Node.js.home-gear3.js.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -102,12 +118,16 @@
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\assets\fonts" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.home-gear3.js">
     <configuration name="home-gear2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IREV/IREV/template-parts/home/home-gear2.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home-gear3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" working-dir="$PROJECT_DIR$/IREV/src/js/home">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.home-gear3.js" />
         <item itemvalue="JavaScript Debug.home-gear2.php" />
         <item itemvalue="JavaScript Debug.home-gear2.php" />
         <item itemvalue="JavaScript Debug.home-gear2.php" />
@@ -187,7 +207,11 @@
       <workItem from="1761854648831" duration="1205000" />
       <workItem from="1761856575429" duration="24000" />
       <workItem from="1761857092558" duration="1298000" />
-      <workItem from="1761858802736" duration="3956000" />
+      <workItem from="1761858802736" duration="5600000" />
+      <workItem from="1761864486716" duration="1634000" />
+      <workItem from="1761917606947" duration="7280000" />
+      <workItem from="1761927458386" duration="3370000" />
+      <workItem from="1761937330952" duration="1240000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -533,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761851274367</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fix popup">
+      <option name="closed" value="true" />
+      <created>1761862817708</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1761862817708</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix hover" />
     <MESSAGE value="home-first-component/ header fix" />
     <MESSAGE value="фиксы видео и прочее" />
     <MESSAGE value="финиш по 1 компоненту" />
@@ -576,7 +607,8 @@
     <MESSAGE value="фиксы по свгшкам" />
     <MESSAGE value="case page" />
     <MESSAGE value="fix irev policy inline" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix irev policy inline" />
+    <MESSAGE value="fix popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix popup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

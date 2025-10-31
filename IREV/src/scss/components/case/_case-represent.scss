@@ -17,6 +17,14 @@
     justify-content: center;
     min-height: 530px;
 
+    &.second{
+      min-height: 660px;
+
+      @media(max-width: $tablet-width){
+        min-height: 417px;
+      }
+    }
+
     @media(max-width: $tablet-width){
       min-height: 300px;
     }
@@ -54,9 +62,35 @@
     .case_represent_back{
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       z-index: -2;
       max-width: calc(100% / 1.5);
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translateZ(0);
+      will-change: transform;
+
+      &.second{
+        bottom: 0;
+        right: 0;
+        max-width: 47%;
+
+        @media(max-width: $tablet-width){
+          top: auto;
+          bottom: 0;
+          right: 0;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+          &.parallax {
+            transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+          }
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        &.parallax {
+          transform: translateX(-50%) translateY(var(--parallax-offset, 0px)) translateZ(0);
+        }
+      }
 
       @media(max-width: $tablet-width){
         top: -25px;
@@ -79,6 +113,11 @@
       max-width: 55%;
       margin-left: 50px;
 
+      &.second{
+        margin-left: 150px;
+        max-width: 66%
+      }
+
       @media(max-width: $tablet-width){
         max-width: 60%;
         margin-top: 25px;
@@ -99,6 +138,10 @@
       width: 644px;
       max-width: 100%;
       color: #F8FAFF;
+
+      &.second{
+        width: 804px;
+      }
 
       @media(max-width: $tablet-width){
         width: 451px;

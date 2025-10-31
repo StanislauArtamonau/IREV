@@ -13,3 +13,5 @@ require('./partner-platform/pp_c6.js');
 require('./partner-platform/pp-represent.js');
 require('./lead-distribution/ld-component2.js');
 require('./case/case-finish.js');
+require('./lead-distribution/parallax.js');
+require('./case/parallax.js');

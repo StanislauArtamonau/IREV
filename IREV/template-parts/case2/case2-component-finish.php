@@ -63,8 +63,8 @@
 
     <div class="case_finish_lower">
         <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
-                class="case_finish_back"
+            src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
+            class="case_finish_back"
         />
         <h2>Become a champion with irev</h2>
         <form>

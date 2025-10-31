@@ -5,6 +5,10 @@
   gap: 36px;
   position: relative;
 
+  @media(max-width: $mobile-width){
+    height: 260px;
+  }
+
   img{
     position: absolute;
     max-width: 38%;
@@ -28,6 +32,11 @@
       100% {
         filter: hue-rotate(360deg) saturate(1.2);
       }
+    }
+
+    @media(max-width: $mobile-width){
+      min-width: 100%;
+      top: 98px;
     }
   }
 
@@ -57,6 +66,7 @@
       width: 100%;
       margin-left: 0;
       height: 50px;
+      margin-top: auto;
     }
 
     .home_represent_form{

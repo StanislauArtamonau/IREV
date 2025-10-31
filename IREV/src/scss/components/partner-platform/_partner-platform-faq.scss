@@ -163,6 +163,8 @@
     min-height: 229px;
     margin-bottom: 90px;
     position: relative;
+    padding: 50px;
+    overflow: hidden;
 
     @media(max-width: $tablet-width){
       margin-top: 120px;
@@ -182,7 +184,7 @@
       width: 50%;
       position: absolute;
       right: 0;
-      top: 0;
+      top: 100px;
       z-index: -2;
       transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
       transform: translateZ(0);
@@ -215,7 +217,7 @@
 
       @media(max-width: $mobile-width){
         width: 100%;
-        top: 0;
+        top: 100px;
       }
     }
 

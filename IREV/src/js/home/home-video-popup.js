@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
             originalPlayImg.style.display = 'block';
         }
 
-        resetForm();
     }
 
     if (videoWrapper && modalOverlay) {
