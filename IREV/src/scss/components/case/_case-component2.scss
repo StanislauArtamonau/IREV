@@ -131,6 +131,11 @@
           font-size: 20px;
           color: #1C1E25;
 
+          &.second{
+            background: #A980FF;
+            color: #1C1E25;
+          }
+
           @media(max-width: $tablet-width){
             height: 23px;
             padding: 4px 12px 4px 12px;
@@ -255,6 +260,10 @@
     gap: 36px;
     border-radius: 20px;
     margin: 120px auto 0 auto;
+
+    &.second{
+      border: 1px solid #A980FF;
+    }
     
 
     .review_text{

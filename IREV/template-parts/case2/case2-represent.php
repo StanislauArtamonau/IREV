@@ -4,23 +4,23 @@
  */
 ?>
 
-<section class="case_represent">
+<section class="case2_represent">
     <div class="case_represent_container second">
         <img
             src="<?php echo esc_url(get_theme_file_uri('src/icons/case2logo.svg')); ?>"
-            class="case_logo second"
+            class="case_logo"
         />
-        <div class="label_wrapper second">
-            <h1 class="second">Bigger, faster, stronger – speedy solutions for
+        <img
+                src="<?php echo esc_url(get_theme_file_uri('src/icons/case2represent_back.svg')); ?>"
+                class="case_represent_back"
+        />
+        <div class="label_wrapper">
+            <h1>Bigger, faster, stronger – speedy solutions for
                 a modern business</h1>
             <span>
                 Play Partners is an international iGaming affiliate network with a team of seasoned professionals. They have dedicated years to mastering affiliate marketing and the gambling industry. Covering Europe and Latin American regions, the company boasts the highest CR on the market and a profound understanding of the industry verticals and their intricacies
         </span>
         </div>
-        <img
-            src="<?php echo esc_url(get_theme_file_uri('src/icons/case2represent_back.svg')); ?>"
-            class="case_represent_back second"
-        />
     </div>
     <div class="lower_container">
         <ul>

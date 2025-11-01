@@ -1,4 +1,4 @@
-.case_represent{
+.case2_represent{
   @include home_gear();
   margin-top: 47px;
 
@@ -15,10 +15,10 @@
     display: flex;
     position: relative;
     justify-content: center;
-    min-height: 530px;
+    min-height: 650px;
 
     @media(max-width: $tablet-width){
-      min-height: 300px;
+      min-height: 450px;
     }
 
     @media(max-width: $mobile-width){
@@ -53,16 +53,17 @@
 
     .case_represent_back{
       position: absolute;
-      left: 50%;
+      bottom: 0;
+      right: 0;
       z-index: -2;
-      max-width: calc(100% / 1.5);
+      max-width: 47%;
       transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
       transform: translateZ(0);
       will-change: transform;
 
       @media (prefers-reduced-motion: no-preference) {
         &.parallax {
-          transform: translateX(-50%) translateY(var(--parallax-offset, 0px)) translateZ(0);
+          transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
         }
       }
 
@@ -73,14 +74,15 @@
       }
 
       @media(max-width: $tablet-width){
-        top: -25px;
-        max-width: calc(100% / 1.32);
+        bottom: 0;
+        right: -20px;
+        max-width: 37.2%;
       }
 
       @media(max-width: $mobile-width){
-        max-width: 100%;
-        top: auto;
-        left: 0;
+        max-width: 65%;
+        top: 100px;
+        left: 30px;
         bottom: 0;
       }
     }
@@ -89,8 +91,8 @@
       display: flex;
       flex-direction: column;
       gap: 36px;
-      max-width: 55%;
-      margin-left: 50px;
+      max-width: 65%;
+      margin-left: 150px;
 
 
       @media(max-width: $tablet-width){
@@ -105,12 +107,13 @@
       @media(max-width: $mobile-width){
         margin-left: 0;
         max-width: 100%;
+        margin-top: 246px;
         gap: 24px;
       }
     }
 
     h1{
-      width: 644px;
+      width: 804px;
       max-width: 100%;
       color: #F8FAFF;
 

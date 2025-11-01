@@ -8797,14 +8797,6 @@ html {
   justify-content: center;
   min-height: 530px;
 }
-.case_represent .case_represent_container.second {
-  min-height: 660px;
-}
-@media (max-width: 751px) {
-  .case_represent .case_represent_container.second {
-    min-height: 417px;
-  }
-}
 @media (max-width: 751px) {
   .case_represent .case_represent_container {
     min-height: 300px;
@@ -8851,26 +8843,14 @@ html {
   transform: translateZ(0);
   will-change: transform;
 }
-.case_represent .case_represent_container .case_represent_back.second {
-  bottom: 0;
-  right: 0;
-  max-width: 47%;
-}
-@media (max-width: 751px) {
-  .case_represent .case_represent_container .case_represent_back.second {
-    top: auto;
-    bottom: 0;
-    right: 0;
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .case_represent .case_represent_container .case_represent_back.second.parallax {
-    transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
-  }
-}
 @media (prefers-reduced-motion: no-preference) {
   .case_represent .case_represent_container .case_represent_back.parallax {
     transform: translateX(-50%) translateY(var(--parallax-offset, 0px)) translateZ(0);
+  }
+}
+@media (max-width: 400px) {
+  .case_represent .case_represent_container .case_represent_back.parallax {
+    transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
   }
 }
 @media (max-width: 751px) {
@@ -8884,7 +8864,6 @@ html {
     max-width: 100%;
     top: auto;
     left: 0;
-    transform: none;
     bottom: 0;
   }
 }
@@ -8894,10 +8873,6 @@ html {
   gap: 36px;
   max-width: 55%;
   margin-left: 50px;
-}
-.case_represent .case_represent_container .label_wrapper.second {
-  margin-left: 150px;
-  max-width: 66%;
 }
 @media (max-width: 751px) {
   .case_represent .case_represent_container .label_wrapper {
@@ -8921,9 +8896,6 @@ html {
   width: 644px;
   max-width: 100%;
   color: #F8FAFF;
-}
-.case_represent .case_represent_container h1.second {
-  width: 804px;
 }
 @media (max-width: 751px) {
   .case_represent .case_represent_container h1 {
@@ -9183,6 +9155,10 @@ html {
   font-size: 20px;
   color: #1C1E25;
 }
+.case_c2 .case_c2_container .labels_container .label_wrapper div.second {
+  background: #A980FF;
+  color: #1C1E25;
+}
 @media (max-width: 751px) {
   .case_c2 .case_c2_container .labels_container .label_wrapper div {
     height: 23px;
@@ -9317,6 +9293,9 @@ html {
   gap: 36px;
   border-radius: 20px;
   margin: 120px auto 0 auto;
+}
+.case_c2 .review_wrapper.second {
+  border: 1px solid #A980FF;
 }
 .case_c2 .review_wrapper .review_text {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
@@ -9801,6 +9780,246 @@ html {
   .case_finish .case_finish_lower span {
     margin-top: 9px;
     font-size: 10px;
+  }
+}
+
+.case2_represent {
+  max-width: min(1220px, 100% - 60px);
+  margin: 200px auto 0;
+  margin-top: 47px;
+}
+@media (max-width: 751px) {
+  .case2_represent {
+    max-width: min(704px, 100% - 40px);
+    margin-top: 95px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 751px) {
+  .case2_represent {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent {
+    margin-top: 16px;
+  }
+}
+.case2_represent .case_represent_container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  min-height: 650px;
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container {
+    min-height: 450px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container {
+    flex-direction: column;
+    justify-content: initial;
+    min-height: 300px;
+    gap: 36px;
+  }
+}
+.case2_represent .case_represent_container .case_logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container .case_logo {
+    width: 121px;
+    height: 37px;
+    top: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .case2_represent .case_represent_container .case_logo {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container .case_logo {
+    position: initial;
+    display: flex;
+    width: 121px;
+  }
+}
+.case2_represent .case_represent_container .case_represent_back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+  max-width: 47%;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateZ(0);
+  will-change: transform;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .case2_represent .case_represent_container .case_represent_back.parallax {
+    transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container .case_represent_back.parallax {
+    transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+  }
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container .case_represent_back {
+    bottom: 0;
+    right: -20px;
+    max-width: 37.2%;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container .case_represent_back {
+    max-width: 65%;
+    top: 100px;
+    left: 30px;
+    bottom: 0;
+  }
+}
+.case2_represent .case_represent_container .label_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 65%;
+  margin-left: 150px;
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container .label_wrapper {
+    max-width: 60%;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .case2_represent .case_represent_container .label_wrapper {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container .label_wrapper {
+    margin-left: 0;
+    max-width: 100%;
+    margin-top: 246px;
+    gap: 24px;
+  }
+}
+.case2_represent .case_represent_container h1 {
+  width: 804px;
+  max-width: 100%;
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container h1 {
+    width: 451px;
+    font-size: 55px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container h1 {
+    width: 100%;
+    font-size: 46px;
+  }
+}
+.case2_represent .case_represent_container span {
+  width: 605px;
+  max-width: 100%;
+  color: #F8FAFF;
+  text-align: start;
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+@media (max-width: 751px) {
+  .case2_represent .case_represent_container span {
+    font-size: 12px;
+    width: 399px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .case_represent_container span {
+    width: 100%;
+  }
+}
+.case2_represent .lower_container {
+  width: 100%;
+  margin-top: 200px;
+}
+@media (max-width: 751px) {
+  .case2_represent .lower_container {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .lower_container {
+    margin-top: 72px;
+  }
+}
+.case2_represent .lower_container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+@media (max-width: 751px) {
+  .case2_represent .lower_container ul {
+    gap: 36px;
+  }
+}
+.case2_represent .lower_container ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 400px) {
+  .case2_represent .lower_container ul li {
+    flex-direction: column;
+    justify-content: initial;
+    gap: 16px;
+  }
+  .case2_represent .lower_container ul li:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+.case2_represent .lower_container ul li h2 {
+  color: #F8FAFF;
+}
+@media (max-width: 751px) {
+  .case2_represent .lower_container ul li h2 {
+    font-size: 36px;
+  }
+}
+.case2_represent .lower_container ul li span {
+  font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 20px;
+  color: #F8FAFF;
+  max-width: 726px;
+}
+@media (max-width: 751px) {
+  .case2_represent .lower_container ul li span {
+    font-size: 12px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 400px) {
+  .case2_represent .lower_container ul li span {
+    max-width: 100%;
   }
 }
 
