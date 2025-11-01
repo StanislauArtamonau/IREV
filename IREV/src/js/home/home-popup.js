@@ -6,52 +6,65 @@ document.addEventListener('DOMContentLoaded', function() {
     const timerElement = document.querySelector('.home_popup_content_label_wrapper_counter');
 
     let timerInterval = null;
+    let totalSeconds = 15 * 60; // 15 минут
+    let isTimerRunning = false;
 
     function startTimer() {
         if (!timerElement) return;
 
-        let totalSeconds = 15 * 60;
+        if (isTimerRunning) return;
+
+        isTimerRunning = true;
+
+        totalSeconds = 15 * 60;
 
         if (timerInterval) {
             clearInterval(timerInterval);
         }
 
+        updateTimerDisplay();
+
         timerInterval = setInterval(function() {
-            const hours = Math.floor(totalSeconds / 3600);
-            const minutes = Math.floor((totalSeconds % 3600) / 60);
-            const seconds = totalSeconds % 60;
-
-            const formattedTime =
-                String(hours).padStart(2, '0') + ':' +
-                String(minutes).padStart(2, '0') + ':' +
-                String(seconds).padStart(2, '0');
-
-            timerElement.textContent = formattedTime;
-
-            if (--totalSeconds < 0) {
+            if (totalSeconds > 0) {
+                totalSeconds--;
+                if (popupOverlay && popupOverlay.style.display === 'block') {
+                    updateTimerDisplay();
+                }
+            } else {
                 clearInterval(timerInterval);
-                timerElement.textContent = "00:00:00";
+                timerInterval = null;
+                isTimerRunning = false;
                 timerComplete();
             }
         }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        const formattedTime =
+            String(hours).padStart(2, '0') + ':' +
+            String(minutes).padStart(2, '0') + ':' +
+            String(seconds).padStart(2, '0');
+
+        timerElement.textContent = formattedTime;
     }
 
     function stopTimer() {
         if (timerInterval) {
             clearInterval(timerInterval);
             timerInterval = null;
-        }
-    }
-
-    function resetTimer() {
-        stopTimer();
-        if (timerElement) {
-            timerElement.textContent = "00:15:00";
+            isTimerRunning = false;
         }
     }
 
     function timerComplete() {
         console.log("Таймер завершен!");
+        if (popupOverlay && popupOverlay.style.display === 'block') {
+            closePopup();
+        }
     }
 
     function openPopup() {
@@ -61,7 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             setTimeout(() => {
                 popupOverlay.classList.add('active');
-                startTimer();
+                if (!isTimerRunning) {
+                    startTimer();
+                } else {
+                    updateTimerDisplay();
+                }
             }, 10);
         }
     }
@@ -73,19 +90,17 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 popupOverlay.style.display = 'none';
                 document.body.style.overflow = '';
-                stopTimer();
-                resetTimer();
             }, 300);
         }
     }
 
     if (openButtons) {
-        openButtons.forEach(openButton=>{
+        openButtons.forEach(openButton => {
             openButton.addEventListener('click', function(e) {
                 e.preventDefault();
                 openPopup();
             });
-        })
+        });
     }
 
     if (closeButton) {
@@ -106,10 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // video
     const video = document.getElementById('popupVideo');
     const videoContainer = document.querySelector('.home_popup_content_lower_rightcont_video');
-    const playButton = videoContainer.querySelector('img'); // находим изображение кнопки play
+    const playButton = videoContainer.querySelector('img');
 
     function updatePlayButtonVisibility() {
         if (video.paused) {
@@ -119,19 +133,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    video.addEventListener('play', updatePlayButtonVisibility);
-    video.addEventListener('pause', updatePlayButtonVisibility);
-    video.addEventListener('ended', function() {
-        playButton.style.display = 'block';
-    });
+    if (video && videoContainer && playButton) {
+        video.addEventListener('play', updatePlayButtonVisibility);
+        video.addEventListener('pause', updatePlayButtonVisibility);
+        video.addEventListener('ended', function() {
+            playButton.style.display = 'block';
+        });
 
-    videoContainer.addEventListener('click', function() {
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    });
+        videoContainer.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
 
-    updatePlayButtonVisibility();
+        updatePlayButtonVisibility();
+    }
 });

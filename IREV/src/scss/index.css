@@ -2134,7 +2134,7 @@ footer .footer_wrapper .footer_lower {
   height: fit-content;
   min-width: 50%;
   position: sticky;
-  top: 120px;
+  top: 200px;
   align-self: flex-start;
   transition: all ease 0.3s;
 }
