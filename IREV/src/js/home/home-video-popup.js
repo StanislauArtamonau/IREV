@@ -8,7 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const originalPlayImg = videoWrapper ? videoWrapper.querySelector('.video_cont img') : null;
     const modalPlayImg = modalOverlay ? modalOverlay.querySelector('.modal-video img') : null;
 
+    const originalTimer = videoWrapper ? videoWrapper.querySelector('.video_player span') : null;
+    const modalTimer = modalOverlay ? modalOverlay.querySelector('.modal-video .video_player span') : null;
+
     let currentTime = 0;
+
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    function updateTimer(video, timerElement) {
+        if (!video || !timerElement) return;
+
+        const remainingTime = video.duration - video.currentTime;
+        timerElement.textContent = formatTime(remainingTime);
+    }
 
     function togglePlayButton(video, playImg) {
         if (!video || !playImg) return;
@@ -20,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function setupVideoListeners(video, playImg) {
+    function setupVideoListeners(video, playImg, timerElement) {
         if (!video || !playImg) return;
 
         video.addEventListener('play', function() {
@@ -34,16 +50,27 @@ document.addEventListener('DOMContentLoaded', function() {
         video.addEventListener('ended', function() {
             playImg.style.display = 'block';
             video.currentTime = 0;
+            if (timerElement) {
+                updateTimer(video, timerElement);
+            }
+        });
+
+        video.addEventListener('timeupdate', function() {
+            updateTimer(video, timerElement);
+        });
+
+        video.addEventListener('loadedmetadata', function() {
+            updateTimer(video, timerElement);
         });
     }
 
     if (originalVideo && originalPlayImg) {
-        setupVideoListeners(originalVideo, originalPlayImg);
+        setupVideoListeners(originalVideo, originalPlayImg, originalTimer);
         togglePlayButton(originalVideo, originalPlayImg);
     }
 
     if (modalVideo && modalPlayImg) {
-        setupVideoListeners(modalVideo, modalPlayImg);
+        setupVideoListeners(modalVideo, modalPlayImg, modalTimer);
         modalPlayImg.style.display = 'none';
     }
 
@@ -80,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modalPlayImg) {
             modalPlayImg.style.display = 'none';
         }
+
+        updateTimer(modalVideo, modalTimer);
     }
 
     function closeModal() {
@@ -101,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
             originalPlayImg.style.display = 'block';
         }
 
+        updateTimer(originalVideo, originalTimer);
     }
 
     if (videoWrapper && modalOverlay) {
         videoWrapper.addEventListener('click', function(e) {
-            // Проверяем, что клик не по кнопке управления в video_player
             if (!playButton || !playButton.contains(e.target)) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -153,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    
+
     const submitButton = document.querySelector('#submitButton');
     const emailInput = document.querySelector('input[type="email"]');
     const form = document.querySelector('.wpcf7-form');
@@ -214,8 +243,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     updateButtonState();
-
-    
 });
 
 

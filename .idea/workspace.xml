@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="case2page fix">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="timer fix + gear1 sticky">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +196,8 @@
       <workItem from="1761937330952" duration="1664000" />
       <workItem from="1762004013040" duration="2491000" />
       <workItem from="1762009520294" duration="2253000" />
-      <workItem from="1762022344534" duration="1586000" />
+      <workItem from="1762022344534" duration="2310000" />
+      <workItem from="1762293594197" duration="573000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -569,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762006501694</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="timer fix + gear1 sticky">
+      <option name="closed" value="true" />
+      <created>1762024068113</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1762024068113</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="финиш по 1 компоненту" />
     <MESSAGE value="component 2" />
     <MESSAGE value="component 3" />
     <MESSAGE value="component 3 fix" />
@@ -612,7 +617,8 @@
     <MESSAGE value="fix popup" />
     <MESSAGE value="фиксы по адаптиву и паралаксам" />
     <MESSAGE value="case2page fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="case2page fix" />
+    <MESSAGE value="timer fix + gear1 sticky" />
+    <option name="LAST_COMMIT_MESSAGE" value="timer fix + gear1 sticky" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
