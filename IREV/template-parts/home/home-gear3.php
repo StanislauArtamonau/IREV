@@ -2,126 +2,81 @@
 /**
  * Template Part: Home Gear3
  */
-?>
 
+$gear_3 = get_field('gear_3');
+$is_shown = $gear_3 ? $gear_3['is_shown'] : false;
+?>
 <section class="home_gear3">
+    <?php if ($is_shown) : ?>
     <header class="home_gear_header">
-        <span>[GEAR 03]</span>
-        <img
-            src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3.svg')); ?>"
-        />
+        <span><?php echo esc_html($gear_3['title']); ?></span>
+        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3.svg')); ?>" />
     </header>
     <div class="home_gear3_container">
-        <h2>Hear from our satisfied partners</h2>
+        <h2><?php echo esc_html($gear_3['heading']); ?></h2>
         <img class="home_gear3_background" src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3back.svg')); ?>"/>
         <div class="home_gear3_clients">
             <div class="home_gear3_clients_avatar">
-                <div class="avatar-item">
-                    <button data-trigger="client1">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar1.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Ethan Miller</div>
-                </div>
-                <div class="avatar-item">
-                    <button data-trigger="client2">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar2.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Brandon Carter</div>
-                </div>
-                <div class="avatar-item">
-                    <button data-trigger="client3">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar3.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Emily Clarke</div>
-                </div>
-                <div class="avatar-item selected">
-                    <button data-trigger="client4">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Daniel Gram</div>
-                </div>
-                <div class="avatar-item">
-                    <button data-trigger="client5">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar5.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Chloe Bennett</div>
-                </div>
-                <div class="avatar-item">
-                    <button data-trigger="client6">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar6.svg')); ?>"/>
-                    </button>
-                    <div class="tooltip">Dylan Cooper</div>
-                </div>
+                <?php if (!empty($gear_3['satisfied_partners']) && is_array($gear_3['satisfied_partners'])) : ?>
+                    <?php 
+                    $counter = 1;
+                    foreach ($gear_3['satisfied_partners'] as $index => $partner) : 
+                        $selected = $counter === 4 ? 'selected' : '';
+                    ?>
+                    <div class="avatar-item <?php echo $selected; ?>">
+                        <button data-trigger="client<?php echo $counter; ?>">
+                            <?php if (!empty($partner['avatar'])) : ?>
+                                <img src="<?php echo esc_url($partner['avatar']['url']); ?>" alt="<?php echo esc_attr($partner['avatar']['alt']); ?>"/>
+                            <?php endif; ?>
+                        </button>
+                        <div class="tooltip"><?php echo esc_html($partner['name']); ?></div>
+                    </div>
+                    <?php 
+                    $counter++;
+                    endforeach; 
+                    ?>
+                <?php endif; ?>
             </div>
         </div>
 
-            <div class="home_gear3_reviews">
-                <div class="home_gear3_reviews_review" data-client="client1">
-                    <span>text 1</span>
+        <div class="home_gear3_reviews">
+            <?php if (!empty($gear_3['satisfied_partners']) && is_array($gear_3['satisfied_partners'])) : ?>
+                <?php 
+                $counter = 1;
+                foreach ($gear_3['satisfied_partners'] as $partner) : 
+                    $selected = $counter === 4 ? 'selected' : '';
+                ?>
+                <div class="home_gear3_reviews_review <?php echo $selected; ?>" data-client="client<?php echo $counter; ?>">
+                    <?php if (!empty($partner['comment'])) : ?>
+                        <span><?php echo esc_html($partner['comment']); ?></span>
+                    <?php endif; ?>
                     <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
+                        <?php if (!empty($partner['avatar'])) : ?>
+                            <img src="<?php echo esc_url($partner['avatar']['url']); ?>" alt="<?php echo esc_attr($partner['avatar']['alt']); ?>"/>
+                        <?php endif; ?>
                         <div class="client_info">
-                            <span class="client_name">Ethan Miller</span>
-                            <span class="client_additional">bulls media</span>
+                            <span class="client_name"><?php echo esc_html($partner['name']); ?></span>
+                            <?php if (!empty($partner['company'])) : ?>
+                                <span class="client_additional"><?php echo esc_html($partner['company']); ?></span>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
-                <div class="home_gear3_reviews_review" data-client="client2">
-                    <span>text 2</span>
-                    <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                        <div class="client_info">
-                            <span class="client_name">Brandon Carter</span>
-                            <span class="client_additional">bulls media</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="home_gear3_reviews_review" data-client="client3">
-                    <span>text 3</span>
-                    <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                        <div class="client_info">
-                            <span class="client_name">Emily Clarke</span>
-                            <span class="client_additional">bulls media</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="home_gear3_reviews_review selected" data-client="client4">
-                <span>IREV covers everything for the convenient and effective management of affiliate programs. We've been very happy with the platform and support from day one. What comes to Lead Distribution tool, it became
-a game-changer for us. You wouldn't find the same convenience elsewhere.</span>
-                    <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                        <div class="client_info">
-                            <span class="client_name">Ethan Miller</span>
-                            <span class="client_additional">bulls media</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="home_gear3_reviews_review" data-client="client5">
-                    <span>text4</span>
-                    <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                        <div class="client_info">
-                            <span class="client_name">Chloe Bennett</span>
-                            <span class="client_additional">bulls media</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="home_gear3_reviews_review" data-client="client6">
-                    <span>text 5</span>
-                    <div class="client">
-                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"/>
-                        <div class="client_info">
-                            <span class="client_name">Dylan Cooper</span>
-                            <span class="client_additional">bulls media</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php 
+                $counter++;
+                endforeach; 
+                ?>
+            <?php endif; ?>
+        </div>
     </div>
-
+<?php endif; ?>
+    <?php
+$power_on_the_track = get_field('power_on_the_track');
+$power_is_shown = $power_on_the_track ? $power_on_the_track['is_shown'] : false;
+?>
+<?php if ($power_is_shown) : ?>
     <div class="home_gear3_lower_container">
-        <h2>PROVEN ON THE TRACK</h2>
+        <h2><?php echo esc_html($power_on_the_track['title']); ?></h2>
         <img class="back" src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3back2.svg')); ?>"/>
         <div class="dashed_vertical"></div>
         <div class="dashed_horizontal"></div>
@@ -130,52 +85,46 @@ a game-changer for us. You wouldn't find the same convenience elsewhere.</span>
                 <div class="dashed_vertical"></div>
                 <div class="label">
                     <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
-                    <div>PLAY PARTNERS</div>
+                    <div><?php echo esc_html($power_on_the_track['play_partners']['name']); ?></div>
                 </div>
-                <span>Bigger, faster, stronger – solutions for a modern business</span>
+                <span><?php echo esc_html($power_on_the_track['play_partners']['paragraph']); ?></span>
                 <div class="cases_wraper">
                     <div class="case">
                         <div class="dashed_vertical"></div>
                         <div class="case_label">
                             <img src="<?php echo esc_url(get_theme_file_uri('src/icons/ftds.svg')); ?>"/>
-                            <span>FTDS</span>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_1']['name']); ?></span>
                         </div>
-                        <span>
-                        x3.5 increase in FTDs in 6 months
-                    </span>
+                        <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_1']['paragraph']); ?></span>
                     </div>
 
                     <div class="case">
                         <div class="dashed_vertical"></div>
                         <div class="case_label">
                             <img src="<?php echo esc_url(get_theme_file_uri('src/icons/CR.svg')); ?>"/>
-                            <span>CR</span>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_2']['name']); ?></span>
                         </div>
-                        <span>
-                        x6 times CR increased
-                    </span>
+                        <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_2']['paragraph']); ?></span>
                     </div>
 
                     <div class="case">
                         <div class="dashed_vertical"></div>
                         <div class="case_label">
                             <img src="<?php echo esc_url(get_theme_file_uri('src/icons/geos.svg')); ?>"/>
-                            <span>geos</span>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_3']['name']); ?></span>
                         </div>
-                        <span>
-                        150% increased in GEOS
-                    </span>
+                        <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_3']['paragraph']); ?></span>
                     </div>
                 </div>
-                <button>read full case</button>
+                <button><?php echo esc_html($power_on_the_track['play_partners']['button']['text']); ?></button>
             </div>
             <div class="home_gear3_lower_right">
                 <div class="dashed_vertical"></div>
                 <div class="label">
                     <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
-                    <div>PLAY PARTNERS</div>
+                    <div><?php echo esc_html($power_on_the_track['ox_tech']['name']); ?></div>
                 </div>
-                <span>IGaming partnership launched in heaven</span>
+                <span><?php echo esc_html($power_on_the_track['ox_tech']['paragraph']); ?></span>
             </div>
         </div>
 
@@ -184,35 +133,29 @@ a game-changer for us. You wouldn't find the same convenience elsewhere.</span>
                 <div class="case">
                     <div class="dashed_vertical"></div>
                     <div class="case_label">
-                        <span>750 %</span>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_1']['name']); ?></span>
                     </div>
-                    <span>
-                        reduction in onboarding time
-                    </span>
+                    <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_1']['paragraph']); ?></span>
                 </div>
 
                 <div class="case">
                     <div class="dashed_vertical"></div>
                     <div class="case_label">
-                        <span>$ 1-3 MLN</span>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_2']['name']); ?></span>
                     </div>
-                    <span>
-                        discrepancy losses prevented
-                    </span>
+                    <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_2']['paragraph']); ?></span>
                 </div>
 
                 <div class="case">
                     <div class="dashed_vertical"></div>
                     <div class="case_label">
-                        <span>20 +</span>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_3']['name']); ?></span>
                     </div>
-                    <span>
-                        operators covered
-                    </span>
+                    <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_3']['paragraph']); ?></span>
                 </div>
             </div>
-            <button>read full case</button>
+            <button><?php echo esc_html($power_on_the_track['ox_tech']['button']['text']); ?></button>
         </div>
-
     </div>
+<?php endif; ?>
 </section>
