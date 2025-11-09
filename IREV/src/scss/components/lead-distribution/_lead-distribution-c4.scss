@@ -1,0 +1,280 @@
+.ld_c4{
+  margin-top: 16px;
+  width: 100%;
+  overflow: hidden;
+
+  @media(max-width: $tablet-width){
+    margin-top: 18px;
+  }
+
+  @media(max-width: $mobile-width){
+    margin-top: 36px;
+  }
+
+  .home_gear3_container{
+    position: relative;
+    max-width: min(1220px, calc(100vw - 60px));
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &.ld{
+      margin-top: 200px;
+
+      @media(max-width: $tablet-width){
+        margin-top: 120px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin-top: 72px;
+      }
+    }
+
+    @media(max-width: $tablet-width){
+      max-width: min(750px, calc(100vw - 40px));
+    }
+
+    @media(max-width: $mobile-width){
+      max-width: min(750px, calc(100vw - 40px));
+    }
+
+    .home_gear3_clients{
+      margin-top: 0;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      span{
+        @include caption-small-font();
+        color: #F8FAFFCC;
+        font-size: 16px;
+
+        @media(max-width: $tablet-width){
+          display: none;
+        }
+      }
+
+      @media(max-width: $tablet-width){
+        margin-top: 0;
+        gap: 9px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin: 0px auto 0 auto;
+        gap: 6px;
+      }
+
+      .home_gear3_clients_avatar{
+        display: flex;
+        gap: 8px;
+        position: relative;
+
+        @media(max-width: $tablet-width){
+          gap: 4px;
+        }
+
+        @media(max-width: $mobile-width){
+          gap: 8px;
+        }
+
+        .avatar-item{
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+
+          button{
+            img{
+              display: flex;
+              width: 40px;
+              height: 40px;
+              transition: transform 0.2s;
+
+              @media(max-width: $tablet-width){
+                width: 23px;
+                height: 23px;
+              }
+
+              @media(max-width: $mobile-width){
+                width: 26px;
+                height: 26px;
+              }
+            }
+          }
+
+          .tooltip{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1C1E25;
+            color: #F8FAFFE5;
+            padding: 16px;
+            border-radius: 10px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            margin-top: 10px;
+            @include body-small-font();
+            @media(max-width: $tablet-width){
+              padding: 9px;
+              font-size: 12px;
+            }
+          }
+
+          &.selected {
+            border: 2px solid #A980FF;
+
+            .tooltip {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+
+    .home_gear3_reviews{
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      margin-top: 85px;
+      height: 288px;
+      transition: transform 0.6s ease;
+      will-change: transform;
+      left: 0;
+      right: 0;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+
+      @media(max-width: $tablet-width){
+        height: 192px;
+      }
+
+      .home_gear3_reviews_review{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0 !important;
+        cursor: pointer;
+        gap: 36px;
+        width: 344px;
+        height: 288px;
+        background: #1C1E25CC;
+        border-radius: 20px;
+        padding: 36px 16px 36px 16px;
+        pointer-events: auto;
+        opacity: 0.8;
+        transition: opacity ease 0.3s;
+
+        @media(max-width: $tablet-width){
+          gap: 23px;
+          width: 228px;
+          height: 191px;
+          padding: 23px 10px 23px 10px;
+        }
+
+
+        &.selected{
+          opacity: 1;
+          border: 1px solid #A980FF;
+        }
+
+        span{
+          @include caption-medium-font();
+          font-size: 14px;
+          color: #F8FAFFE5;
+
+          @media(max-width: $tablet-width){
+            font-size: 10px;
+          }
+        }
+
+        .client{
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-top: auto;
+
+          @media(max-width: $tablet-width){
+            gap: 10px;
+          }
+
+          img{
+            width: 54px;
+            height: 54px;
+
+            @media(max-width: $tablet-width){
+              width: 36px;
+              height: 36px;
+            }
+          }
+
+          .client_info{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            @media(max-width: $tablet-width){
+              gap: 2px;
+            }
+
+            .client_name{
+              @include caption-medium-font();
+              font-size: 16px;
+
+              @media(max-width: $tablet-width){
+                font-size: 10px;
+              }
+            }
+
+            .client_additional{
+              @include body-large-font();
+              font-size: 20px;
+
+              @media(max-width: $tablet-width){
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo_container{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+
+    @media(max-width: $tablet-width){
+      height: 55px;
+      margin-top: 120px;
+      gap: 90px;
+
+      img{
+        max-height: 55px;
+        max-width: 120px;
+      }
+    }
+
+    @media(max-width: $mobile-width){
+      height: 36px;
+      margin-top: 72px;
+      gap: 60px;
+
+      img{
+        max-height: 36px;
+        max-width: 79px;
+      }
+    }
+  }
+}

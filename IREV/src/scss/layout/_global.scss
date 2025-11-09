@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root{
+  --parallax-offset: 0px;
+}
+
+
 body{
   background: getColor("background-black", 100);
 }
@@ -53,7 +58,7 @@ button{
 }
 
 h1 {
-  @include font-style($FoundersGrotesk-family, 88px, 88px, 700, 0.02em, uppercase);
+  @include font-style($FoundersGrotesk-family, 88px, 85%, 700, 0.02em, uppercase);
 }
 
 h2 {
@@ -62,4 +67,17 @@ h2 {
 
 h3{
   @include font-style($FoundersGrotesk-family, 32px, 1, 700, 0, uppercase);
+}
+
+.home_main{
+  margin-top: calc($header-height + 67px);
+  margin-bottom: 90px;
+
+  @media(max-width: $tablet-width){
+    margin-top: calc(57px + 30px);
+  }
+
+  @media(max-width: $mobile-width){
+    margin-top: 73px;
+  }
 }

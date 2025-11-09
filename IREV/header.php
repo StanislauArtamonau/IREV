@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header>
+<header class="header">
     <div class="header_wrapper">
         <div>
             <img class="header_logo" src="<?php echo esc_url(get_theme_file_uri('src/icons/logo.svg')); ?>"
@@ -18,59 +18,67 @@
         <nav class="header_nav">
             <div class="header_menu">
                 <div class="header_menu_item" data-dropdown-trigger="product">
-                    <button>
-                        Product
-                    </button>
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_unselected"
-                    />
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_selected"
-                    />
+                        <div class="header_menu_item_inner">
+                            <button>
+                                Product
+                            </button>
+                            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                                 alt="arrow"
+                                 class="header_menu_item_arrow_unselected"
+                            />
+                            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                                 alt="arrow"
+                                 class="header_menu_item_arrow_selected"
+                            />
+                        </div>
                 </div>
                 <div class="header_menu_item" data-dropdown-trigger="solution">
-                    <button>
-                        Solution
-                    </button>
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_unselected"
-                    />
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_selected"
-                    />
+                    <div class="header_menu_item_inner">
+                        <button>
+                            Solution
+                        </button>
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_unselected"
+                        />
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_selected"
+                        />
+                    </div>
                 </div>
                 <div class="header_menu_item">
                         Pricing
                 </div>
                 <div class="header_menu_item" data-dropdown-trigger="resources">
-                    <button>
-                        Resources
-                    </button>
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_unselected"
-                    />
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_selected"
-                    />
+                    <div class="header_menu_item_inner">
+                        <button>
+                            Resources
+                        </button>
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_unselected"
+                        />
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_selected"
+                        />
+                    </div>
                 </div>
                 <div class="header_menu_item" data-dropdown-trigger="company">
-                    <button>
-                        Company
-                    </button>
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_unselected"
-                    />
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
-                         alt="arrow"
-                         class="header_menu_item_arrow_selected"
-                    />
+                    <div class="header_menu_item_inner">
+                        <button>
+                            Company
+                        </button>
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/miniArrow.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_unselected"
+                        />
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/arrowSelected.svg')); ?>"
+                             alt="arrow"
+                             class="header_menu_item_arrow_selected"
+                        />
+                    </div>
                 </div>
             </div>
             <div class="nav_dropdown_container">

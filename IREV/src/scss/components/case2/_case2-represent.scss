@@ -1,0 +1,212 @@
+.case2_represent{
+  @include home_gear();
+  margin-top: 47px;
+
+  @media(max-width: $tablet-width){
+    margin-top: 30px;
+  }
+
+  @media(max-width: $mobile-width){
+    margin-top: 16px;
+  }
+
+  .case_represent_container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 650px;
+
+    @media(max-width: $tablet-width){
+      min-height: 450px;
+    }
+
+    @media(max-width: $mobile-width){
+      flex-direction: column;
+      justify-content: initial;
+      min-height: 300px;
+      gap: 36px;
+    }
+
+
+    .case_logo{
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @media(max-width: $tablet-width){
+        width: 121px;
+        height: 37px;
+        top: 25px;
+      }
+
+      @media(max-width: 450px){
+        width: 100px;
+      }
+
+      @media(max-width: $mobile-width){
+        position: initial;
+        display: flex;
+        width: 121px;
+      }
+    }
+
+    .case_represent_back{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -2;
+      max-width: 47%;
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translateZ(0);
+      will-change: transform;
+
+      @media (prefers-reduced-motion: no-preference) {
+        &.parallax {
+          transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+        }
+      }
+
+      @media (max-width: $mobile-width) {
+        &.parallax {
+          transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+        }
+      }
+
+      @media(max-width: $tablet-width){
+        bottom: 0;
+        right: -20px;
+        max-width: 37.2%;
+      }
+
+      @media(max-width: $mobile-width){
+        max-width: 65%;
+        top: 100px;
+        left: 30px;
+        bottom: 0;
+      }
+    }
+
+    .label_wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      max-width: 65%;
+      margin-left: 150px;
+
+
+      @media(max-width: $tablet-width){
+        max-width: 60%;
+        margin-top: 25px;
+      }
+
+      @media(max-width: 600px){
+        margin-left: 100px;
+      }
+
+      @media(max-width: $mobile-width){
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 246px;
+        gap: 24px;
+      }
+    }
+
+    h1{
+      width: 804px;
+      max-width: 100%;
+      color: #F8FAFF;
+
+      @media(max-width: $tablet-width){
+        width: 451px;
+        font-size: 55px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 100%;
+        font-size: 46px;
+      }
+    }
+
+    span{
+      width: 605px;
+      max-width: 100%;
+      color: #F8FAFF;
+      text-align: start;
+      @include body-small-font();
+      font-size: 20px;
+
+      @media(max-width: $tablet-width){
+        font-size: 12px;
+        width: 399px;
+      }
+
+      @media(max-width: $mobile-width){
+        width: 100%;
+      }
+    }
+  }
+
+  .lower_container{
+    width: 100%;
+    margin-top: 200px;
+
+    @media(max-width: $tablet-width){
+      margin-top: 50px;
+    }
+
+    @media(max-width: $mobile-width){
+      margin-top: 72px;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+
+      @media(max-width: $tablet-width){
+        gap: 36px;
+      }
+
+      li{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media(max-width: $mobile-width){
+          flex-direction: column;
+          justify-content: initial;
+          gap: 16px;
+
+          &:nth-child(2) {
+            flex-direction: column-reverse;
+          }
+        }
+
+        h2{
+          color: #F8FAFF;
+
+          @media(max-width: $tablet-width){
+            font-size: 36px;
+          }
+        }
+
+        span{
+          @include body-small-font();
+          font-size: 20px;
+          color: #F8FAFF;
+          max-width: 726px;
+
+          @media(max-width: $tablet-width){
+            font-size: 12px;
+            max-width: 350px;
+          }
+
+          @media(max-width: $mobile-width){
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

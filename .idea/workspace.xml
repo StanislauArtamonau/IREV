@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="fix header footer">
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="timer fix + gear1 sticky">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/layout/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-video-popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +20,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="PHP File" />
         <option value="HTML File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="PHP File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="c3e5dc1584773f08e38aae6005ce900a70fbeaf2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,8 +47,12 @@
     &quot;accountId&quot;: &quot;827537e0-95df-46cc-9018-446e16833d38&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/modules/intellij.relaxng.jar!/resources/html5-schema/html5/web-forms.rnc" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../../wamp64/bin/php/php7.4.33/php.exe" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -68,31 +68,54 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.home-gear2.php.executor&quot;: &quot;Coverage&quot;,
+    &quot;Node.js.home-gear3.js.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/serap/PhpstormProjects/IREV/IREV/src/fonts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/serap/PhpstormProjects/IREV/IREV/src/video&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.stickyLines&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\video" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\icons" />
+      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src\img" />
+      <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\src" />
       <recent name="C:\Users\serap\PhpstormProjects\IREV\IREV\assets\fonts" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.home-gear3.js">
+    <configuration name="home-gear2.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IREV/IREV/template-parts/home/home-gear2.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home-gear3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" working-dir="$PROJECT_DIR$/IREV/src/js/home">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.home-gear3.js" />
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
+        <item itemvalue="JavaScript Debug.home-gear2.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -121,7 +144,60 @@
       <workItem from="1760607775287" duration="6817000" />
       <workItem from="1760618494113" duration="4114000" />
       <workItem from="1760623385117" duration="4847000" />
-      <workItem from="1760634053690" duration="985000" />
+      <workItem from="1760634053690" duration="23982000" />
+      <workItem from="1760696674415" duration="18796000" />
+      <workItem from="1760737758394" duration="19454000" />
+      <workItem from="1760782465224" duration="2535000" />
+      <workItem from="1760787090863" duration="11782000" />
+      <workItem from="1760882637630" duration="983000" />
+      <workItem from="1760902642607" duration="18776000" />
+      <workItem from="1760949205998" duration="14709000" />
+      <workItem from="1760974213117" duration="5226000" />
+      <workItem from="1760983957572" duration="19735000" />
+      <workItem from="1761038959656" duration="6610000" />
+      <workItem from="1761046479848" duration="2804000" />
+      <workItem from="1761055748801" duration="4876000" />
+      <workItem from="1761061631566" duration="5436000" />
+      <workItem from="1761074078825" duration="8133000" />
+      <workItem from="1761118757877" duration="10398000" />
+      <workItem from="1761147804029" duration="5624000" />
+      <workItem from="1761154705537" duration="3547000" />
+      <workItem from="1761162759668" duration="11005000" />
+      <workItem from="1761208734850" duration="4529000" />
+      <workItem from="1761221518933" duration="5336000" />
+      <workItem from="1761235629374" duration="11706000" />
+      <workItem from="1761264931877" duration="1432000" />
+      <workItem from="1761298505084" duration="8045000" />
+      <workItem from="1761341223399" duration="12440000" />
+      <workItem from="1761392770503" duration="3000" />
+      <workItem from="1761401392744" duration="302000" />
+      <workItem from="1761470992246" duration="15279000" />
+      <workItem from="1761509265674" duration="6230000" />
+      <workItem from="1761564044149" duration="7140000" />
+      <workItem from="1761599362673" duration="284000" />
+      <workItem from="1761602618615" duration="6122000" />
+      <workItem from="1761609260376" duration="2571000" />
+      <workItem from="1761656759190" duration="3647000" />
+      <workItem from="1761667845147" duration="3957000" />
+      <workItem from="1761673089085" duration="2867000" />
+      <workItem from="1761690042528" duration="6418000" />
+      <workItem from="1761730486645" duration="1513000" />
+      <workItem from="1761751709184" duration="18873000" />
+      <workItem from="1761822870518" duration="3565000" />
+      <workItem from="1761843598086" duration="3417000" />
+      <workItem from="1761848497704" duration="2165000" />
+      <workItem from="1761854648831" duration="1205000" />
+      <workItem from="1761856575429" duration="24000" />
+      <workItem from="1761857092558" duration="1298000" />
+      <workItem from="1761858802736" duration="5600000" />
+      <workItem from="1761864486716" duration="1634000" />
+      <workItem from="1761917606947" duration="7280000" />
+      <workItem from="1761927458386" duration="3370000" />
+      <workItem from="1761937330952" duration="1664000" />
+      <workItem from="1762004013040" duration="2491000" />
+      <workItem from="1762009520294" duration="2253000" />
+      <workItem from="1762022344534" duration="2310000" />
+      <workItem from="1762293594197" duration="573000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
@@ -243,7 +319,263 @@
       <option name="project" value="LOCAL" />
       <updated>1760628160223</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix hover">
+      <option name="closed" value="true" />
+      <created>1760635346430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760635346430</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix hover">
+      <option name="closed" value="true" />
+      <created>1760659211009</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760659211009</updated>
+    </task>
+    <task id="LOCAL-00018" summary="home-first-component/ header fix">
+      <option name="closed" value="true" />
+      <created>1760757342555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760757342555</updated>
+    </task>
+    <task id="LOCAL-00019" summary="home-first-component/ header fix">
+      <option name="closed" value="true" />
+      <created>1760784753624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760784753624</updated>
+    </task>
+    <task id="LOCAL-00020" summary="фиксы видео и прочее">
+      <option name="closed" value="true" />
+      <created>1760796841788</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760796841788</updated>
+    </task>
+    <task id="LOCAL-00021" summary="финиш по 1 компоненту">
+      <option name="closed" value="true" />
+      <created>1760801993679</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760801993679</updated>
+    </task>
+    <task id="LOCAL-00022" summary="component 2">
+      <option name="closed" value="true" />
+      <created>1760909918707</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760909918707</updated>
+    </task>
+    <task id="LOCAL-00023" summary="component 3">
+      <option name="closed" value="true" />
+      <created>1760964191048</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760964191048</updated>
+    </task>
+    <task id="LOCAL-00024" summary="component 3 fix">
+      <option name="closed" value="true" />
+      <created>1760979459694</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760979459694</updated>
+    </task>
+    <task id="LOCAL-00025" summary="component 3 fixx">
+      <option name="closed" value="true" />
+      <created>1760985173760</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1760985173760</updated>
+    </task>
+    <task id="LOCAL-00026" summary="button comp 3 fix">
+      <option name="closed" value="true" />
+      <created>1760988288400</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1760988288400</updated>
+    </task>
+    <task id="LOCAL-00027" summary="slider">
+      <option name="closed" value="true" />
+      <created>1761000818135</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1761000818135</updated>
+    </task>
+    <task id="LOCAL-00028" summary="gear 3 ( ne dodelan )">
+      <option name="closed" value="true" />
+      <created>1761006243321</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006243321</updated>
+    </task>
+    <task id="LOCAL-00029" summary="gear 3">
+      <option name="closed" value="true" />
+      <created>1761080281420</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1761080281420</updated>
+    </task>
+    <task id="LOCAL-00030" summary="slider fix">
+      <option name="closed" value="true" />
+      <created>1761122019246</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1761122019246</updated>
+    </task>
+    <task id="LOCAL-00031" summary="gear 4">
+      <option name="closed" value="true" />
+      <created>1761152405394</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1761152405394</updated>
+    </task>
+    <task id="LOCAL-00032" summary="gear 5">
+      <option name="closed" value="true" />
+      <created>1761175271020</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1761175271023</updated>
+    </task>
+    <task id="LOCAL-00033" summary="gear 6 over">
+      <option name="closed" value="true" />
+      <created>1761179990054</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1761179990054</updated>
+    </task>
+    <task id="LOCAL-00034" summary="partner platform 1 comp">
+      <option name="closed" value="true" />
+      <created>1761213140650</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1761213140650</updated>
+    </task>
+    <task id="LOCAL-00035" summary="без одного компонента partner platform">
+      <option name="closed" value="true" />
+      <created>1761266370406</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1761266370406</updated>
+    </task>
+    <task id="LOCAL-00036" summary="partner platform finish ( пока без фиксов )">
+      <option name="closed" value="true" />
+      <created>1761306905582</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1761306905582</updated>
+    </task>
+    <task id="LOCAL-00037" summary="push">
+      <option name="closed" value="true" />
+      <created>1761401646349</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1761401646349</updated>
+    </task>
+    <task id="LOCAL-00038" summary="checkbox fix">
+      <option name="closed" value="true" />
+      <created>1761488962077</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1761488962077</updated>
+    </task>
+    <task id="LOCAL-00039" summary="lead distribution page">
+      <option name="closed" value="true" />
+      <created>1761611835063</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1761611835063</updated>
+    </task>
+    <task id="LOCAL-00040" summary="фиксы по свгшкам">
+      <option name="closed" value="true" />
+      <created>1761697296706</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1761697296706</updated>
+    </task>
+    <task id="LOCAL-00041" summary="case page">
+      <option name="closed" value="true" />
+      <created>1761785935892</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1761785935892</updated>
+    </task>
+    <task id="LOCAL-00042" summary="case page">
+      <option name="closed" value="true" />
+      <created>1761848721107</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1761848721107</updated>
+    </task>
+    <task id="LOCAL-00043" summary="fix irev policy inline">
+      <option name="closed" value="true" />
+      <created>1761851274367</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1761851274367</updated>
+    </task>
+    <task id="LOCAL-00044" summary="fix popup">
+      <option name="closed" value="true" />
+      <created>1761862817708</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1761862817708</updated>
+    </task>
+    <task id="LOCAL-00045" summary="фиксы по адаптиву и паралаксам">
+      <option name="closed" value="true" />
+      <created>1761938793802</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1761938793802</updated>
+    </task>
+    <task id="LOCAL-00046" summary="case2page fix">
+      <option name="closed" value="true" />
+      <created>1762006501694</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1762006501694</updated>
+    </task>
+    <task id="LOCAL-00047" summary="timer fix + gear1 sticky">
+      <option name="closed" value="true" />
+      <created>1762024068113</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1762024068113</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,21 +593,38 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="базовый ui kit, fonts, mixins" />
-    <MESSAGE value="базовый ui kit, fonts, mixins, url fix" />
-    <MESSAGE value="home page template" />
-    <MESSAGE value="fix template" />
-    <MESSAGE value="поставил относительные импорты в подключении шрифтов" />
-    <MESSAGE value="фикс относительных импортов в подключении шрифтов" />
-    <MESSAGE value="desktop header, footer" />
-    <MESSAGE value="адаптив хедер, футер" />
-    <MESSAGE value="fix адаптив" />
-    <MESSAGE value="header dropdown" />
-    <MESSAGE value="fix header footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix header footer" />
+    <MESSAGE value="component 2" />
+    <MESSAGE value="component 3" />
+    <MESSAGE value="component 3 fix" />
+    <MESSAGE value="component 3 fixx" />
+    <MESSAGE value="button comp 3 fix" />
+    <MESSAGE value="slider" />
+    <MESSAGE value="gear 3 ( ne dodelan )" />
+    <MESSAGE value="gear 3" />
+    <MESSAGE value="slider fix" />
+    <MESSAGE value="gear 4" />
+    <MESSAGE value="gear 5" />
+    <MESSAGE value="gear 6 over" />
+    <MESSAGE value="partner platform 1 comp" />
+    <MESSAGE value="без одного компонента partner platform" />
+    <MESSAGE value="partner platform finish ( пока без фиксов )" />
+    <MESSAGE value="push" />
+    <MESSAGE value="checkbox fix" />
+    <MESSAGE value="lead distribution page" />
+    <MESSAGE value="фиксы по свгшкам" />
+    <MESSAGE value="case page" />
+    <MESSAGE value="fix irev policy inline" />
+    <MESSAGE value="fix popup" />
+    <MESSAGE value="фиксы по адаптиву и паралаксам" />
+    <MESSAGE value="case2page fix" />
+    <MESSAGE value="timer fix + gear1 sticky" />
+    <option name="LAST_COMMIT_MESSAGE" value="timer fix + gear1 sticky" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IREV$home_gear2_php.dat" NAME="home-gear2.php Coverage Results" MODIFIED="1760921727861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
