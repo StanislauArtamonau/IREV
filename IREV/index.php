@@ -5,6 +5,7 @@
  */
 get_header(); ?>
 <main class="home_main home">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <?php get_template_part('template-parts/home/home-represent'); ?>
     <?php get_template_part('template-parts/home/home-gear1'); ?>
     <?php get_template_part('template-parts/home/home-gear2'); ?>

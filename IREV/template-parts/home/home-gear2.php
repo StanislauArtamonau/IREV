@@ -29,7 +29,15 @@ $is_shown = $gear_2 ? $gear_2['is_shown'] : false;
                     </div>
                 </div>
             </div>
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/homegear2back.svg')); ?>" />
+            <div class="lottie_img">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/globe.json')); ?>"
+                        speed="1"
+                        style="max-width: 472px; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+            </div>
         </div>
     </div>
 <?php endif; ?>

@@ -2262,7 +2262,6 @@ html {
 .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .home_gear2_upper_credits {
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   margin-top: auto;
   margin-left: 308px;
@@ -2295,6 +2294,12 @@ html {
   flex-direction: column;
   gap: 16px;
   height: 50%;
+  min-width: 257px;
+}
+@media (max-width: 751px) {
+  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .home_gear2_upper_credits .credits_group {
+    min-width: 156px;
+  }
 }
 .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .home_gear2_upper_credits .credits_group span {
   font-family: "IBMPlexMono", "SF Mono", "Cascadia Code", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
@@ -2307,10 +2312,12 @@ html {
   text-transform: none;
   white-space: nowrap;
   line-height: 1.2;
+  min-width: 257px;
 }
 @media (max-width: 751px) {
   .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .home_gear2_upper_credits .credits_group span {
     font-size: 20px;
+    min-width: 156px;
     gap: 10px;
   }
 }
@@ -2319,33 +2326,31 @@ html {
     gap: 10px;
   }
 }
-.home_gear2 .home_gear2_upper_container .home_gear2_upper_back img {
+.home_gear2 .home_gear2_upper_container .home_gear2_upper_back .lottie_img {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -20;
-  max-width: 472px;
-  max-height: 328px;
+  max-width: 472px !important;
+  background: transparent !important;
   transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   transform: translateZ(0);
   will-change: transform;
   animation: multiColorFlow 8s ease-in-out infinite;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back img.parallax {
+  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .lottie_img.parallax {
     transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
   }
 }
 @media (max-width: 751px) {
-  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back img {
+  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .lottie_img {
     max-width: 310px;
-    max-height: 216px;
   }
 }
 @media (max-width: 400px) {
-  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back img {
+  .home_gear2 .home_gear2_upper_container .home_gear2_upper_back .lottie_img {
     max-width: 159px;
-    max-height: 111px;
     right: 11px;
     bottom: 47px;
   }

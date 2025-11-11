@@ -1,3 +1,4 @@
+import createParallax from '../global';
 document.addEventListener('DOMContentLoaded', function() {
     const testDriveButton = document.querySelector('.home_represent_form_container_button');
     const input = document.querySelector('.home_represent_form_container_input');
@@ -97,37 +98,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 });
 
 // paralax
-document.addEventListener('DOMContentLoaded', function() {
-    const partnerSection = document.querySelector('.home');
+createParallax('.home', '.home_represent_backgroundImg')
 
-    if (!partnerSection) {
-        return;
-    }
-    const parallaxImg = document.querySelector('.home_represent_backgroundImg');
-
-    if (parallaxImg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        parallaxImg.classList.add('parallax');
-
-        function updateParallax() {
-            const scrolled = window.pageYOffset;
-            const speed = 0.3;
-            const offset = (scrolled * speed) + 'px';
-
-            document.documentElement.style.setProperty('--parallax-offset', offset);
-        }
-
-        let ticking = false;
-        window.addEventListener('scroll', function() {
-            if (!ticking) {
-                requestAnimationFrame(function() {
-                    updateParallax();
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-
-        updateParallax();
-    }
-});
 
