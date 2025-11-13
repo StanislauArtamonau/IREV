@@ -5,10 +5,15 @@
 ?>
 
 <section class="lead_distribution_c3">
-    <img
-            class="ld_c3_back"
-        src="<?php echo esc_url(get_theme_file_uri('src/icons/ld-c3-back.svg')); ?>"
-    />
+     <div class="ld_c3_back">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/flag.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+    </div>
     <div class="ld_c3_wrapper">
         <h2>You’ve seen the track. Now take the wheel</h2>
         <div class="home_represent_form_container">

@@ -317,6 +317,8 @@
     z-index: -1000;
     bottom: 39px;
     left: 170px;
+    max-width: 595px;
+    max-height: 561px;
     animation: multiColorFlow 8s ease-in-out infinite, changeScale 8s ease-in-out infinite;
 
     transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);

@@ -14,7 +14,15 @@ $is_shown = $gear_3 ? $gear_3['is_shown'] : false;
     </header>
     <div class="home_gear3_container">
         <h2><?php echo esc_html($gear_3['heading']); ?></h2>
-        <img class="home_gear3_background" src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3back.svg')); ?>"/>
+        <div class="home_gear3_background">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/rings1.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
         <div class="home_gear3_clients">
             <div class="home_gear3_clients_avatar">
                 <?php if (!empty($gear_3['satisfied_partners']) && is_array($gear_3['satisfied_partners'])) : ?>
@@ -77,7 +85,15 @@ $power_is_shown = $power_on_the_track ? $power_on_the_track['is_shown'] : false;
 <?php if ($power_is_shown) : ?>
     <div class="home_gear3_lower_container">
         <h2><?php echo esc_html($power_on_the_track['title']); ?></h2>
-        <img class="back" src="<?php echo esc_url(get_theme_file_uri('src/icons/gear3back2.svg')); ?>"/>
+        <div class="back">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/spin.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
         <div class="dashed_vertical"></div>
         <div class="dashed_horizontal"></div>
         <div class="lower_wrapper">

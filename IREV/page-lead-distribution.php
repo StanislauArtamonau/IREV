@@ -5,6 +5,7 @@
  */
 get_header(); ?>
     <main class="home_main ld">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-represent'); ?>
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-component2'); ?>
         <?php get_template_part('template-parts/lead-distribution/lead-distribution-component3'); ?>

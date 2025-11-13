@@ -9,10 +9,11 @@
     height: 260px;
   }
 
-  img{
+  .lottie_container{
     position: absolute;
     max-width: 38%;
     top: 0;
+    transform: translateY(-40%);
     right: 15px;
     z-index: -2;
     animation: multiColorFlow 8s ease-in-out infinite;

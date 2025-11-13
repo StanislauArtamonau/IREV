@@ -86,9 +86,15 @@ $first_screen = get_field('first_screen');
         <?php endif; ?>
     </div>
 
-    <img class="home_represent_backgroundImg"
-         src="<?php echo esc_url(get_theme_file_uri('src/icons/gradientGlobes.svg')); ?>"
-         alt="backgroundimage" />
+     <div class="home_represent_backgroundImg">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/cell.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
 </section>
 
 <?php endif;

@@ -7,6 +7,7 @@
     position: relative;
     background: #F8FAFF;
     border-radius: 20px;
+    position: relative;
   }
 
   img{
@@ -16,6 +17,17 @@
     @media(max-width: 800px){
       min-height: 430px;
     }
+
+    @media(max-width: 520px){
+      display: none;
+    }
+  }
+
+  .lottie_container{
+    position: absolute;
+    max-width: 50%;
+    bottom: 55%;
+    transform: translateY(50%);
 
     @media(max-width: 520px){
       display: none;

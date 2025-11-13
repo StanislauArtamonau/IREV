@@ -14,8 +14,15 @@
     <div class="home_gear6_container">
         <h2>GET YOUR MUSCLE CAR IN THE WORLD OF AFFILIATE MARKETING Rev Up</h2>
         <button class="open_modal">RAVE UP</button>
-        <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
-        />
+
+        <div class="lottie_container">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/pixelcar.json')); ?>"
+                        speed="1"
+                        style= "width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
     </div>
 </section>

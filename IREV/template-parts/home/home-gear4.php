@@ -79,8 +79,15 @@ $high_performance_is_shown = $high_performance ? $high_performance['is_shown'] :
                 </div>
             </div>
         </div>
-
-        <img class="gear4back" src="<?php echo esc_url(get_theme_file_uri('src/icons/gear4back.svg')); ?>" />
+         <div class="gear4back">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/spiral.json')); ?>"
+                        speed="1"
+                        style="max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
     </div>
 <?php endif; ?>
 </section>

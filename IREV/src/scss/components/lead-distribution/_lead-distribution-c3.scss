@@ -28,7 +28,7 @@
   }
 
 
-  img{
+  .ld_c3_back{
     position: absolute;
     max-width: 38%;
     left: 0;
@@ -40,7 +40,7 @@
 
     @media (prefers-reduced-motion: no-preference) {
       &.parallax {
-        transform: translateY(var(--parallax-offset, 0px)) translateZ(0);
+        transform: translateY(calc(50px + var(--parallax-offset, 0px))) translateZ(0);
       }
     }
 

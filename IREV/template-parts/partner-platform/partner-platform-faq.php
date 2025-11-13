@@ -85,8 +85,14 @@
         <h2>Want additionally boost CR of your partner program by 30%?
         </h2>
         <button class="open_modal">Check Lead Distribution platform</button>
-        <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/gear6back.svg')); ?>"
-        />
+        <div class="lottie_container">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/pixelcar.json')); ?>"
+                        speed="1"
+                        style= "width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
     </div>
 </section>

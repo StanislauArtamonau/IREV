@@ -6,9 +6,15 @@
 
 <section class="partner_platform_c3">
     <h2>become a champion with irev</h2>
-    <img
-            src="<?php echo esc_url(get_theme_file_uri('src/icons/ppcomp3back.svg')); ?>"
-    />
+     <div class="lottie_container">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/arrow.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+     </div>
     <div class="home_represent_form_container">
         <form class="home_represent_form">
             <input

@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="timer fix + gear1 sticky">
-      <change beforePath="$PROJECT_DIR$/.idea/IREV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IREV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear4.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-gear6.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-gear6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/js/home/home-represent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/home/_home-gear2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/home/home-gear2.php" afterDir="false" />
-    </list>
+    <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="timer fix + gear1 sticky" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +195,7 @@
       <workItem from="1762009520294" duration="2253000" />
       <workItem from="1762022344534" duration="2310000" />
       <workItem from="1762293594197" duration="573000" />
-      <workItem from="1762877327639" duration="1783000" />
+      <workItem from="1762877327639" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />

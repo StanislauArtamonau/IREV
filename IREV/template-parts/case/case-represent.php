@@ -16,10 +16,15 @@
             Established in 2016, OX Tech works with many iGaming operators. The company provides a platform for operation with management tools, a wide choice of state-of-the-art games, and rich features
         </span>
         </div>
-        <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/caserepresentback.svg')); ?>"
-                class="case_represent_back"
-        />
+        <div class="case_represent_back">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/circle_arrow.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+        </div>
     </div>
     <div class="lower_container">
         <ul>

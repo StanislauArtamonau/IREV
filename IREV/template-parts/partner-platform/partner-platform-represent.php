@@ -5,10 +5,15 @@
 ?>
 
 <section class="partner_platform_represent">
-    <img
-            class="back"
-            src="<?php echo esc_url(get_theme_file_uri('src/icons/pp-represent-back.svg')); ?>"
-    />
+     <div class="back">
+                <lottie-player
+                        src="<?php echo esc_url(get_theme_file_uri('src/animations/rings2.json')); ?>"
+                        speed="1"
+                        style= "max-width: 100%; background: transparent"
+                        loop
+                        autoplay>
+                </lottie-player>
+     </div>
     <div class="represent_label">
         <h1>partner platform</h1>
         <span>Built for scale. Powered by IREV.</span>
