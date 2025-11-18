@@ -132,7 +132,7 @@ $power_is_shown = $power_on_the_track ? $power_on_the_track['is_shown'] : false;
                         <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_3']['paragraph']); ?></span>
                     </div>
                 </div>
-                <button><?php echo esc_html($power_on_the_track['play_partners']['button']['text']); ?></button>
+                <a href="<?php echo esc_attr($power_on_the_track['play_partners']['button']['url']) ?>"><button><?php echo esc_html($power_on_the_track['play_partners']['button']['text']); ?></button></a>
             </div>
             <div class="home_gear3_lower_right">
                 <div class="dashed_vertical"></div>
@@ -170,7 +170,7 @@ $power_is_shown = $power_on_the_track ? $power_on_the_track['is_shown'] : false;
                     <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_3']['paragraph']); ?></span>
                 </div>
             </div>
-            <button><?php echo esc_html($power_on_the_track['ox_tech']['button']['text']); ?></button>
+            <a href="<?php echo esc_attr($power_on_the_track['ox_tech']['button']['url']) ?>"><button><?php echo esc_html($power_on_the_track['ox_tech']['button']['text']); ?></button></a>
         </div>
     </div>
 <?php endif; ?>
