@@ -2,8 +2,12 @@
 /**
  * Template Part: Partner Platform Component6
  */
+
+$calculator = get_field('calculator');
+$calculator_is_shown = $calculator ? $calculator['is_shown'] : false;
 ?>
 
+<?php if ($calculator_is_shown) : ?>
 <section class="partner_platform_c6">
     <div class="pp_c6_cont">
         <img src="<?php echo esc_url(get_theme_file_uri('src/icons/ppc6backv2.svg')); ?>"/>
@@ -17,7 +21,7 @@
                 </lottie-player>
         </div>
         <div class="form_container">
-            <h2>Cost check before green light</h2>
+            <h2><?php echo esc_html($calculator['heading']); ?></h2>
             <div class="form_item">
                 <span>Conversions per month</span>
                 <input type="number" id="conversions" placeholder="30 000" min="0" />
@@ -43,5 +47,6 @@
         </div>
     </div>
 
-    <h3>Ready to race? Start scaling with Partner platform</h3>
+    <h3><?php echo esc_html($calculator['low_title']); ?></h3>
 </section>
+<?php endif; ?>
