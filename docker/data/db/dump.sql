@@ -85,10 +85,17 @@ INSERT INTO `wp_actionscheduler_actions` VALUES
 (31,'action_scheduler_run_recurring_actions_schedule_hook','complete','2025-11-18 08:06:11','2025-11-18 08:06:11',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763453171;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763453171;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,1,'2025-11-18 08:06:24','2025-11-18 08:06:24',3445,NULL),
 (32,'action_scheduler_run_recurring_actions_schedule_hook','failed','2025-11-19 08:06:24','2025-11-19 08:06:24',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763539584;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763539584;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,1,'2025-11-19 08:06:59','2025-11-19 08:06:59',0,NULL),
 (33,'wp_mail_smtp_admin_notifications_update','complete','2025-11-19 08:19:38','2025-11-19 08:19:38',10,'[1]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763540378;s:18:\"\0*\0first_timestamp\";i:1761417607;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763540378;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',2,1,'2025-11-19 08:20:24','2025-11-19 08:20:24',0,NULL),
+<<<<<<< HEAD
 (34,'action_scheduler_run_recurring_actions_schedule_hook','failed','2025-11-20 08:06:59','2025-11-20 08:06:59',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763626019;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763626019;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,1,'2025-11-20 14:19:34','2025-11-20 14:19:34',0,NULL),
 (35,'wp_mail_smtp_admin_notifications_update','complete','2025-11-20 08:20:24','2025-11-20 08:20:24',10,'[1]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763626824;s:18:\"\0*\0first_timestamp\";i:1761417607;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763626824;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',2,1,'2025-11-20 14:19:34','2025-11-20 14:19:34',0,NULL),
 (36,'wp_mail_smtp_admin_notifications_update','pending','2025-11-21 14:19:34','2025-11-21 14:19:34',10,'[1]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763734774;s:18:\"\0*\0first_timestamp\";i:1761417607;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763734774;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',2,0,'0000-00-00 00:00:00','0000-00-00 00:00:00',0,NULL),
 (37,'action_scheduler_run_recurring_actions_schedule_hook','pending','2025-11-21 14:19:34','2025-11-21 14:19:34',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763734774;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763734774;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,0,'0000-00-00 00:00:00','0000-00-00 00:00:00',0,NULL);
+=======
+(34,'action_scheduler_run_recurring_actions_schedule_hook','failed','2025-11-20 08:06:59','2025-11-20 08:06:59',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763626019;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763626019;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,1,'2025-11-20 16:24:33','2025-11-20 16:24:33',0,NULL),
+(35,'wp_mail_smtp_admin_notifications_update','complete','2025-11-20 08:20:24','2025-11-20 08:20:24',10,'[1]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763626824;s:18:\"\0*\0first_timestamp\";i:1761417607;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763626824;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',2,1,'2025-11-20 16:24:33','2025-11-20 16:24:33',0,NULL),
+(36,'wp_mail_smtp_admin_notifications_update','pending','2025-11-21 16:24:33','2025-11-21 16:24:33',10,'[1]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763742273;s:18:\"\0*\0first_timestamp\";i:1761417607;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763742273;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',2,0,'0000-00-00 00:00:00','0000-00-00 00:00:00',0,NULL),
+(37,'action_scheduler_run_recurring_actions_schedule_hook','pending','2025-11-21 16:24:33','2025-11-21 16:24:33',20,'[]','O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1763742273;s:18:\"\0*\0first_timestamp\";i:1763453171;s:13:\"\0*\0recurrence\";i:86400;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1763742273;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:86400;}',5,0,'0000-00-00 00:00:00','0000-00-00 00:00:00',0,NULL);
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 /*!40000 ALTER TABLE `wp_actionscheduler_actions` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -105,7 +112,11 @@ CREATE TABLE `wp_actionscheduler_claims` (
   `date_created_gmt` datetime DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`claim_id`),
   KEY `date_created_gmt` (`date_created_gmt`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=4090 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=3963 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -251,12 +262,21 @@ INSERT INTO `wp_actionscheduler_logs` VALUES
 (71,33,'action started via WP Cron','2025-11-19 08:20:24','2025-11-19 08:20:24'),
 (72,33,'action complete via WP Cron','2025-11-19 08:20:24','2025-11-19 08:20:24'),
 (73,35,'action created','2025-11-19 08:20:24','2025-11-19 08:20:24'),
+<<<<<<< HEAD
 (74,35,'action started via WP Cron','2025-11-20 14:19:33','2025-11-20 14:19:33'),
 (75,35,'action complete via WP Cron','2025-11-20 14:19:34','2025-11-20 14:19:34'),
 (76,36,'action created','2025-11-20 14:19:34','2025-11-20 14:19:34'),
 (77,34,'action started via WP Cron','2025-11-20 14:19:34','2025-11-20 14:19:34'),
 (78,34,'action failed via WP Cron: Scheduled action for action_scheduler_run_recurring_actions_schedule_hook will not be executed as no callbacks are registered.','2025-11-20 14:19:34','2025-11-20 14:19:34'),
 (79,37,'action created','2025-11-20 14:19:34','2025-11-20 14:19:34');
+=======
+(74,35,'action started via WP Cron','2025-11-20 16:24:32','2025-11-20 16:24:32'),
+(75,35,'action complete via WP Cron','2025-11-20 16:24:33','2025-11-20 16:24:33'),
+(76,36,'action created','2025-11-20 16:24:33','2025-11-20 16:24:33'),
+(77,34,'action started via WP Cron','2025-11-20 16:24:33','2025-11-20 16:24:33'),
+(78,34,'action failed via WP Cron: Scheduled action for action_scheduler_run_recurring_actions_schedule_hook will not be executed as no callbacks are registered.','2025-11-20 16:24:33','2025-11-20 16:24:33'),
+(79,37,'action created','2025-11-20 16:24:33','2025-11-20 16:24:33');
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 /*!40000 ALTER TABLE `wp_actionscheduler_logs` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -387,7 +407,11 @@ CREATE TABLE `wp_options` (
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`),
   KEY `autoload` (`autoload`)
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=5496 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=5324 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -398,7 +422,11 @@ LOCK TABLES `wp_options` WRITE;
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 set autocommit=0;
 INSERT INTO `wp_options` VALUES
+<<<<<<< HEAD
 (1,'cron','a:13:{i:1763656460;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"0d04ed39571b55704c122d726248bbac\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:1:{i:0;s:7:\"WP Cron\";}s:8:\"interval\";i:60;}}}i:1763659095;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1763688513;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763691494;a:1:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763693294;a:1:{s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763695094;a:1:{s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763731095;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763731713;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763731715;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763836072;a:1:{s:27:\"acf_update_site_health_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1763990296;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1764076695;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','on'),
+=======
+(1,'cron','a:13:{i:1763656280;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"0d04ed39571b55704c122d726248bbac\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:1:{i:0;s:7:\"WP Cron\";}s:8:\"interval\";i:60;}}}i:1763659095;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1763688513;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763691494;a:1:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763693294;a:1:{s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763695094;a:1:{s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1763731095;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763731713;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763731715;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1763836072;a:1:{s:27:\"acf_update_site_health_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1763990296;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1764076695;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','on'),
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 (2,'siteurl','http://localhost','on'),
 (3,'home','http://localhost','on'),
 (4,'blogname','Custom Theme','on'),
@@ -537,7 +565,11 @@ INSERT INTO `wp_options` VALUES
 (460,'acf_first_activated_version','6.6.1','on'),
 (461,'acf_site_health','{\"version\":\"6.6.2\",\"plugin_type\":\"PRO\",\"update_source\":\"ACF Direct\",\"activated\":true,\"activated_url\":\"http:\\/\\/localhost\",\"license_type\":\"Agency\",\"license_status\":\"active\",\"subscription_expires\":1793707383,\"wp_version\":\"6.8.3\",\"mysql_version\":\"12.0.2-MariaDB-ubu2404\",\"is_multisite\":false,\"active_theme\":{\"name\":\"Irev Theme\",\"version\":\"1.0.4\",\"theme_uri\":\"\",\"stylesheet\":false},\"active_plugins\":{\"advanced-custom-fields-pro\\/acf.php\":{\"name\":\"Advanced Custom Fields PRO\",\"version\":\"6.6.2\",\"plugin_uri\":\"https:\\/\\/www.advancedcustomfields.com\"},\"contact-form-7\\/wp-contact-form-7.php\":{\"name\":\"Contact Form 7\",\"version\":\"6.1.3\",\"plugin_uri\":\"https:\\/\\/contactform7.com\\/\"},\"wp-mail-smtp\\/wp_mail_smtp.php\":{\"name\":\"WP Mail SMTP\",\"version\":\"4.6.0\",\"plugin_uri\":\"https:\\/\\/wpmailsmtp.com\\/\"}},\"ui_field_groups\":\"0\",\"php_field_groups\":\"0\",\"json_field_groups\":\"1\",\"rest_field_groups\":\"0\",\"all_location_rules\":[\"page_type==front_page\",\"page==2\"],\"field_groups_with_single_block_rule\":\"0\",\"field_groups_with_multiple_block_rules\":\"0\",\"field_groups_with_blocks_and_other_rules\":\"0\",\"number_of_fields_by_type\":{\"tab\":9,\"group\":9},\"number_of_third_party_fields_by_type\":[],\"post_types_enabled\":true,\"ui_post_types\":\"4\",\"json_post_types\":\"0\",\"ui_taxonomies\":\"3\",\"json_taxonomies\":\"0\",\"ui_options_pages_enabled\":true,\"ui_options_pages\":\"0\",\"json_options_pages\":\"0\",\"php_options_pages\":\"0\",\"rest_api_format\":\"light\",\"registered_acf_blocks\":\"0\",\"blocks_per_api_version\":[],\"blocks_per_acf_block_version\":[],\"blocks_using_post_meta\":\"0\",\"preload_blocks\":true,\"admin_ui_enabled\":true,\"field_type-modal_enabled\":true,\"field_settings_tabs_enabled\":false,\"shortcode_enabled\":false,\"registered_acf_forms\":\"0\",\"json_save_paths\":1,\"json_load_paths\":1,\"event_first_activated\":1761416875,\"event_activated_pro\":1762190657,\"event_first_created_field_group\":1762191841,\"last_updated\":1763539511,\"event_first_created_ui_options_page\":1763539511}','off'),
 (462,'acf_version','6.6.2','auto'),
+<<<<<<< HEAD
 (470,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-6.8.3.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-6.8.3.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.8.3\";s:7:\"version\";s:5:\"6.8.3\";s:11:\"php_version\";s:6:\"7.2.24\";s:13:\"mysql_version\";s:5:\"5.5.5\";s:11:\"new_bundled\";s:3:\"6.7\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1763648375;s:15:\"version_checked\";s:5:\"6.8.3\";s:12:\"translations\";a:0:{}}','off'),
+=======
+(470,'_site_transient_update_core','O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-6.8.3.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-6.8.3.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"6.8.3\";s:7:\"version\";s:5:\"6.8.3\";s:11:\"php_version\";s:6:\"7.2.24\";s:13:\"mysql_version\";s:5:\"5.5.5\";s:11:\"new_bundled\";s:3:\"6.7\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1763655874;s:15:\"version_checked\";s:5:\"6.8.3\";s:12:\"translations\";a:0:{}}','off'),
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 (473,'action_scheduler_hybrid_store_demarkation','8','auto'),
 (474,'schema-ActionScheduler_StoreSchema','8.0.1763453171','auto'),
 (475,'schema-ActionScheduler_LoggerSchema','3.0.1761417479','auto'),
@@ -546,13 +578,21 @@ INSERT INTO `wp_options` VALUES
 (478,'wp_mail_smtp','a:3:{s:4:\"mail\";a:6:{s:10:\"from_email\";s:17:\"admin@example.com\";s:9:\"from_name\";s:12:\"Custom Theme\";s:6:\"mailer\";s:4:\"mail\";s:11:\"return_path\";b:0;s:16:\"from_email_force\";b:1;s:15:\"from_name_force\";b:0;}s:4:\"smtp\";a:2:{s:7:\"autotls\";b:1;s:4:\"auth\";b:1;}s:7:\"general\";a:1:{s:29:\"summary_report_email_disabled\";b:0;}}','off'),
 (479,'wp_mail_smtp_activated_time','1761417479','off'),
 (480,'wp_mail_smtp_activated','a:1:{s:4:\"lite\";i:1761417479;}','auto'),
+<<<<<<< HEAD
 (485,'action_scheduler_lock_async-request-runner','691f42ac2de448.60491465|1763656424','no'),
+=======
+(485,'action_scheduler_lock_async-request-runner','691f4203a17cd4.41962586|1763656255','no'),
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 (489,'wp_mail_smtp_migration_version','5','on'),
 (490,'wp_mail_smtp_debug_events_db_version','1','on'),
 (491,'wp_mail_smtp_activation_prevent_redirect','1','auto'),
 (494,'as_has_wp_comment_logs','no','on'),
 (495,'wp_mail_smtp_setup_wizard_stats','a:3:{s:13:\"launched_time\";i:1761417547;s:14:\"completed_time\";i:0;s:14:\"was_successful\";b:0;}','off'),
+<<<<<<< HEAD
 (497,'wp_mail_smtp_notifications','a:4:{s:6:\"update\";i:1763648374;s:4:\"feed\";a:0:{}s:6:\"events\";a:0:{}s:9:\"dismissed\";a:0:{}}','auto'),
+=======
+(497,'wp_mail_smtp_notifications','a:4:{s:6:\"update\";i:1763655873;s:4:\"feed\";a:0:{}s:6:\"events\";a:0:{}s:9:\"dismissed\";a:0:{}}','auto'),
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 (522,'wp_mail_smtp_review_notice','a:2:{s:4:\"time\";i:1761418967;s:9:\"dismissed\";b:0;}','auto'),
 (611,'secret_key','PP=B`o}lA-+cxhOZ]+y/ Ks{/pJ7~Lmn<6zS6UFZ_ot6F/J7UDe&tgflD z)l5@?','off'),
 (1263,'wp_mail_smtp_summary_report_email_last_sent_week','47','auto'),
@@ -561,7 +601,12 @@ INSERT INTO `wp_options` VALUES
 (1266,'wp_mail_smtp_lite_weekly_sent_email_counter','a:3:{i:44;i:1;i:45;i:1;i:47;i:1;}','on'),
 (3001,'action_scheduler_migration_status','complete','auto'),
 (3009,'acf_pro_license','YToyOntzOjM6ImtleSI7czo3MjoiTkRBMk1qRXhZVEUxTjJVeU5HVTFZalkxWXpVMU5UZ3lZalZsTjJRM09HUmlPREUwTlRjM1pHVTVPVGRrT0RnM056TmlZelJsIjtzOjM6InVybCI7czoxNjoiaHR0cDovL2xvY2FsaG9zdCI7fQ==','off'),
+<<<<<<< HEAD
 (3010,'acf_pro_license_status','a:11:{s:6:\"status\";s:6:\"active\";s:7:\"created\";i:1762171383;s:6:\"expiry\";i:1793707383;s:4:\"name\";s:6:\"Agency\";s:8:\"lifetime\";b:0;s:8:\"refunded\";b:0;s:17:\"view_licenses_url\";s:62:\"https://www.advancedcustomfields.com/my-account/view-licenses/\";s:23:\"manage_subscription_url\";s:73:\"https://www.advancedcustomfields.com/my-account/view-subscription/681480/\";s:9:\"error_msg\";s:0:\"\";s:10:\"next_check\";i:1763734771;s:16:\"legacy_multisite\";b:0;}','on'),
+=======
+(3010,'acf_pro_license_status','a:11:{s:6:\"status\";s:6:\"active\";s:7:\"created\";i:1762171383;s:6:\"expiry\";i:1793707383;s:4:\"name\";s:6:\"Agency\";s:8:\"lifetime\";b:0;s:8:\"refunded\";b:0;s:17:\"view_licenses_url\";s:62:\"https://www.advancedcustomfields.com/my-account/view-licenses/\";s:23:\"manage_subscription_url\";s:73:\"https://www.advancedcustomfields.com/my-account/view-subscription/681480/\";s:9:\"error_msg\";s:0:\"\";s:10:\"next_check\";i:1763742270;s:16:\"legacy_multisite\";b:0;}','on'),
+(3901,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1763655875;s:7:\"checked\";a:4:{s:4:\"IREV\";s:5:\"1.0.4\";s:16:\"twentytwentyfive\";s:3:\"1.3\";s:16:\"twentytwentyfour\";s:3:\"1.3\";s:17:\"twentytwentythree\";s:3:\"1.6\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:3:{s:16:\"twentytwentyfive\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfive\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfive/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfive.1.3.zip\";s:8:\"requires\";s:3:\"6.7\";s:12:\"requires_php\";s:3:\"7.2\";}s:16:\"twentytwentyfour\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfour\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfour/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfour.1.3.zip\";s:8:\"requires\";s:3:\"6.4\";s:12:\"requires_php\";s:3:\"7.0\";}s:17:\"twentytwentythree\";a:6:{s:5:\"theme\";s:17:\"twentytwentythree\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:47:\"https://wordpress.org/themes/twentytwentythree/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/theme/twentytwentythree.1.6.zip\";s:8:\"requires\";s:3:\"6.1\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}','off'),
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 (4176,'_site_transient_timeout_php_check_84bab1ffd8c4f8f9d81d62c8afdcab8a','1763972379','off'),
 (4177,'_site_transient_php_check_84bab1ffd8c4f8f9d81d62c8afdcab8a','a:5:{s:19:\"recommended_version\";s:3:\"8.3\";s:15:\"minimum_version\";s:6:\"7.2.24\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}','off'),
 (4653,'_site_transient_timeout_browser_76a02e3b7c9b39b51bd1ef658e740b35','1764057926','off'),
@@ -581,6 +626,7 @@ INSERT INTO `wp_options` VALUES
 (5246,'_transient_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9','1763617464','off'),
 (5247,'_transient_timeout_dash_v2_f69de0bbfe7eaa113146875f40c02000','1763660664','off'),
 (5248,'_transient_dash_v2_f69de0bbfe7eaa113146875f40c02000','<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://ru.wordpress.org/news/2025/06/dropping-security-updates-for-wordpress-versions-4-1-through-4-6/\'>Прекращение поддержки старых версий WordPress 4.1-4.6</a></li><li><a class=\'rsswidget\' href=\'https://ru.wordpress.org/news/2023/12/scam-alert-2023/\'>Предупреждение о мошенниках</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://ma.tt/2025/11/gemini-fsd/\'>Matt: Gemini &amp;amp; FSD</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/podcast/194-devin-walker-on-leading-jetpack-challenges-vision-and-the-future\'>WPTavern: #194 – Devin Walker on Leading Jetpack: Challenges, Vision, and the Future</a></li><li><a class=\'rsswidget\' href=\'https://openchannels.fm/the-everyday-chaos-of-open-tabs-and-browser-battles/\'>Open Channels FM: Open Tabs</a></li></ul></div>','off'),
+<<<<<<< HEAD
 (5311,'_transient_timeout_acf_pro_validating_license','1763649271','off'),
 (5312,'_transient_acf_pro_validating_license','1','off'),
 (5317,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1763648376;s:7:\"checked\";a:4:{s:4:\"IREV\";s:5:\"1.0.4\";s:16:\"twentytwentyfive\";s:3:\"1.2\";s:16:\"twentytwentyfour\";s:3:\"1.3\";s:17:\"twentytwentythree\";s:3:\"1.6\";}s:8:\"response\";a:1:{s:16:\"twentytwentyfive\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfive\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfive/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfive.1.3.zip\";s:8:\"requires\";s:3:\"6.7\";s:12:\"requires_php\";s:3:\"7.2\";}}s:9:\"no_update\";a:2:{s:16:\"twentytwentyfour\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfour\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfour/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfour.1.3.zip\";s:8:\"requires\";s:3:\"6.4\";s:12:\"requires_php\";s:3:\"7.0\";}s:17:\"twentytwentythree\";a:6:{s:5:\"theme\";s:17:\"twentytwentythree\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:47:\"https://wordpress.org/themes/twentytwentythree/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/theme/twentytwentythree.1.6.zip\";s:8:\"requires\";s:3:\"6.1\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}','off'),
@@ -606,6 +652,15 @@ INSERT INTO `wp_options` VALUES
 (5464,'_site_transient_theme_roots','a:4:{s:4:\"IREV\";s:7:\"/themes\";s:16:\"twentytwentyfive\";s:7:\"/themes\";s:16:\"twentytwentyfour\";s:7:\"/themes\";s:17:\"twentytwentythree\";s:7:\"/themes\";}','off'),
 (5480,'_site_transient_timeout_wp_theme_files_patterns-890528a00f394fe35a90090ad2fa63bf','1763657391','off'),
 (5481,'_site_transient_wp_theme_files_patterns-890528a00f394fe35a90090ad2fa63bf','a:2:{s:7:\"version\";s:5:\"1.0.4\";s:8:\"patterns\";a:0:{}}','off');
+=======
+(5309,'_site_transient_timeout_wp_theme_files_patterns-890528a00f394fe35a90090ad2fa63bf','1763657669','off'),
+(5310,'_site_transient_wp_theme_files_patterns-890528a00f394fe35a90090ad2fa63bf','a:2:{s:7:\"version\";s:5:\"1.0.4\";s:8:\"patterns\";a:0:{}}','off'),
+(5311,'_transient_timeout_acf_pro_validating_license','1763656769','off'),
+(5312,'_transient_acf_pro_validating_license','1','off'),
+(5315,'_site_transient_timeout_theme_roots','1763657674','off'),
+(5316,'_site_transient_theme_roots','a:4:{s:4:\"IREV\";s:7:\"/themes\";s:16:\"twentytwentyfive\";s:7:\"/themes\";s:16:\"twentytwentyfour\";s:7:\"/themes\";s:17:\"twentytwentythree\";s:7:\"/themes\";}','off'),
+(5317,'_site_transient_update_plugins','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1763655875;s:8:\"response\";a:1:{s:29:\"wp-mail-smtp/wp_mail_smtp.php\";O:8:\"stdClass\":13:{s:2:\"id\";s:26:\"w.org/plugins/wp-mail-smtp\";s:4:\"slug\";s:12:\"wp-mail-smtp\";s:6:\"plugin\";s:29:\"wp-mail-smtp/wp_mail_smtp.php\";s:11:\"new_version\";s:5:\"4.7.0\";s:3:\"url\";s:43:\"https://wordpress.org/plugins/wp-mail-smtp/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/plugin/wp-mail-smtp.4.7.0.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:65:\"https://ps.w.org/wp-mail-smtp/assets/icon-256x256.png?rev=1755440\";s:2:\"1x\";s:65:\"https://ps.w.org/wp-mail-smtp/assets/icon-128x128.png?rev=1755440\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:68:\"https://ps.w.org/wp-mail-smtp/assets/banner-1544x500.png?rev=3206423\";s:2:\"1x\";s:67:\"https://ps.w.org/wp-mail-smtp/assets/banner-772x250.png?rev=3206423\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"5.5\";s:6:\"tested\";s:5:\"6.8.3\";s:12:\"requires_php\";s:3:\"7.4\";s:16:\"requires_plugins\";a:0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:36:\"contact-form-7/wp-contact-form-7.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:28:\"w.org/plugins/contact-form-7\";s:4:\"slug\";s:14:\"contact-form-7\";s:6:\"plugin\";s:36:\"contact-form-7/wp-contact-form-7.php\";s:11:\"new_version\";s:5:\"6.1.3\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/contact-form-7/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/plugin/contact-form-7.6.1.3.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:59:\"https://ps.w.org/contact-form-7/assets/icon.svg?rev=2339255\";s:3:\"svg\";s:59:\"https://ps.w.org/contact-form-7/assets/icon.svg?rev=2339255\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:69:\"https://ps.w.org/contact-form-7/assets/banner-1544x500.png?rev=860901\";s:2:\"1x\";s:68:\"https://ps.w.org/contact-form-7/assets/banner-772x250.png?rev=880427\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:3:\"6.7\";}}s:7:\"checked\";a:3:{s:34:\"advanced-custom-fields-pro/acf.php\";s:5:\"6.6.2\";s:36:\"contact-form-7/wp-contact-form-7.php\";s:5:\"6.1.3\";s:29:\"wp-mail-smtp/wp_mail_smtp.php\";s:5:\"4.6.0\";}}','off');
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -815,7 +870,7 @@ INSERT INTO `wp_postmeta` VALUES
 (184,2,'_gear_5_is_shown','field_690f856f24d1d'),
 (185,2,'gear_5_title','[gear 05] '),
 (186,2,'_gear_5_title','field_690f858724d1e'),
-(187,2,'gear_5_heading','Twin-turbo solutions for affiliate domination '),
+(187,2,'gear_5_heading','Twin-turbo solutions for affiliate domination'),
 (188,2,'_gear_5_heading','field_690f859424d1f'),
 (189,2,'gear_5_product_card','2'),
 (190,2,'_gear_5_product_card','field_690f85c124d20'),
@@ -3705,7 +3760,7 @@ INSERT INTO `wp_postmeta` VALUES
 (3134,2,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (3135,2,'gear_1_points_4_name','support'),
 (3136,2,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(3137,2,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(3137,2,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (3138,2,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (3139,2,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (3140,2,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -3921,7 +3976,7 @@ INSERT INTO `wp_postmeta` VALUES
 (3350,158,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (3351,158,'gear_1_points_4_name','support'),
 (3352,158,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(3353,158,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(3353,158,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (3354,158,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (3355,158,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (3356,158,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -4150,7 +4205,7 @@ INSERT INTO `wp_postmeta` VALUES
 (3584,160,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (3585,160,'gear_1_points_4_name','support'),
 (3586,160,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(3587,160,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(3587,160,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (3588,160,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (3589,160,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (3590,160,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -4436,7 +4491,7 @@ INSERT INTO `wp_postmeta` VALUES
 (3875,169,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (3876,169,'gear_1_points_4_name','support'),
 (3877,169,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(3878,169,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(3878,169,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (3879,169,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (3880,169,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (3881,169,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -4713,7 +4768,7 @@ INSERT INTO `wp_postmeta` VALUES
 (4155,170,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (4156,170,'gear_1_points_4_name','support'),
 (4157,170,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(4158,170,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(4158,170,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (4159,170,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (4160,170,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (4161,170,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -4990,7 +5045,7 @@ INSERT INTO `wp_postmeta` VALUES
 (4437,172,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (4438,172,'gear_1_points_4_name','support'),
 (4439,172,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(4440,172,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(4440,172,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (4441,172,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (4442,172,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (4443,172,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -5271,7 +5326,7 @@ INSERT INTO `wp_postmeta` VALUES
 (4723,176,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (4724,176,'gear_1_points_4_name','support'),
 (4725,176,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(4726,176,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(4726,176,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (4727,176,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (4728,176,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (4729,176,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -5550,7 +5605,7 @@ INSERT INTO `wp_postmeta` VALUES
 (5005,178,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (5006,178,'gear_1_points_4_name','support'),
 (5007,178,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(5008,178,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(5008,178,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (5009,178,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (5010,178,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (5011,178,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -5849,7 +5904,7 @@ INSERT INTO `wp_postmeta` VALUES
 (5307,179,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (5308,179,'gear_1_points_4_name','support'),
 (5309,179,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(5310,179,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(5310,179,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (5311,179,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (5312,179,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (5313,179,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -6148,7 +6203,7 @@ INSERT INTO `wp_postmeta` VALUES
 (5609,180,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (5610,180,'gear_1_points_4_name','support'),
 (5611,180,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(5612,180,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(5612,180,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (5613,180,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (5614,180,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (5615,180,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -6447,7 +6502,7 @@ INSERT INTO `wp_postmeta` VALUES
 (5911,181,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (5912,181,'gear_1_points_4_name','support'),
 (5913,181,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(5914,181,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(5914,181,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (5915,181,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (5916,181,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (5917,181,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -6746,7 +6801,7 @@ INSERT INTO `wp_postmeta` VALUES
 (6213,182,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (6214,182,'gear_1_points_4_name','support'),
 (6215,182,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(6216,182,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(6216,182,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (6217,182,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (6218,182,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (6219,182,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -7039,7 +7094,7 @@ INSERT INTO `wp_postmeta` VALUES
 (6511,186,'_gear_5_is_shown','field_690f856f24d1d'),
 (6512,186,'gear_5_title','[gear 05] '),
 (6513,186,'_gear_5_title','field_690f858724d1e'),
-(6514,186,'gear_5_heading','Twin-turbo solutions for affiliate domination '),
+(6514,186,'gear_5_heading','Twin-turbo solutions for affiliate domination'),
 (6515,186,'_gear_5_heading','field_690f859424d1f'),
 (6516,186,'gear_5_product_card','2'),
 (6517,186,'_gear_5_product_card','field_690f85c124d20'),
@@ -7101,7 +7156,7 @@ INSERT INTO `wp_postmeta` VALUES
 (6573,186,'_gear_1_points_3_paragraph','field_690e4b51b6ef4'),
 (6574,186,'gear_1_points_4_name','support'),
 (6575,186,'_gear_1_points_4_name','field_690e4b42b6ef2'),
-(6576,186,'gear_1_points_4_heading','Like a pit stop at 300 km/h –  our support keeps you racing'),
+(6576,186,'gear_1_points_4_heading','Like a pit stop at 300 km/h – our support keeps you racing'),
 (6577,186,'_gear_1_points_4_heading','field_690e4b4bb6ef3'),
 (6578,186,'gear_1_points_4_paragraph','Full onboarding, account setup, and hands-on assistance with 98% client satisfaction rate. IREV is aimed on personalised service and support, fostering mutual growth.'),
 (6579,186,'_gear_1_points_4_paragraph','field_690e4b51b6ef4'),
@@ -10891,4 +10946,8 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
+<<<<<<< HEAD
 -- Dump completed on 2025-11-20 16:33:41
+=======
+-- Dump completed on 2025-11-20 16:30:27
+>>>>>>> a10e534b2440b71803eb2805622420488dcbf7b2

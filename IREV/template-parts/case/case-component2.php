@@ -42,6 +42,42 @@
         </div>
         <div class="lower_item">
             <img
+                    src="<?php echo esc_url(get_theme_file_uri('src/icons/casec2_1.svg')); ?>"
+                    class="item_logo"
+            />
+            <span class="item_label">
+                Expanding offers with more goals
+            </span>
+            <span class="item_desc">
+                FTD, registration, withdrawal, verified phone - all these and many other conversion tracking criteria were custom-made for the operators of OX Tech providing deeper insights into player bases.
+            </span>
+        </div>
+        <div class="lower_item">
+            <img
+                    src="<?php echo esc_url(get_theme_file_uri('src/icons/casec2_1.svg')); ?>"
+                    class="item_logo"
+            />
+            <span class="item_label">
+                Expanding offers with more goals
+            </span>
+            <span class="item_desc">
+                FTD, registration, withdrawal, verified phone - all these and many other conversion tracking criteria were custom-made for the operators of OX Tech providing deeper insights into player bases.
+            </span>
+        </div>
+        <div class="lower_item">
+            <img
+                    src="<?php echo esc_url(get_theme_file_uri('src/icons/casec2_1.svg')); ?>"
+                    class="item_logo"
+            />
+            <span class="item_label">
+                Expanding offers with more goals
+            </span>
+            <span class="item_desc">
+                FTD, registration, withdrawal, verified phone - all these and many other conversion tracking criteria were custom-made for the operators of OX Tech providing deeper insights into player bases.
+            </span>
+        </div>
+        <div class="lower_item">
+            <img
                     src="<?php echo esc_url(get_theme_file_uri('src/icons/casec2_2.svg')); ?>"
                     class="item_logo"
             />

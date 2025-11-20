@@ -175,6 +175,14 @@
     gap: 70px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+     &:active {
+    cursor: grabbing;
+    }
 
     &::-webkit-scrollbar {
       display: none;
@@ -197,6 +205,11 @@
       gap: 36px;
       min-width: 236px;
       padding-top: 20px;
+      user-select: none;
+      scroll-snap-align: start;
+      scroll-behavior: smooth;
+        will-change: scroll-position;
+      backface-visibility: hidden;
 
       @media(max-width: $tablet-width){
         min-width: 236px;
@@ -205,6 +218,7 @@
       img{
         width: 80px;
         height: 80px;
+        user-select: none;
 
         animation: multiColorFlow 8s ease-in-out infinite, changeScale 8s ease-in-out infinite;
         @keyframes multiColorFlow {
@@ -235,12 +249,14 @@
         @include body-medium-font();
         font-size: 16px;
         color: #F8FAFF;
+        user-select: none;
       }
 
       .item_desc{
         @include caption-small-font();
         font-size: 16px;
         color: #F8FAFFCC;
+        user-select: none;
 
         @media(max-width: $tablet-width){
           font-size: 12px;

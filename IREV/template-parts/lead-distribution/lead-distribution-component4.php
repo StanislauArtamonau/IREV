@@ -6,10 +6,12 @@
 
 <section class="ld_c4">
     <div class="logo_container">
-        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/bullsmedia.svg')); ?>"/>
-        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/oxtech.svg')); ?>"/>
-        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/exness.svg')); ?>"/>
-        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartners.svg')); ?>"/>
+        <div class="logo_track">
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/bullsmedia.svg')); ?>"/>
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/oxtech.svg')); ?>"/>
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/exness.svg')); ?>"/>
+            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartners.svg')); ?>"/>
+        </div>
     </div>
     <div class="home_gear3_container ld">
         <div class="home_gear3_clients">
