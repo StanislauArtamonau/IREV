@@ -72,13 +72,6 @@ $comments_is_shown = $comments ? $comments['is_shown'] : false;
             <img src="<?php echo esc_url(get_theme_file_uri('src/icons/exness.svg')); ?>"/>
             <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartners.svg')); ?>"/>
         </div>
-
-        <div class="logo_track">
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/bullsmedia.svg')); ?>"/>
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/oxtech.svg')); ?>"/>
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/exness.svg')); ?>"/>
-            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartners.svg')); ?>"/>
-        </div>
     </div>
 </section>
 <?php endif; ?>

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-reviews.php" afterDir="false" />
@@ -206,6 +205,7 @@
       <workItem from="1763045976500" duration="26000" />
       <workItem from="1763046028486" duration="294000" />
       <workItem from="1763649317468" duration="1182000" />
+      <workItem from="1763655615126" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
