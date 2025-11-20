@@ -2,10 +2,13 @@
 /**
  * Template Part: Partner Platform Component3
  */
-?>
 
+$platform_form = get_field('platform_form');
+$platform_form_is_shown = $platform_form ? $platform_form['is_shown'] : false;
+?>
+<?php if ($platform_form_is_shown) : ?>
 <section class="partner_platform_c3">
-    <h2>become a champion with irev</h2>
+    <h2><?php echo esc_html($platform_form['heading']); ?></h2>
      <div class="lottie_container">
                 <lottie-player
                         src="<?php echo esc_url(get_theme_file_uri('src/animations/arrow.json')); ?>"
@@ -29,7 +32,8 @@
             </button>
         </form>
         <span>
-                [Only 5 slots left this month]
-            </span>
+            <?php echo esc_html($platform_form['paragraph']); ?>
+        </span>
     </div>
 </section>
+<?php endif; ?>

@@ -2,8 +2,11 @@
 /**
  * Template Part: Partner Platform Represent
  */
-?>
 
+$first_screen_platform = get_field('first_screen_platform');
+$first_screen_platform_is_shown = $first_screen_platform ? $first_screen_platform['is_shown'] : false;
+?>
+<?php if ($first_screen_platform_is_shown) : ?>
 <section class="partner_platform_represent">
      <div class="back">
                 <lottie-player
@@ -15,36 +18,25 @@
                 </lottie-player>
      </div>
     <div class="represent_label">
-        <h1>partner platform</h1>
-        <span>Built for scale. Powered by IREV.</span>
+        <h1><?php echo esc_html($first_screen_platform['heading']); ?></h1>
+        <span><?php echo esc_html($first_screen_platform['paragraph']); ?></span>
     </div>
     <div class="home_represent_rate">
         <div class="home_represent_rate_avatars">
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar1.svg')); ?>"
-            />
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar2.svg')); ?>"
-            />
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar3.svg')); ?>"
-            />
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar4.svg')); ?>"
-            />
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar5.svg')); ?>"
-            />
-            <img
-                src="<?php echo esc_url(get_theme_file_uri('src/icons/avatar6.svg')); ?>"
-            />
+            <?php if (!empty($first_screen_platform['avatars']) && is_array($first_screen_platform['avatars'])) : ?>
+                <?php foreach ($first_screen_platform['avatars'] as $avatar) : ?>
+                    <?php if (!empty($avatar['photo'])) : ?>
+                        <img src="<?php echo esc_url($avatar['photo']['url']); ?>" alt="<?php echo esc_attr($avatar['photo']['alt']); ?>" />
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
         <img
             class="home_represent_rate_rating"
             src="<?php echo esc_url(get_theme_file_uri('src/icons/stars.svg')); ?>"
         />
         <span>
-            5/5 from 439 affiliate business owner
+            <?php echo esc_html($first_screen_platform['avatar_paragraph']); ?>
         </span>
     </div>
 
@@ -62,10 +54,10 @@
             </button>
         </form>
         <span>
-                [Only 5 slots left this month]
-            </span>
+            <?php echo esc_html($first_screen_platform['form_paragraph']); ?>
+        </span>
     </div>
 
-
-    <span class="represent_text_lower">All-in-one software to launch, run, and grow your affiliate program — fast.</span>
+    <span class="represent_text_lower"><?php echo esc_html($first_screen_platform['low_paragraph']); ?></span>
 </section>
+<?php endif; ?>

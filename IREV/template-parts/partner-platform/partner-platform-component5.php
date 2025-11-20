@@ -3,81 +3,105 @@
  * Template Part: Partner Platform Component5
  */
 ?>
-
+<!-- proven_on_the_track_platform -->
+ <!-- is_shown -->
 <section class="partner_platform_c5">
-    <div class="home_gear3_lower_container">
-        <h2>PROVEN ON THE TRACK</h2>
-        <div class="back">
-                <lottie-player
-                        src="<?php echo esc_url(get_theme_file_uri('src/animations/spin.json')); ?>"
-                        speed="1"
-                        style= "max-width: 100%; background: transparent"
-                        loop
-                        autoplay>
-                </lottie-player>
-        </div>
-        <div class="dashed_vertical"></div>
-        <div class="dashed_horizontal"></div>
-        <div class="lower_wrapper">
-            <div class="home_gear3_lower_left">
-                <div class="dashed_vertical"></div>
-                <div class="label">
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
-                    <div>PLAY PARTNERS</div>
-                </div>
-                <span>Bigger, faster, stronger – solutions for a modern business</span>
-                <div class="cases_wraper">
-                    <div class="case">
-                        <div class="dashed_vertical"></div>
-                        <div class="case_label">
-                            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/ftds.svg')); ?>"/>
-                            <span>FTDS</span>
-                        </div>
-                        <span>
-                        x3.5 increase in FTDs in 6 months
-                    </span>
-                    </div>
-
-                    <div class="case">
-                        <div class="dashed_vertical"></div>
-                        <div class="case_label">
-                            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/CR.svg')); ?>"/>
-                            <span>CR</span>
-                        </div>
-                        <span>
-                        x6 times CR increased
-                    </span>
-                    </div>
-
-                    <div class="case">
-                        <div class="dashed_vertical"></div>
-                        <div class="case_label">
-                            <img src="<?php echo esc_url(get_theme_file_uri('src/icons/geos.svg')); ?>"/>
-                            <span>geos</span>
-                        </div>
-                        <span>
-                        150% increased in GEOS
-                    </span>
-                    </div>
-                </div>
-                <button>read full case</button>
+        <?php
+    $power_on_the_track = get_field('proven_on_the_track_platform');
+    $power_is_shown = $power_on_the_track ? $power_on_the_track['is_shown'] : false;
+    ?>
+    <?php if ($power_is_shown) : ?>
+        <div class="home_gear3_lower_container">
+            <h2><?php echo esc_html($power_on_the_track['title']); ?></h2>
+            <div class="back">
+                    <lottie-player
+                            src="<?php echo esc_url(get_theme_file_uri('src/animations/spin.json')); ?>"
+                            speed="1"
+                            style= "max-width: 100%; background: transparent"
+                            loop
+                            autoplay>
+                    </lottie-player>
             </div>
-            <div class="home_gear3_lower_right">
-                <div class="dashed_wrapper">
-                    <div class="dashed_label_wrapper">
-                        <div class="dashed_vertical first"></div>
-                        <div class="label">Winning trust at every turn</div>
-                        <span>98% client satisfaction rate</span>
-                    </div>
+            <div class="dashed_vertical"></div>
+            <div class="dashed_horizontal"></div>
+            <div class="lower_wrapper">
+                <div class="home_gear3_lower_left">
                     <div class="dashed_vertical"></div>
+                    <div class="label">
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
+                        <div><?php echo esc_html($power_on_the_track['play_partners']['name']); ?></div>
+                    </div>
+                    <span><?php echo esc_html($power_on_the_track['play_partners']['paragraph']); ?></span>
+                    <div class="cases_wraper">
+                        <div class="case">
+                            <div class="dashed_vertical"></div>
+                            <div class="case_label">
+                                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/ftds.svg')); ?>"/>
+                                <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_1']['name']); ?></span>
+                            </div>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_1']['paragraph']); ?></span>
+                        </div>
+
+                        <div class="case">
+                            <div class="dashed_vertical"></div>
+                            <div class="case_label">
+                                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/CR.svg')); ?>"/>
+                                <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_2']['name']); ?></span>
+                            </div>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_2']['paragraph']); ?></span>
+                        </div>
+
+                        <div class="case">
+                            <div class="dashed_vertical"></div>
+                            <div class="case_label">
+                                <img src="<?php echo esc_url(get_theme_file_uri('src/icons/geos.svg')); ?>"/>
+                                <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_3']['name']); ?></span>
+                            </div>
+                            <span><?php echo esc_html($power_on_the_track['play_partners']['parametr_3']['paragraph']); ?></span>
+                        </div>
+                    </div>
+                    <a href="<?php echo esc_attr($power_on_the_track['play_partners']['button']['url']) ?>"><button><?php echo esc_html($power_on_the_track['play_partners']['button']['text']); ?></button></a>
                 </div>
-                <div class="label">
-                    <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
-                    <div>OX TECH</div>
+                <div class="home_gear3_lower_right">
+                    <div class="dashed_vertical"></div>
+                    <div class="label">
+                        <img src="<?php echo esc_url(get_theme_file_uri('src/icons/playpartnersicon.svg')); ?>"/>
+                        <div><?php echo esc_html($power_on_the_track['ox_tech']['name']); ?></div>
+                    </div>
+                    <span><?php echo esc_html($power_on_the_track['ox_tech']['paragraph']); ?></span>
                 </div>
-                <span>IGaming partnership launched in heaven</span>
+            </div>
+
+            <div class="right_bottom">
+                <div class="right_cases_wrapper">
+                    <div class="case">
+                        <div class="dashed_vertical"></div>
+                        <div class="case_label">
+                            <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_1']['name']); ?></span>
+                        </div>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_1']['paragraph']); ?></span>
+                    </div>
+
+                    <div class="case">
+                        <div class="dashed_vertical"></div>
+                        <div class="case_label">
+                            <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_2']['name']); ?></span>
+                        </div>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_2']['paragraph']); ?></span>
+                    </div>
+
+                    <div class="case">
+                        <div class="dashed_vertical"></div>
+                        <div class="case_label">
+                            <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_3']['name']); ?></span>
+                        </div>
+                        <span><?php echo esc_html($power_on_the_track['ox_tech']['parametr_3']['paragraph']); ?></span>
+                    </div>
+                </div>
+                <a href="<?php echo esc_attr($power_on_the_track['ox_tech']['button']['url']) ?>"><button><?php echo esc_html($power_on_the_track['ox_tech']['button']['text']); ?></button></a>
             </div>
         </div>
+    <?php endif; ?>
 
         <div class="right_bottom">
             <div class="right_cases_wrapper">
