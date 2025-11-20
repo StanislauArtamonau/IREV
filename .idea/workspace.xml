@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="910ee9d9-3a2f-45ae-ad35-823da304344c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/components/partner-platform/_partner-platform-reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IREV/src/scss/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/src/scss/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/IREV/template-parts/partner-platform/partner-platform-reviews.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +44,12 @@
     &quot;assignee&quot;: &quot;seraphhh444&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/StanislauArtamonau/IREV.git",
-    "accountId": "827537e0-95df-46cc-9018-446e16833d38"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/StanislauArtamonau/IREV.git&quot;,
+    &quot;accountId&quot;: &quot;827537e0-95df-46cc-9018-446e16833d38&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$APPLICATION_HOME_DIR$/lib/modules/intellij.relaxng.jar!/resources/html5-schema/html5/web-forms.rnc" root0="SKIP_INSPECTION" />
   </component>
@@ -203,6 +205,7 @@
       <workItem from="1762877327639" duration="2449000" />
       <workItem from="1763045976500" duration="26000" />
       <workItem from="1763046028486" duration="294000" />
+      <workItem from="1763649317468" duration="1182000" />
     </task>
     <task id="LOCAL-00001" summary="базовый ui kit, fonts, mixins">
       <option name="closed" value="true" />
